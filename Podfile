@@ -9,6 +9,7 @@ target 'iOSAppProject' do
   pod 'Masonry'
   pod 'AFNetworking', '~> 3.0'
   pod 'SDWebImage', '~> 4.0'
+  pod 'CocoaLumberjack'
   
   target 'iOSAppProjectTests' do
     inherit! :search_paths
