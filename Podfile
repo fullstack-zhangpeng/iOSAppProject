@@ -3,11 +3,12 @@ platform :ios, '8.0'
 
 target 'iOSAppProject' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  use_frameworks!
+  # use_frameworks!
 
   # Pods for iOSAppProject
-  pod 'AFNetworking', '~> 3.0'
   pod 'Masonry'
+  pod 'AFNetworking', '~> 3.0'
+  pod 'SDWebImage', '~> 4.0'
   
   target 'iOSAppProjectTests' do
     inherit! :search_paths
@@ -18,5 +19,6 @@ target 'iOSAppProject' do
     inherit! :search_paths
     # Pods for testing
   end
+  
 
 end
