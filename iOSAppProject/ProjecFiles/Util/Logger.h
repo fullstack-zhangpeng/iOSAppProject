@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CocoaLumberjack.h>
 
 @interface Logger : NSObject
 
 + (void)setupLogger;
+
+@end
+
+@interface LoggerFormatter : NSObject <DDLogFormatter>
 
 @end

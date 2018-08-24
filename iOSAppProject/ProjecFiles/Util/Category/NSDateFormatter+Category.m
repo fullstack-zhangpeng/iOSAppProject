@@ -10,7 +10,7 @@
 
 @implementation NSDateFormatter (Category)
 
-+ (NSDateFormatter *)dateFormatterWithString:(NSString *)format {
++ (NSDateFormatter *)p_dateFormatterWithString:(NSString *)format {
     // 版本2 ，使用当前线程字典来保存对象
     NSMutableDictionary *threadDic = [[NSThread currentThread] threadDictionary];
     NSDateFormatter *dateFormatter = [threadDic objectForKey:format];

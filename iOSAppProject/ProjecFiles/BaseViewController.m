@@ -24,7 +24,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    NSLog(@"self:%@", [self class]);
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

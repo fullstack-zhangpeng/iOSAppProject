@@ -10,6 +10,6 @@
 
 @interface NSDateFormatter (Category)
 
-+ (NSDateFormatter *)dateFormatterWithString:(NSString *)format;
++ (NSDateFormatter *)p_dateFormatterWithString:(NSString *)format;
 
 @end
