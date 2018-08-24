@@ -12,4 +12,6 @@
 
 - (void)setupRootViewController;
 
+- (void)setupLogger;
+    
 @end

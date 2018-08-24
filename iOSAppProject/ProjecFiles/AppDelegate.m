@@ -17,7 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setupLogger];
+    
     [self setupRootViewController];
+    
     return YES;
 }
 

@@ -10,7 +10,7 @@
 #import "BaseTabBarController.h"
 #import "BaseNavigationController.h"
 #import "BaseViewController.h"
-#import "test.h"
+#import "Logger.h"
 
 @implementation AppDelegate (Initialization)
 
@@ -22,10 +22,11 @@
     [self.window makeKeyAndVisible];
     
     [UITabBar appearance];
+    
     // Setup ChildVC
-    BaseNavigationController *nav0 = [self setupTabBarControllerChildVCWithTitle:@"1" image:nil selectedImage:nil];
-    BaseNavigationController *nav1 = [self setupTabBarControllerChildVCWithTitle:@"2" image:nil selectedImage:nil];
-    BaseNavigationController *nav2 = [self setupTabBarControllerChildVCWithTitle:@"3" image:nil selectedImage:nil];
+    BaseNavigationController *nav0 = [self setupTabBarControllerChildVCWithVC:[[BaseViewController alloc] init] title:@"t" image:nil selectedImage:nil];
+    BaseNavigationController *nav1 = [self setupTabBarControllerChildVCWithVC:[[BaseViewController alloc] init] title:@"t" image:nil selectedImage:nil];
+    BaseNavigationController *nav2 = [self setupTabBarControllerChildVCWithVC:[[BaseViewController alloc] init] title:@"t" image:nil selectedImage:nil];
     
     // Setup RootViewController
     BaseTabBarController *tabBarController = [[BaseTabBarController alloc] init];
@@ -33,15 +34,19 @@
     self.window.rootViewController = tabBarController;
 }
 
-- (BaseNavigationController *)setupTabBarControllerChildVCWithTitle:(NSString *)title
-                                                              image:(UIImage *)image
-                                                      selectedImage:(UIImage *)selectedImage {
-    test *vc = [[test alloc] init];
+- (BaseNavigationController *)setupTabBarControllerChildVCWithVC:(BaseViewController *)vc
+                                                           title:(NSString *)title
+                                                           image:(UIImage *)image
+                                                   selectedImage:(UIImage *)selectedImage {
     vc.title = title;
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selectedImage;
     BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
     return nav;
+}
+
+- (void)setupLogger{
+    [Logger setupLogger];
 }
 
 @end
