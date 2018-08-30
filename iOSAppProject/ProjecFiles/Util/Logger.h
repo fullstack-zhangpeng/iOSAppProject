@@ -9,12 +9,28 @@
 #import <Foundation/Foundation.h>
 #import <CocoaLumberjack.h>
 
-@interface Logger : NSObject
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
 
-+ (void)setupLogger;
+// 日志配置
+@interface LoggerConfig : NSObject
 
 @end
 
+// 日志格式化
 @interface LoggerFormatter : NSObject <DDLogFormatter>
 
 @end
+
+@interface Logger : NSObject
+
++ (instancetype)sharedInstance;
+
++ (void)setupLogger:(void(^)(LoggerConfig *config))block;
+
+@end
+
+
