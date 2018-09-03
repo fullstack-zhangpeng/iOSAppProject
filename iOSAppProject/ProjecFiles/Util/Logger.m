@@ -9,6 +9,12 @@
 #import "Logger.h"
 #import "NSDateFormatter+Category.h"
 
+#ifdef DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif
+
 @class LoggerFormatter;
 
 #pragma mark - 设置输出等级
@@ -20,10 +26,19 @@
 
 @implementation LoggerConfig
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.logInConsole = YES;
+        self.logInFile = NO;
+    }
+    return self;
+}
+
 @end
 
 @interface Logger ()
-
+@property (nonatomic, strong) LoggerConfig *config;
 @end
 
 @implementation Logger
@@ -37,52 +52,40 @@
     return instance ;
 }
 
-+ (void)setupLogger:(void (^)(LoggerConfig *))block {
+#pragma mark ---
+
+- (void)logWithName:(NSString *)logName param:(NSDictionary *)param {
+    NSLog(@"logName: %@", logName);
+    NSLog(@"param: %@", param);
     
+    NSLog(@"config: %@", self.config);
+    DDLogInfo(@"111");
 }
 
 #pragma mark ---
 
-- (void)setupConfig:(void(^)(LoggerConfig *config))block {
+- (void)setupLogger:(void (^)(LoggerConfig *))block {
     LoggerConfig *config = [[LoggerConfig alloc] init];
-//    config.consoleLog = NO;
-//    XM_SAFE_BLOCK(block, config);
-    
     if (block) {
         block(config);
     }
     
-//    if (config.generalServer) {
-//        self.generalServer = config.generalServer;
-//    }
-//    if (config.generalParameters.count > 0) {
-//        [self.generalParameters addEntriesFromDictionary:config.generalParameters];
-//    }
-//    if (config.generalHeaders.count > 0) {
-//        [self.generalHeaders addEntriesFromDictionary:config.generalHeaders];
-//    }
-//    if (config.callbackQueue != NULL) {
-//        self.callbackQueue = config.callbackQueue;
-//    }
-//    if (config.generalUserInfo) {
-//        self.generalUserInfo = config.generalUserInfo;
-//    }
-//    if (config.engine) {
-//        self.engine = config.engine;
-//    }
-//    self.consoleLog = config.consoleLog;
-}
-
-+ (void)setupLogger {
-    [DDTTYLogger sharedInstance].logFormatter = [[LoggerFormatter alloc] init];
-    [DDLog addLogger:[DDTTYLogger sharedInstance]]; // TTY = Xcode console
-    // [DDLog addLogger:[DDASLLogger sharedInstance]]; // ASL = Apple System Logs
+    if (config.logInConsole) {
+        [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    }
     
-    // DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
-    // fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
-    // fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
-    //
-    // [DDLog addLogger:fileLogger];
+    if (config.logInSystemConsole) {
+        [DDLog addLogger:[DDASLLogger sharedInstance]];
+    }
+    
+    if (config.logInFile) {
+        DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
+        fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+        fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+        
+        [DDLog addLogger:fileLogger];
+    }
+    self.config = config;
 }
 
 @end
@@ -125,3 +128,16 @@
 }
 
 @end
+
+@implementation DDDynamicLogLevel
+
++ (DDLogLevel)ddLogLevel {
+    return ddLogLevel;
+}
+
++ (void)ddSetLogLevel:(DDLogLevel)ddLogLevel {
+    ddLogLevel = ddLogLevel;
+}
+
+@end
+

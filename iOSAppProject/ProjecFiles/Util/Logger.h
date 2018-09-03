@@ -9,14 +9,39 @@
 #import <Foundation/Foundation.h>
 #import <CocoaLumberjack.h>
 
-#ifdef DEBUG
-static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
-#else
-static const DDLogLevel ddLogLevel = DDLogLevelWarning;
-#endif
+typedef NS_ENUM(NSUInteger, P_LogLevel) {
+    P_LogLevelDefault,
+    MyEnumValueB,
+    MyEnumValueC,
+};
 
 // 日志配置
 @interface LoggerConfig : NSObject
+
+/**
+ 是否输出在控制台
+ */
+@property (nonatomic, assign) BOOL logInConsole;
+
+/**
+ 是否输出在系统控制台
+ */
+@property (nonatomic, assign) BOOL logInSystemConsole;
+
+/**
+ 是否输出在文件
+ */
+@property (nonatomic, assign) BOOL logInFile;
+
+/**
+ log 文件路径
+ */
+@property (nonatomic, copy) NSString *logFilePath;
+
+/**
+ 通用参数
+ */
+@property (nonatomic, strong) NSDictionary *commonParam;
 
 @end
 
@@ -29,8 +54,21 @@ static const DDLogLevel ddLogLevel = DDLogLevelWarning;
 
 + (instancetype)sharedInstance;
 
-+ (void)setupLogger:(void(^)(LoggerConfig *config))block;
+- (void)setupLogger:(void(^)(LoggerConfig *config))block;
+
+/**
+ 打点
+
+ @param logName 打点名字
+ @param param 打点参数
+ */
+- (void)logWithName:(NSString *)logName
+              param:(NSDictionary *)param;
 
 @end
 
+#pragma mark - 日志等级控制
 
+@interface DDDynamicLogLevel : NSObject <DDRegisteredDynamicLogging>
+
+@end

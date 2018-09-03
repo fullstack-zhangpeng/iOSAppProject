@@ -46,7 +46,12 @@
 }
 
 - (void)setupLogger{
-    [Logger setupLogger];
+    [[Logger sharedInstance] setupLogger:^(LoggerConfig *config) {
+        
+        
+    }];
+    
+    [[Logger sharedInstance] logWithName:@"Name" param:@{@"key": @"value"}];
 }
 
 @end
