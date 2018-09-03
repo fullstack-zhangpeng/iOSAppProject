@@ -9,7 +9,9 @@
 #import "AppDelegate+Initialization.h"
 #import "BaseTabBarController.h"
 #import "BaseNavigationController.h"
-#import "BaseViewController.h"
+#import "HomeViewController.h"
+#import "SettingViewController.h"
+
 #import "Logger.h"
 
 @implementation AppDelegate (Initialization)
@@ -24,13 +26,12 @@
     [UITabBar appearance];
     
     // Setup ChildVC
-    BaseNavigationController *nav0 = [self setupTabBarControllerChildVCWithVC:[[BaseViewController alloc] init] title:@"t" image:nil selectedImage:nil];
-    BaseNavigationController *nav1 = [self setupTabBarControllerChildVCWithVC:[[BaseViewController alloc] init] title:@"t" image:nil selectedImage:nil];
-    BaseNavigationController *nav2 = [self setupTabBarControllerChildVCWithVC:[[BaseViewController alloc] init] title:@"t" image:nil selectedImage:nil];
+    BaseNavigationController *nav0 = [self setupTabBarControllerChildVCWithVC:[[HomeViewController alloc] init] title:@"t" image:nil selectedImage:nil];
+    BaseNavigationController *nav1 = [self setupTabBarControllerChildVCWithVC:[[SettingViewController alloc] init] title:@"设置" image:nil selectedImage:nil];
     
     // Setup RootViewController
     BaseTabBarController *tabBarController = [[BaseTabBarController alloc] init];
-    tabBarController.viewControllers = @[nav0, nav1, nav2];
+    tabBarController.viewControllers = @[nav0, nav1];
     self.window.rootViewController = tabBarController;
 }
 
@@ -51,7 +52,7 @@
         
     }];
     
-    [[Logger sharedInstance] logWithName:@"Name" param:@{@"key": @"value"}];
+//    [[Logger sharedInstance] logWithName:@"Name" param:@{@"key": @"value"}];
 }
 
 @end

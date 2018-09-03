@@ -11,6 +11,8 @@ target 'iOSAppProject' do
   pod 'SDWebImage', '~> 4.0'
   pod 'CocoaLumberjack'
   
+  pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+  
   target 'iOSAppProjectTests' do
     inherit! :search_paths
     # Pods for testing

@@ -9,29 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <CocoaLumberjack.h>
 
-typedef NS_ENUM(NSUInteger, P_LogLevel) {
-    P_LogLevelDefault,
-    MyEnumValueB,
-    MyEnumValueC,
+typedef NS_ENUM(NSUInteger, P_LogType) {
+    P_LogTypeInfo
 };
 
-// 日志配置
+#pragma mark - LoggerLevel
+
+@interface LoggerLevel : NSObject <DDRegisteredDynamicLogging>
+
+@end
+
+#pragma mark - LoggerConfig
 @interface LoggerConfig : NSObject
-
-/**
- 是否输出在控制台
- */
-@property (nonatomic, assign) BOOL logInConsole;
-
-/**
- 是否输出在系统控制台
- */
-@property (nonatomic, assign) BOOL logInSystemConsole;
-
-/**
- 是否输出在文件
- */
-@property (nonatomic, assign) BOOL logInFile;
 
 /**
  log 文件路径
@@ -45,10 +34,13 @@ typedef NS_ENUM(NSUInteger, P_LogLevel) {
 
 @end
 
-// 日志格式化
+#pragma mark - LoggerFormatter
+
 @interface LoggerFormatter : NSObject <DDLogFormatter>
 
 @end
+
+#pragma mark - Logger
 
 @interface Logger : NSObject
 
@@ -64,11 +56,5 @@ typedef NS_ENUM(NSUInteger, P_LogLevel) {
  */
 - (void)logWithName:(NSString *)logName
               param:(NSDictionary *)param;
-
-@end
-
-#pragma mark - 日志等级控制
-
-@interface DDDynamicLogLevel : NSObject <DDRegisteredDynamicLogging>
 
 @end

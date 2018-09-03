@@ -14,6 +14,11 @@
 		6EA2525E21281D0B00ED0495 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2525D21281D0B00ED0495 /* main.m */; };
 		6EA2526821281D0B00ED0495 /* iOSAppProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2526721281D0B00ED0495 /* iOSAppProjectTests.m */; };
 		6EA2527321281D0B00ED0495 /* iOSAppProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2527221281D0B00ED0495 /* iOSAppProjectUITests.m */; };
+		6EC3F873213D11A9003319BF /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3F872213D11A9003319BF /* SettingViewController.m */; };
+		6EC3F879213D1318003319BF /* UIView+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3F878213D1318003319BF /* UIView+Property.m */; };
+		6EC3F87C213D2D8F003319BF /* NSObject+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3F87B213D2D8F003319BF /* NSObject+Description.m */; };
+		6EC3F87F213D3558003319BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3F87E213D3558003319BF /* ViewController.m */; };
+		6EC3F882213D3B9A003319BF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC3F881213D3B9A003319BF /* HomeViewController.m */; };
 		6EE11F98212EB50100877091 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE11F97212EB50100877091 /* Logger.m */; };
 		6EF83C97212A59B100705870 /* AppDelegate+Initialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF83C96212A59B100705870 /* AppDelegate+Initialization.m */; };
 		6EF83C9B212A5FFA00705870 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF83C9A212A5FFA00705870 /* Const.m */; };
@@ -61,6 +66,15 @@
 		6EA2526E21281D0B00ED0495 /* iOSAppProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAppProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA2527221281D0B00ED0495 /* iOSAppProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSAppProjectUITests.m; sourceTree = "<group>"; };
 		6EA2527421281D0B00ED0495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EC3F871213D11A9003319BF /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		6EC3F872213D11A9003319BF /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		6EC3F877213D1318003319BF /* UIView+Property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Property.h"; sourceTree = "<group>"; };
+		6EC3F878213D1318003319BF /* UIView+Property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Property.m"; sourceTree = "<group>"; };
+		6EC3F87A213D2D8F003319BF /* NSObject+Description.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Description.h"; sourceTree = "<group>"; };
+		6EC3F87B213D2D8F003319BF /* NSObject+Description.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Description.m"; sourceTree = "<group>"; };
+		6EC3F87E213D3558003319BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6EC3F880213D3B9A003319BF /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		6EC3F881213D3B9A003319BF /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		6EE11F96212EB50100877091 /* Logger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		6EE11F97212EB50100877091 /* Logger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		6EF83C95212A59B100705870 /* AppDelegate+Initialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Initialization.h"; sourceTree = "<group>"; };
@@ -199,6 +213,11 @@
 				6EF83CA4212A618800705870 /* BaseNavigationController.m */,
 				6EA2525121281D0700ED0495 /* BaseViewController.h */,
 				6EA2525221281D0700ED0495 /* BaseViewController.m */,
+				6EC3F871213D11A9003319BF /* SettingViewController.h */,
+				6EC3F872213D11A9003319BF /* SettingViewController.m */,
+				6EC3F880213D3B9A003319BF /* HomeViewController.h */,
+				6EC3F881213D3B9A003319BF /* HomeViewController.m */,
+				6EC3F87E213D3558003319BF /* ViewController.m */,
 			);
 			path = ProjecFiles;
 			sourceTree = "<group>";
@@ -226,8 +245,12 @@
 		6EF83C9F212A60E000705870 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				6EC3F877213D1318003319BF /* UIView+Property.h */,
+				6EC3F878213D1318003319BF /* UIView+Property.m */,
 				6EF83C9C212A60A300705870 /* NSDateFormatter+Category.h */,
 				6EF83C9D212A60A300705870 /* NSDateFormatter+Category.m */,
+				6EC3F87A213D2D8F003319BF /* NSObject+Description.h */,
+				6EC3F87B213D2D8F003319BF /* NSObject+Description.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -443,15 +466,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EC3F87F213D3558003319BF /* ViewController.m in Sources */,
+				6EC3F87C213D2D8F003319BF /* NSObject+Description.m in Sources */,
 				6EF83CA2212A617600705870 /* BaseTabBarController.m in Sources */,
 				6EF83C9B212A5FFA00705870 /* Const.m in Sources */,
 				6EF83C9E212A60A300705870 /* NSDateFormatter+Category.m in Sources */,
 				6EA2525321281D0700ED0495 /* BaseViewController.m in Sources */,
 				6EA2525E21281D0B00ED0495 /* main.m in Sources */,
 				6EF83CB5212A957D00705870 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				6EC3F882213D3B9A003319BF /* HomeViewController.m in Sources */,
 				6EE11F98212EB50100877091 /* Logger.m in Sources */,
 				6EF83CA5212A618800705870 /* BaseNavigationController.m in Sources */,
 				6EF83C97212A59B100705870 /* AppDelegate+Initialization.m in Sources */,
+				6EC3F873213D11A9003319BF /* SettingViewController.m in Sources */,
+				6EC3F879213D1318003319BF /* UIView+Property.m in Sources */,
 				6EA2525021281D0700ED0495 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

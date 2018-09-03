@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark - NSUserDefaults
+extern NSString *const nd_Setting_FLEXDebug;
+
 #pragma mark - Date Formatter
 
 extern NSString *const df_yyyy;

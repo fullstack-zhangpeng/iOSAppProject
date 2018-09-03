@@ -9,11 +9,10 @@
 #import "Logger.h"
 #import "NSDateFormatter+Category.h"
 
-#ifdef DEBUG
-static DDLogLevel ddLogLevel = DDLogLevelVerbose;
-#else
-static DDLogLevel ddLogLevel = DDLogLevelWarning;
+#ifdef LOG_LEVEL_DEF
+#   undef LOG_LEVEL_DEF
 #endif
+#define LOG_LEVEL_DEF [LoggerLevel ddLogLevel]
 
 @class LoggerFormatter;
 
@@ -29,8 +28,7 @@ static DDLogLevel ddLogLevel = DDLogLevelWarning;
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.logInConsole = YES;
-        self.logInFile = NO;
+        
     }
     return self;
 }
@@ -39,6 +37,7 @@ static DDLogLevel ddLogLevel = DDLogLevelWarning;
 
 @interface Logger ()
 @property (nonatomic, strong) LoggerConfig *config;
+@property (nonatomic, strong) DDFileLogger *fileLogger;
 @end
 
 @implementation Logger
@@ -48,6 +47,18 @@ static DDLogLevel ddLogLevel = DDLogLevelWarning;
     static dispatch_once_t onceToken ;
     dispatch_once(&onceToken, ^{
         instance = [[Logger alloc] init];
+        // 设置 Logger 等级
+        [LoggerLevel ddSetLogLevel:DDLogLevelVerbose];
+        
+        // 初始化 Logger
+        [DDLog addLogger:[DDTTYLogger sharedInstance]];
+        
+        // 初始化 Logger
+        DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
+        fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+        fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+        [DDLog addLogger:fileLogger];
+        instance.fileLogger = fileLogger;
     }) ;
     return instance ;
 }
@@ -58,8 +69,8 @@ static DDLogLevel ddLogLevel = DDLogLevelWarning;
     NSLog(@"logName: %@", logName);
     NSLog(@"param: %@", param);
     
-    NSLog(@"config: %@", self.config);
-    DDLogInfo(@"111");
+
+    
 }
 
 #pragma mark ---
@@ -70,21 +81,7 @@ static DDLogLevel ddLogLevel = DDLogLevelWarning;
         block(config);
     }
     
-    if (config.logInConsole) {
-        [DDLog addLogger:[DDTTYLogger sharedInstance]];
-    }
     
-    if (config.logInSystemConsole) {
-        [DDLog addLogger:[DDASLLogger sharedInstance]];
-    }
-    
-    if (config.logInFile) {
-        DDFileLogger *fileLogger = [[DDFileLogger alloc] init]; // File Logger
-        fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
-        fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
-        
-        [DDLog addLogger:fileLogger];
-    }
     self.config = config;
 }
 
@@ -129,14 +126,16 @@ static DDLogLevel ddLogLevel = DDLogLevelWarning;
 
 @end
 
-@implementation DDDynamicLogLevel
+@implementation LoggerLevel
+
+static DDLogLevel custom_ddLogLevel = DDLogLevelVerbose;
 
 + (DDLogLevel)ddLogLevel {
-    return ddLogLevel;
+    return custom_ddLogLevel;
 }
 
 + (void)ddSetLogLevel:(DDLogLevel)ddLogLevel {
-    ddLogLevel = ddLogLevel;
+    custom_ddLogLevel = ddLogLevel;
 }
 
 @end
