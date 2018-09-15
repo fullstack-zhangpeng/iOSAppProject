@@ -69,8 +69,7 @@
     NSLog(@"logName: %@", logName);
     NSLog(@"param: %@", param);
     
-
-    
+    DDLogInfo(@"%@", param);
 }
 
 #pragma mark ---
@@ -80,8 +79,6 @@
     if (block) {
         block(config);
     }
-    
-    
     self.config = config;
 }
 

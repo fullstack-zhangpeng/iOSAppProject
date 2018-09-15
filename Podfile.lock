@@ -21,6 +21,9 @@ PODS:
   - CocoaLumberjack/Extensions (3.4.2):
     - CocoaLumberjack/Default
   - FLEX (2.4.0)
+  - GCDWebServer (3.4.2):
+    - GCDWebServer/Core (= 3.4.2)
+  - GCDWebServer/Core (3.4.2)
   - Masonry (1.1.0)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -30,6 +33,7 @@ DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - CocoaLumberjack
   - FLEX (~> 2.0)
+  - GCDWebServer (~> 3.0)
   - Masonry
   - SDWebImage (~> 4.0)
 
@@ -38,6 +42,7 @@ SPEC REPOS:
     - AFNetworking
     - CocoaLumberjack
     - FLEX
+    - GCDWebServer
     - Masonry
     - SDWebImage
 
@@ -45,9 +50,10 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: 82aef015ed5e76733a894c8ac7f2f1f7d8090da8
+PODFILE CHECKSUM: cef51d004364ee42d32ff04879c5e442ae06884d
 
 COCOAPODS: 1.5.3

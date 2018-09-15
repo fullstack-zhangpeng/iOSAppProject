@@ -11,6 +11,8 @@ target 'iOSAppProject' do
   pod 'SDWebImage', '~> 4.0'
   pod 'CocoaLumberjack'
   
+  pod 'GCDWebServer', '~> 3.0'
+  
   pod 'FLEX', '~> 2.0', :configurations => ['Debug']
   
   target 'iOSAppProjectTests' do
