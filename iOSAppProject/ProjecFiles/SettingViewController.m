@@ -8,7 +8,7 @@
 
 #import "SettingViewController.h"
 #import <FLEXManager.h>
-#import "NSObject+Description.h"
+#import "NSObject+Category.h"
 
 @interface SettingViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSArray <NSArray *> *settingArray;

@@ -6,9 +6,9 @@
 //  Copyright © 2018年 zhangpeng. All rights reserved.
 //
 
-#import "UIView+Property.h"
+#import "UIView+Category.h"
 
-@implementation UIView (Property)
+@implementation UIView (Category)
 
 - (void)setP_origin:(CGPoint)p_origin {
     CGRect frame = self.frame;

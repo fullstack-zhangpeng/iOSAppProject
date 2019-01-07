@@ -1,5 +1,5 @@
 //
-//  UIView+Property.h
+//  UIView+Category.h
 //  iOSAppProject
 //
 //  Created by zhangpeng on 2018/9/3.
@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Property)
+@interface UIView (Category)
+
+#pragma mark - Property
 
 @property (nonatomic, assign) CGPoint p_origin;      ///< Shortcut for frame.origin.
 @property (nonatomic, assign) CGSize  p_size;        ///< Shortcut for frame.size.

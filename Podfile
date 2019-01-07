@@ -15,6 +15,9 @@ target 'iOSAppProject' do
   
   pod 'FLEX', '~> 2.0', :configurations => ['Debug']
   
+  
+  # wechat
+  pod 'WechatOpenSDK'
   target 'iOSAppProjectTests' do
     inherit! :search_paths
     # Pods for testing

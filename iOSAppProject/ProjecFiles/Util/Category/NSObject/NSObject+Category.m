@@ -1,15 +1,15 @@
 //
-//  NSObject+Description.m
+//  NSObject+Category.m
 //  iOSAppProject
 //
-//  Created by zhangpeng on 2018/9/3.
-//  Copyright © 2018年 zhangpeng. All rights reserved.
+//  Created by zhangpeng on 2019/1/7.
+//  Copyright © 2019 zhangpeng. All rights reserved.
 //
 
-#import "NSObject+Description.h"
+#import "NSObject+Category.h"
 #import <objc/runtime.h>
 
-@implementation NSObject (Description)
+@implementation NSObject (Category)
 
 - (NSString *)p_description {
     unsigned int count;

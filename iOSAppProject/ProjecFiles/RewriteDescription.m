@@ -7,7 +7,6 @@
 //
 
 #ifdef DEBUG
-
 @implementation NSSet(Log)
 
 - (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
