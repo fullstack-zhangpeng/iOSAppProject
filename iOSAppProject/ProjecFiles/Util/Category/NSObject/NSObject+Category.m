@@ -8,7 +8,6 @@
 
 #import "NSObject+Category.h"
 
-
 @implementation NSObject (Category)
 
 - (NSString *)p_description {

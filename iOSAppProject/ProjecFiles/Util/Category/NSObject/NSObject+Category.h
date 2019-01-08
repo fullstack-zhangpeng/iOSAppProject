@@ -9,6 +9,31 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 
+#define Singleton() \
+static id _instance = nil; \
++ (instancetype)sharedInstance { \
+static dispatch_once_t onceToken; \
+dispatch_once(&onceToken, ^{ \
+_instance = [[[self class] alloc] init]; \
+}); \
+return _instance; \
+} \
++ (instancetype)allocWithZone:(struct _NSZone *)zone { \
+static dispatch_once_t token; \
+dispatch_once(&token, ^{ \
+if(_instance == nil) { \
+_instance = [super allocWithZone:zone]; \
+} \
+}); \
+return _instance; \
+} \
+- (nonnull id)copyWithZone:(nullable NSZone *)zone { \
+return [[self class] sharedInstance]; \
+} \
+- (nonnull id)mutableCopyWithZone:(nullable NSZone *)zone { \
+return [[self class] sharedInstance]; \
+}
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (Category)

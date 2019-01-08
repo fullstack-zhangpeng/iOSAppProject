@@ -21,7 +21,7 @@
     //    [self setupLogger];
     [self setupRootViewController];
 
-    [WXApi registerApp:@""];
+//    [WXApi registerApp:@""];
     
     return YES;
 }
