@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+Category.h"
-#import <objc/runtime.h>
+
 
 @implementation NSObject (Category)
 
@@ -42,6 +42,14 @@
         return [string substringFromIndex:1];
     }
     return string;
+}
+
+- (id)p_objectWithAssociatedKey:(void *)key {
+    return objc_getAssociatedObject(self, key);
+}
+
+- (void)p_setObject:(id)object forAssociatedKey:(void *)key associationPolicy:(objc_AssociationPolicy)policy {
+    objc_setAssociatedObject(self, key, object, policy);
 }
 
 @end

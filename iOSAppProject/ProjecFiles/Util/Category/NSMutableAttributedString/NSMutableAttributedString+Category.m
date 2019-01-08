@@ -11,6 +11,8 @@
 
 @implementation NSMutableAttributedString (Category)
 
+#pragma mark - AddAttributeStyle
+
 - (void)addLineWithStyle:(LineStyle)lineStyle range:(NSRange)range {
     switch (lineStyle) {
         case LineStyleDelete: {
@@ -33,8 +35,9 @@
     }
 }
 
-- (void)safelyAddAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range
-{
+#pragma mark - AddAttributes
+
+- (void)safelyAddAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range {
     if ([self isNilOrNullObject:attrs]) {
         return;
     }

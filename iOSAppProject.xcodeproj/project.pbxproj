@@ -17,6 +17,7 @@
 		6E68B88621E34790003A909B /* UIApplication+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68B87A21E34790003A909B /* UIApplication+Category.m */; };
 		6E68B88721E34790003A909B /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68B87D21E34790003A909B /* UIButton+Category.m */; };
 		6E68B88E21E34836003A909B /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68B88D21E34836003A909B /* NSObject+Category.m */; };
+		6E68B89321E35166003A909B /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68B89221E35166003A909B /* UIImage+Category.m */; };
 		6EA2525021281D0700ED0495 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2524F21281D0700ED0495 /* AppDelegate.m */; };
 		6EA2525321281D0700ED0495 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA2525221281D0700ED0495 /* BaseViewController.m */; };
 		6EA2525821281D0B00ED0495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA2525721281D0B00ED0495 /* Assets.xcassets */; };
@@ -80,6 +81,8 @@
 		6E68B87E21E34790003A909B /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category.h"; sourceTree = "<group>"; };
 		6E68B88C21E34836003A909B /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
 		6E68B88D21E34836003A909B /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		6E68B89121E35166003A909B /* UIImage+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		6E68B89221E35166003A909B /* UIImage+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
 		6EA2524B21281D0700ED0495 /* iOSAppProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAppProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA2524E21281D0700ED0495 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6EA2524F21281D0700ED0495 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -271,6 +274,15 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		6E68B89021E35110003A909B /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				6E68B89121E35166003A909B /* UIImage+Category.h */,
+				6E68B89221E35166003A909B /* UIImage+Category.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 		6EA2524221281D0700ED0495 = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +385,7 @@
 		6EF83C9F212A60E000705870 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				6E68B89021E35110003A909B /* UIImage */,
 				6E68B88A21E347D4003A909B /* NSObject */,
 				6E68B88921E347C4003A909B /* NSString */,
 				6E68B88821E347A0003A909B /* UIView */,
@@ -608,6 +621,7 @@
 				6EA2525321281D0700ED0495 /* BaseViewController.m in Sources */,
 				6EA2525E21281D0B00ED0495 /* main.m in Sources */,
 				6EF83CB5212A957D00705870 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				6E68B89321E35166003A909B /* UIImage+Category.m in Sources */,
 				6E68B88421E34790003A909B /* UIScrollView+Category.m in Sources */,
 				6E68B88E21E34836003A909B /* NSObject+Category.m in Sources */,
 				6EC3F882213D3B9A003319BF /* HomeViewController.m in Sources */,
