@@ -123,7 +123,12 @@
 }
 
 - (void)addLimitNums:(NSInteger)num key:(id)key target:(id<UITextFieldDelegate>)target action:(void(^)(void))action{
-    [self addLimitWithDisturb:YES andCondition:nil andNums:num key:key target:target action:action];
+    [self addLimitWithDisturb:YES
+                 andCondition:nil
+                      andNums:num
+                          key:key
+                       target:target
+                       action:action];
 }
 
 - (void)addLimitCondition:(BNConditionBlock)condition key:(id)key target:(id<UITextFieldDelegate>)target action:(void (^)(void))action{
@@ -131,7 +136,12 @@
 }
 
 - (void)observeValueWithCondition:(BNConditionBlock)condition key:(id)key target:(id<UITextFieldDelegate>)target action:(void (^)(void))action{
-    [self addLimitWithDisturb:NO andCondition:condition andNums:0 key:key target:target action:action];
+    [self addLimitWithDisturb:NO
+                 andCondition:condition
+                      andNums:0
+                          key:key
+                       target:target
+                       action:action];
 }
 
 - (void)addLimitWithDisturb:(BOOL)disturb andCondition:(BNConditionBlock)condition andNums:(NSInteger)num key:(id)key target:(id<UITextFieldDelegate>)target action:(void (^)(void))action{

@@ -13,20 +13,17 @@
 
 @interface LimitInfo : NSObject
 @property(nonatomic, weak) id<UITextFieldDelegate> tempDelegate;
-
 @property(nonatomic, assign) NSInteger maxLength;
-@property(nonatomic, copy) void (^action)(void);
-
 @property(nonatomic, copy) P_InputBlock inputBlock;
-@property(nonatomic, copy) void (^inputAction)(void);
-//
-@property(nonatomic, copy) P_InputBlock response;
-@property(nonatomic, copy) void (^responseAction)(void);
+@property(nonatomic, copy) P_InputFailedBlock inputFailedBlock;
+//@property(nonatomic, copy) P_InputBlock response;
 @end
 
 @implementation LimitInfo
 
 @end
+
+#pragma mark -
 
 @interface UITextFieldInputManager : NSObject <UITextFieldDelegate>
 {
@@ -36,24 +33,21 @@
 + (instancetype)sharedInstance;
 - (void)removeLimitForKey:(id)key;
 
-- (void)limitWithMaxLength:(NSInteger)maxLength
-                inputBlock:(P_InputBlock)inputBlock
-                       key:(id)key
-                    target:(id<UITextFieldDelegate>)target
-       inputFailedCallBack:(void(^)(void))inputFailedCallBack;
+#pragma mark Instance Methods
+
+- (void)limitWithKey:(id)key target:(id<UITextFieldDelegate>)target maxLength:(NSInteger)maxLength inputBlock:(P_InputBlock)inputBlock inputFailedBlock:(P_InputFailedBlock)inputFailedBlock;
+
 @end
 
 @implementation UITextFieldInputManager
 
 Singleton()
 
-- (void)dealloc
-{
+- (void)dealloc {
     pthread_mutex_destroy(&_mutex);
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         pthread_mutex_init(&_mutex, NULL);
@@ -61,6 +55,16 @@ Singleton()
         _infos = [[NSMapTable alloc] initWithKeyOptions:keyOptions valueOptions:NSPointerFunctionsStrongMemory|NSPointerFunctionsObjectPersonality capacity:0];
     }
     return self;
+}
+
+- (LimitInfo *)safeReadForKey:(id)key {
+    if (!key) {
+        return nil;
+    }
+    pthread_mutex_lock(&_mutex);
+    LimitInfo *info = [_infos objectForKey:key];
+    pthread_mutex_unlock(&_mutex);
+    return info;
 }
 
 - (void)removeLimitForKey:(id)key {
@@ -74,62 +78,53 @@ Singleton()
     pthread_mutex_unlock(&_mutex);
 }
 
-- (void)addLimitWithDisturb:(BOOL)disturb andCondition:(P_InputBlock)condition andNums:(NSInteger)num key:(id)key target:(id<UITextFieldDelegate>)target action:(void (^)(void))action{
+- (void)addLimitWithKey:(id)key target:(id<UITextFieldDelegate>)target maxLength:(NSInteger)maxLength inputBlock:(P_InputBlock)inputBlock inputFailedBlock:(void(^)(void))inputFailedBlock {
     if (!key) {
         return;
     }
     pthread_mutex_lock(&_mutex);
     LimitInfo *info = [_infos objectForKey:key];
-    
     if (!info) {
         info = [[LimitInfo alloc] init];
         info.tempDelegate = target;
     }
-    if (disturb) {
-        if (condition) {
-            info.inputBlock = condition;
-            info.inputAction = action;
+    if (maxLength > 0) {
+        info.maxLength = maxLength;
+        if (inputFailedBlock) {
+            info.inputFailedBlock = inputFailedBlock;
         }
-        if (num > 0) {
-            info.maxLength = num;
-            [info setAction:action];
-        }
-    }else{
-        info.response = condition;
-        [info setResponseAction:action];
     }
-    
+    if (inputBlock) {
+        info.inputBlock = inputBlock;
+        if (inputFailedBlock) {
+            info.inputFailedBlock = inputFailedBlock;
+        }
+    }
     [_infos setObject:info forKey:key];
     pthread_mutex_unlock(&_mutex);
 }
 
-- (LimitInfo *)safeReadForKey:(id)key {
-    if (!key) {
-        return nil;
-    }
-    pthread_mutex_lock(&_mutex);
-    LimitInfo *info = [_infos objectForKey:key];
-    pthread_mutex_unlock(&_mutex);
-    return info;
+#pragma mark Instance Methods
+
+- (void)limitWithKey:(id)key target:(id<UITextFieldDelegate>)target maxLength:(NSInteger)maxLength inputBlock:(P_InputBlock)inputBlock inputFailedBlock:(P_InputFailedBlock)inputFailedBlock {
+    [self addLimitWithKey:key target:target maxLength:maxLength inputBlock:inputBlock inputFailedBlock:inputFailedBlock];
 }
 
-- (void)limitWithMaxLength:(NSInteger)maxLength inputBlock:(P_InputBlock)inputBlock key:(id)key target:(id<UITextFieldDelegate>)target inputFailedCallBack:(void (^)(void))inputFailedCallBack {
-    [self addLimitWithDisturb:YES andCondition:inputBlock andNums:maxLength key:key target:target action:inputFailedCallBack];
-}
+#pragma mark UITextField Delegate
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     BOOL checkInLimit = NO;
     LimitInfo *info = [self safeReadForKey:textField];
-    if (info.response && !info.response(string) && string.length > 0) {
-        info.responseAction();
-    }
+//    if (info.response && !info.response(string) && string.length > 0) {
+//        info.inputFailedBlock();
+//    }
     if (info.inputBlock && !info.inputBlock(string) && string.length > 0) {
-        info.inputAction();
+        info.inputFailedBlock();
         checkInLimit = YES;
     }
     if (info.maxLength != 0) {
         if (info && textField.text.length == info.maxLength && string.length > 0) {
-            info.action();
+            info.inputFailedBlock();
             checkInLimit = YES;
         }
     }
@@ -159,6 +154,7 @@ Singleton()
         return [info.tempDelegate textFieldDidBeginEditing:textField];
     }
 }
+
 - (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
     LimitInfo *info = [self safeReadForKey:textField];
     if (!info.tempDelegate || ![info.tempDelegate respondsToSelector:_cmd]) {
@@ -166,6 +162,7 @@ Singleton()
     }
     return [info.tempDelegate textFieldShouldEndEditing:textField];
 }
+
 - (void)textFieldDidEndEditing:(UITextField *)textField {
     LimitInfo *info = [self safeReadForKey:textField];
     if ([info.tempDelegate respondsToSelector:_cmd]) {
@@ -187,6 +184,7 @@ Singleton()
     }
     return [info.tempDelegate textFieldShouldClear:textField];
 }
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     LimitInfo *info = [self safeReadForKey:textField];
     if (!info.tempDelegate || ![info.tempDelegate respondsToSelector:_cmd]) {
@@ -197,9 +195,11 @@ Singleton()
 
 @end
 
+#pragma mark -
+
 @implementation UITextField (Category)
 
-#pragma mark - Load
+#pragma mark Load
 
 + (void)load{
     static dispatch_once_t onceToken;
@@ -207,7 +207,7 @@ Singleton()
         Class class = [self class];
         
         SEL originalSelector = @selector(removeFromSuperview);
-        SEL swizzledSelector = @selector(p_removeFromSuperview);
+        SEL swizzledSelector = @selector(swizzled_removeFromSuperview);
         
         Method originalMethod = class_getInstanceMethod(class, originalSelector);
         Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
@@ -221,25 +221,24 @@ Singleton()
     });
 }
 
-- (void)p_removeFromSuperview {
+- (void)swizzled_removeFromSuperview {
     [[UITextFieldInputManager sharedInstance] removeLimitForKey:self];
-    return [self p_removeFromSuperview];
+    return [self swizzled_removeFromSuperview];
 }
 
-#pragma mark - Limit
+#pragma mark Limit
 
-- (void)limitWithMaxLength:(NSInteger)maxLength
-                inputBlock:(P_InputBlock)inputBlock
-       inputFailedCallBack:(void(^)(void))inputFailedCallBack {
-    [[UITextFieldInputManager sharedInstance] limitWithMaxLength:maxLength
-                                                      inputBlock:inputBlock
-                                                             key:self
-                                                          target:self.delegate
-                                             inputFailedCallBack:inputFailedCallBack];
+- (void)limitWithMaxLength:(NSInteger)maxLength inputFailedBlock:(P_InputFailedBlock)inputFailedBlock {
+    [[UITextFieldInputManager sharedInstance] limitWithKey:self target:self.delegate maxLength:maxLength inputBlock:nil inputFailedBlock:inputFailedBlock];
     self.delegate = [UITextFieldInputManager sharedInstance];
 }
 
-#pragma mark - 
+- (void)limitWithMaxLength:(NSInteger)maxLength inputBlock:(P_InputBlock)inputBlock inputFailedBlock:(P_InputFailedBlock)inputFailedBlock {
+    [[UITextFieldInputManager sharedInstance] limitWithKey:self target:self.delegate maxLength:maxLength inputBlock:inputBlock inputFailedBlock:inputFailedBlock];
+    self.delegate = [UITextFieldInputManager sharedInstance];
+}
+
+#pragma mark Private
 
 - (NSString *)primaryLanguage {
     return [self.textInputMode primaryLanguage];

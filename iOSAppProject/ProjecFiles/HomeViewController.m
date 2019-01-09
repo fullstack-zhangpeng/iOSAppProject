@@ -11,6 +11,7 @@
 #import "GCDWebServerDataResponse.h"
 #import "LoginManager.h"
 #import "UITextField+Category.h"
+#import "UITextField+Limit.h"
 
 @interface HomeViewController () <UITextFieldDelegate>
 @property (nonatomic, strong) GCDWebServer *webServer;
@@ -23,9 +24,9 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//    HomeViewController *vc = [[HomeViewController alloc] init];
-//    vc.hidesBottomBarWhenPushed = YES;
-//    [self.navigationController pushViewController:vc animated:YES];
+    //    HomeViewController *vc = [[HomeViewController alloc] init];
+    //    vc.hidesBottomBarWhenPushed = YES;
+    //    [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,15 +46,20 @@
     tf.delegate = self;
     tf.borderStyle = UITextBorderStyleRoundedRect;
     
-    [tf limitWithMaxLength:3
-                inputBlock:^BOOL(NSString * _Nonnull inputCharacter) {
-                    NSLog(@"inputCharacter: %@", inputCharacter);
-                    return [inputCharacter isEqualToString:@"a"];
-                }
-       inputFailedCallBack:^{
-           NSLog(@"函数名：%s，行号：%d", __FUNCTION__, __LINE__);
-       }];
+    [tf limitWithMaxLength:3 inputFailedBlock:^{
+        NSLog(@"---");
+    }];
+    
+//    [tf limitWithMaxLength:3
+//                inputBlock:^BOOL(NSString * _Nonnull inputCharacter) {
+//                    NSLog(@"inputCharacter: %@", inputCharacter);
+//                    return YES;
+//                }
+//          inputFailedBlock:^{
+//              NSLog(@"sss");
+//          }];
     [self.view addSubview:tf];
+    
     
     [self setupRightItem];
 }

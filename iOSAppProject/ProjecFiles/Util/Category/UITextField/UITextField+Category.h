@@ -10,15 +10,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef BOOL(^P_InputBlock)(NSString *inputCharacter);
+typedef BOOL (^P_InputBlock) (NSString *inputCharacter);
+typedef void (^P_InputFailedBlock) (void);
 
 @interface UITextField (Category)
 
 #pragma mark - Limit
 
-- (void)limitWithMaxLength:(NSInteger)maxLength
-                inputBlock:(P_InputBlock)inputBlock
-       inputFailedCallBack:(void(^)(void))inputFailedCallBack;
+- (void)limitWithMaxLength:(NSInteger)maxLength inputFailedBlock:(P_InputFailedBlock)inputFailedBlock;
+
+- (void)limitWithMaxLength:(NSInteger)maxLength inputBlock:(P_InputBlock)inputBlock inputFailedBlock:(P_InputFailedBlock)inputFailedBlock;
 
 #pragma mark - Private
 
