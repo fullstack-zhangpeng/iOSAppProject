@@ -102,6 +102,17 @@ Singleton()
     }
     [_infos setObject:info forKey:key];
     pthread_mutex_unlock(&_mutex);
+    if ([key isKindOfClass:[UITextField class]]) {
+        [key addTarget:self action:@selector(textDidChangedInTextField:) forControlEvents:UIControlEventEditingChanged];
+    }
+}
+
+- (void)textDidChangedInTextField:(UITextField *)textField {
+    LimitInfo *info = [self safeReadForKey:textField];
+    if ((info.maxLength <= 0) || (textField.text.length < info.maxLength)) {
+        return;
+    }
+    textField.text = [textField.text substringWithRange:NSMakeRange(0, info.maxLength)];
 }
 
 #pragma mark Instance Methods
@@ -118,15 +129,25 @@ Singleton()
 //    if (info.response && !info.response(string) && string.length > 0) {
 //        info.inputFailedBlock();
 //    }
-    if (info.inputBlock && !info.inputBlock(string) && string.length > 0) {
-        info.inputFailedBlock();
-        checkInLimit = YES;
-    }
-    if (info.maxLength != 0) {
+    if (info.maxLength > 0) {
         if (info && textField.text.length == info.maxLength && string.length > 0) {
             info.inputFailedBlock();
             checkInLimit = YES;
         }
+        //获取高亮部分
+//        UITextRange *selectedRange = [textField markedTextRange];
+//        UITextPosition *textPosition = [textField positionFromPosition:selectedRange.start offset:0];
+//        if (!textPosition) { // 无高亮部分
+//
+//        }
+//        else { // 有高亮部分
+//
+//        }
+    }
+    
+    if (info.inputBlock && !info.inputBlock(string) && string.length > 0) {
+        info.inputFailedBlock();
+        checkInLimit = YES;
     }
     if (checkInLimit) {
         return NO;
