@@ -7,14 +7,15 @@
 //
 
 #import "HomeViewController.h"
-#import "GCDWebServer.h"
+#import "NSObject+Category.h"
+#import "UIViewController+Category.h"
 #import "GCDWebServerDataResponse.h"
 #import "LoginManager.h"
 #import "UITextField+Category.h"
 #import "UITextField+Limit.h"
 
 @interface HomeViewController () <UITextFieldDelegate>
-@property (nonatomic, strong) GCDWebServer *webServer;
+
 @end
 
 @implementation HomeViewController
@@ -31,38 +32,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    //    LoginManager *m1 = [LoginManager sharedInstance];
-    //    LoginManager *m2 = [[LoginManager alloc] init];
-    //    LoginManager *m3 = [m1 copy];
-    //    LoginManager *m4 = [m1 mutableCopy];
-    //    LoginManager *m5 = class_createInstance([LoginManager class], 0);
-    
-    //    NSLog(@"%s %@", __func__, @[m1, m2]);
-    
-    //    NSLog(@"%s %@", __func__, @[m1,m2,m3,m4]);
-    
-    UITextField *tf = [[UITextField alloc] initWithFrame:CGRectMake(20, 100, self.view.p_width - 20 * 2, 44)];
-    tf.delegate = self;
-    tf.borderStyle = UITextBorderStyleRoundedRect;
-    
-    [tf limitWithMaxLength:3 inputFailedBlock:^{
-        NSLog(@"---");
-    }];
-    
-//    [tf limitWithMaxLength:3
-//                inputBlock:^BOOL(NSString * _Nonnull inputCharacter) {
-//                    NSLog(@"inputCharacter: %@", inputCharacter);
-//                    return YES;
-//                }
-//          inputFailedBlock:^{
-//              NSLog(@"sss");
-//          }];
-    [self.view addSubview:tf];
-    
     
     [self setupRightItem];
+    
+    UIViewController *vc = [[UIViewController alloc] init];
+    [self addChildViewController:vc];
 }
 
 - (void)clickRightItem {
