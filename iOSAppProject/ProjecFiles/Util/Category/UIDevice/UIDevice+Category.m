@@ -14,8 +14,7 @@
 
 @implementation UIDevice (Category)
 
-- (BOOL)isPad
-{
+- (BOOL)isPad {
     static dispatch_once_t one;
     static BOOL pad;
     dispatch_once(&one, ^{
@@ -24,8 +23,7 @@
     return pad;
 }
 
-- (BOOL)isSimulator
-{
+- (BOOL)isSimulator {
     static dispatch_once_t one;
     static BOOL simu;
     dispatch_once(&one, ^{
@@ -34,8 +32,7 @@
     return simu;
 }
 
-+ (NSString *)getDeviceModel
-{
++ (NSString *)getDeviceModel {
     struct utsname systemInfo;
     uname(&systemInfo);
     
@@ -135,13 +132,11 @@
     return dic[platform] ? dic[platform] : @"设备获取失败";
 }
 
-+ (NSString *)getDeviceVersion
-{
++ (NSString *)getDeviceVersion {
     return [[UIDevice currentDevice] systemVersion];
 }
 
-+ (NSString *)getResolution
-{
++ (NSString *)getResolution {
     CGRect rect_screen = [[UIScreen mainScreen]bounds];
     CGSize size_screen = rect_screen.size;
     
@@ -153,8 +148,7 @@
     return [NSString stringWithFormat:@"%.fx%.f", width, height];
 }
 
-+ (NSString *)getCarrier
-{
++ (NSString *)getCarrier {
     CTTelephonyNetworkInfo *info = [[CTTelephonyNetworkInfo alloc] init];
     
     CTCarrier *carrier = [info subscriberCellularProvider];
@@ -163,8 +157,7 @@
     return mCarrier;
 }
 
-+ (NSString *)getUUID
-{
++ (NSString *)getUUID {
     CFUUIDRef puuid = CFUUIDCreate( nil );
     
     CFStringRef uuidString = CFUUIDCreateString( nil, puuid );

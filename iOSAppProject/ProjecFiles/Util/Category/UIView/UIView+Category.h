@@ -23,4 +23,8 @@
 @property (nonatomic, assign) CGFloat p_centerX;     ///< Shortcut for center.x
 @property (nonatomic, assign) CGFloat p_centerY;     ///< Shortcut for center.y
 
+#pragma mark - Method
+
+- (BOOL)p_containView:(UIView *)view;
+
 @end

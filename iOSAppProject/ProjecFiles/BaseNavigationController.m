@@ -7,6 +7,7 @@
 //
 
 #import "BaseNavigationController.h"
+#import "BaseViewController.h"
 
 @interface BaseNavigationController ()
 
@@ -19,19 +20,27 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+        if ([viewController isKindOfClass:[BaseViewController class]]) {
+            BaseViewController *vc = (BaseViewController *)viewController;
+            if (vc.hideLeftBarButtonItem) {
+                vc.navigationItem.hidesBackButton = YES;
+            }
+            else {
+                vc.navigationItem.leftBarButtonItem = [vc getLeftBarButtonItem];
+            }
+        }
+        else {
+            // 如果不是 BaseViewController，由业务自行处理
+        }
+    }
+    [super pushViewController:viewController animated:animated];
+    // 修改tabBar的frame
+    CGRect frame = self.tabBarController.tabBar.frame;
+    frame.origin.y = [UIScreen mainScreen].bounds.size.height - frame.size.height;
+    self.tabBarController.tabBar.frame = frame;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

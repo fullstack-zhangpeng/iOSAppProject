@@ -106,4 +106,13 @@
     return self.center.y;
 }
 
+#pragma mark - Method
+
+- (BOOL)p_containView:(UIView *)view {
+    if (!self || !view || (self.subviews.count <= 0)) {
+        return NO;
+    }
+    return [[self subviews] containsObject:view];
+}
+
 @end

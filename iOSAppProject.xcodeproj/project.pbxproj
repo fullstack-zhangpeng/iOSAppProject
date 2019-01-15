@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E2C710621EDB8320019D2D7 /* TViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2C710521EDB8320019D2D7 /* TViewController.m */; };
 		6E4872A521E470ED00B84C2F /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4872A421E470ED00B84C2F /* UITextField+Category.m */; };
 		6E4872AB21E4AA9400B84C2F /* UITextField+Limit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4872AA21E4AA9400B84C2F /* UITextField+Limit.m */; };
 		6E50C91F217717480026EB8E /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E50C91E217717480026EB8E /* LoginManager.m */; };
@@ -63,6 +64,9 @@
 /* Begin PBXFileReference section */
 		42253E5899184B8ADBADDB84 /* libPods-iOSAppProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSAppProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		529D968BB19D5720A3E9BE70 /* Pods-iOSAppProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAppProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSAppProject/Pods-iOSAppProject.debug.xcconfig"; sourceTree = "<group>"; };
+		6E2C710321ED977E0019D2D7 /* iOSAppProjectHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSAppProjectHeader.h; sourceTree = "<group>"; };
+		6E2C710421EDB8310019D2D7 /* TViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TViewController.h; sourceTree = "<group>"; };
+		6E2C710521EDB8320019D2D7 /* TViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TViewController.m; sourceTree = "<group>"; };
 		6E4872A321E470ED00B84C2F /* UITextField+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Category.h"; sourceTree = "<group>"; };
 		6E4872A421E470ED00B84C2F /* UITextField+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Category.m"; sourceTree = "<group>"; };
 		6E4872A921E4AA9400B84C2F /* UITextField+Limit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Limit.h"; sourceTree = "<group>"; };
@@ -372,6 +376,8 @@
 				6EC3F872213D11A9003319BF /* SettingViewController.m */,
 				6EC3F880213D3B9A003319BF /* HomeViewController.h */,
 				6EC3F881213D3B9A003319BF /* HomeViewController.m */,
+				6E2C710421EDB8310019D2D7 /* TViewController.h */,
+				6E2C710521EDB8320019D2D7 /* TViewController.m */,
 				6E50C91D217717480026EB8E /* LoginManager.h */,
 				6E50C91E217717480026EB8E /* LoginManager.m */,
 				6EC3F87E213D3558003319BF /* RewriteDescription.m */,
@@ -383,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				6EF83C98212A5FB900705870 /* iOSAppProject.pch */,
+				6E2C710321ED977E0019D2D7 /* iOSAppProjectHeader.h */,
 				6EF83C9F212A60E000705870 /* Category */,
 				6EF83C99212A5FFA00705870 /* Const.h */,
 				6EF83C9A212A5FFA00705870 /* Const.m */,
@@ -657,6 +664,7 @@
 				6E68B88721E34790003A909B /* UIButton+Category.m in Sources */,
 				6EA2525021281D0700ED0495 /* AppDelegate.m in Sources */,
 				6E68B88621E34790003A909B /* UIApplication+Category.m in Sources */,
+				6E2C710621EDB8320019D2D7 /* TViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

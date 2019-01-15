@@ -11,9 +11,7 @@
 #import "UIViewController+Category.h"
 #import "GCDWebServerDataResponse.h"
 #import "LoginManager.h"
-#import "UITextField+Category.h"
-#import "UITextField+Limit.h"
-
+#import "TViewController.h"
 @interface HomeViewController () <UITextFieldDelegate>
 
 @end
@@ -25,18 +23,16 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-        HomeViewController *vc = [[HomeViewController alloc] init];
-        vc.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
+    TViewController *vc = [[TViewController alloc] init];
+//    vc.hideLeftBarButtonItem = YES;
+    vc.hideHomeIndicator = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     [self setupRightItem];
-    
-    UIViewController *vc = [[UIViewController alloc] init];
-    [self addChildViewController:vc];
 }
 
 - (void)clickRightItem {
