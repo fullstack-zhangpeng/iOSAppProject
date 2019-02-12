@@ -8,9 +8,8 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Initialization.h"
-#import <WXApi.h>
 
-@interface AppDelegate ()<WXApiDelegate>
+@interface AppDelegate ()
 
 @end
 
@@ -20,26 +19,7 @@
     // Override point for customization after application launch.
     //    [self setupLogger];
     [self setupRootViewController];
-
-//    [WXApi registerApp:@""];
-    
     return YES;
-}
-
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-    return [WXApi handleOpenURL:url delegate:self];
-}
-
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return [WXApi handleOpenURL:url delegate:self];
-}
-
-- (void)onReq:(BaseReq *)req {
-    
-}
-
-- (void)onResp:(BaseResp *)resp {
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -10,7 +10,7 @@
 #import "NSObject+Category.h"
 #import "UIViewController+Category.h"
 #import "GCDWebServerDataResponse.h"
-#import "LoginManager.h"
+#import "Util/Category/UIDevice/UIDevice+Category.h"
 
 @interface HomeViewController () <UITextFieldDelegate>
 
@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"[UIDevice currentDevice].isFullScreenSeries value: %@", [UIDevice currentDevice].isFullScreenSeries?@"YES":@"NO");
 }
 
 - (void)didReceiveMemoryWarning {

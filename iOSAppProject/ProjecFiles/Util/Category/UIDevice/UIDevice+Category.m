@@ -14,15 +14,6 @@
 
 @implementation UIDevice (Category)
 
-- (BOOL)isPad {
-    static dispatch_once_t one;
-    static BOOL pad;
-    dispatch_once(&one, ^{
-        pad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
-    });
-    return pad;
-}
-
 - (BOOL)isSimulator {
     static dispatch_once_t one;
     static BOOL simu;
@@ -32,7 +23,39 @@
     return simu;
 }
 
-+ (NSString *)getDeviceModel {
+- (BOOL)isIPad {
+    static dispatch_once_t one;
+    static BOOL pad;
+    dispatch_once(&one, ^{
+        pad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad;
+    });
+    return pad;
+}
+
+- (BOOL)isIPhone {
+    static dispatch_once_t one;
+    static BOOL pad;
+    dispatch_once(&one, ^{
+        pad = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone;
+    });
+    return pad;
+}
+
+- (BOOL)isFullScreenSeries {
+    BOOL isFullScreenSeries = NO;
+    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+        return isFullScreenSeries;
+    }
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        if (mainWindow.safeAreaInsets.bottom > 0.0) {
+            isFullScreenSeries = YES;
+        }
+    }
+    return isFullScreenSeries;
+}
+
+- (NSString *)deviceModel {
     struct utsname systemInfo;
     uname(&systemInfo);
     
@@ -129,14 +152,14 @@
                           @"x86_64" : @"Simulator x64",
                           };
     
-    return dic[platform] ? dic[platform] : @"设备获取失败";
+    return dic[platform] ? dic[platform] : @"";
 }
 
-+ (NSString *)getDeviceVersion {
+- (NSString *)deviceVersion {
     return [[UIDevice currentDevice] systemVersion];
 }
 
-+ (NSString *)getResolution {
+- (NSString *)deviceResolution {
     CGRect rect_screen = [[UIScreen mainScreen]bounds];
     CGSize size_screen = rect_screen.size;
     
@@ -148,7 +171,7 @@
     return [NSString stringWithFormat:@"%.fx%.f", width, height];
 }
 
-+ (NSString *)getCarrier {
+- (NSString *)deviceCarrier {
     CTTelephonyNetworkInfo *info = [[CTTelephonyNetworkInfo alloc] init];
     
     CTCarrier *carrier = [info subscriberCellularProvider];
@@ -157,17 +180,12 @@
     return mCarrier;
 }
 
-+ (NSString *)getUUID {
+- (NSString *)deviceUUID {
     CFUUIDRef puuid = CFUUIDCreate( nil );
-    
     CFStringRef uuidString = CFUUIDCreateString( nil, puuid );
-    
     NSString *result = (NSString *)CFBridgingRelease(CFStringCreateCopy( NULL, uuidString));
-    
     CFRelease(puuid);
-    
     CFRelease(uuidString);
-    
     return result;
 }
 
