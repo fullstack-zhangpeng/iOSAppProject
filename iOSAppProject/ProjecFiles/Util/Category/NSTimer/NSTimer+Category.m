@@ -2,7 +2,7 @@
 //  NSTimer+Category.m
 //  P_App_OC
 //
-//  Created by 张鹏 on 2018/2/17.
+//  Created by zhangpeng on 2018/2/17.
 //  Copyright © 2018年 zhangpeng. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 @implementation NSTimer (Category)
 
-+ (NSTimer *)scheduledTimerWithTimeInterval:(NSTimeInterval)interval
++ (NSTimer *)p_scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                      block:(void (^)(void))block
                                    repeats:(BOOL)repeats {
     return [self scheduledTimerWithTimeInterval:interval

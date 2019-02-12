@@ -25,8 +25,7 @@
 
 #pragma mark -
 
-@interface UITextFieldInputManager : NSObject <UITextFieldDelegate>
-{
+@interface UITextFieldInputManager : NSObject <UITextFieldDelegate> {
     NSMapTable<id,LimitInfo *> *_infos;
     pthread_mutex_t _mutex;
 }

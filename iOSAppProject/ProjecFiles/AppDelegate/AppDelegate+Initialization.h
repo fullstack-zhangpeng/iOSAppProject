@@ -11,7 +11,5 @@
 @interface AppDelegate (Initialization)
 
 - (void)setupRootViewController;
-
-- (void)setupLogger;
     
 @end

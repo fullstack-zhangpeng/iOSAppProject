@@ -111,8 +111,7 @@
     return __singleton__;
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         pthread_mutex_init(&_mutex, NULL);
@@ -198,8 +197,7 @@
     return info;
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     pthread_mutex_destroy(&_mutex);
 }
 

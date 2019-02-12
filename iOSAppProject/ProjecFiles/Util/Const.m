@@ -11,13 +11,4 @@
 #pragma mark - NSUserDefaults
 NSString *const nd_Setting_FLEXDebug = @"nd_Setting_FLEXDebug";
 
-#pragma mark - Date Formatter
 
-NSString *const df_yyyy = @"yyyy";
-NSString *const df_MM = @"MM";
-NSString *const df_yyyyMM = @"yyyyMM";
-NSString *const df_yyyy_MM = @"yyyy-MM";
-NSString *const df_yyyyMMdd = @"yyyyMMdd";
-NSString *const df_yyyy_MM_dd = @"yyyy-MM-dd";
-NSString *const df_yyyMMddHHmmss = @"yyyyMMddHHmmss";
-NSString *const df_yyy_MM_dd_HH_mm_ss = @"yyyy-MM-dd HH:mm:ss";

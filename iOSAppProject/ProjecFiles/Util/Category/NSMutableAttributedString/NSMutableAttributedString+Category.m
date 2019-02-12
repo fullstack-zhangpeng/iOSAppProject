@@ -13,20 +13,20 @@
 
 #pragma mark - AddAttributeStyle
 
-- (void)addLineWithStyle:(LineStyle)lineStyle range:(NSRange)range {
+- (void)p_addLineWithStyle:(LineStyle)lineStyle range:(NSRange)range {
     switch (lineStyle) {
         case LineStyleDelete: {
-            [self safelyAddAttributes:@{NSStrikethroughStyleAttributeName : @(NSUnderlineStyleNone)}
+            [self p_addAttributes:@{NSStrikethroughStyleAttributeName : @(NSUnderlineStyleNone)}
                                 range: NSMakeRange(0, self.string.length)];
-            [self safelyAddAttributes:@{NSStrikethroughStyleAttributeName : @(NSUnderlineStyleSingle),
+            [self p_addAttributes:@{NSStrikethroughStyleAttributeName : @(NSUnderlineStyleSingle),
                                         NSBaselineOffsetAttributeName : @0}
                                 range:range];
             break;
         }
         case LineStyleUnder: {
-            [self safelyAddAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleNone)}
+            [self p_addAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleNone)}
                                 range: NSMakeRange(0, self.string.length)];
-            [self safelyAddAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle)}
+            [self p_addAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle)}
                                 range:range];
             break;
         }
@@ -37,7 +37,7 @@
 
 #pragma mark - AddAttributes
 
-- (void)safelyAddAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range {
+- (void)p_addAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range {
     if ([self isNilOrNullObject:attrs]) {
         return;
     }

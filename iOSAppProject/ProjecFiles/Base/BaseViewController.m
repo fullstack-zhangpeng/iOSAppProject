@@ -14,23 +14,33 @@
 
 @implementation BaseViewController
 
+#pragma mark - Life Circle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
-- (BOOL)prefersHomeIndicatorAutoHidden {
-    return self.hideHomeIndicator;
-}
+#pragma mark - Private Method
 
 - (void)backAction {
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+#pragma mark - Instance Method
+
 - (UIBarButtonItem *)getLeftBarButtonItem {
     return self.leftBarButtonItem;
 }
+
+#pragma mark - System Method
+
+- (BOOL)prefersHomeIndicatorAutoHidden {
+    return self.hideHomeIndicator;
+}
+
+#pragma mark - Lazy Load
 
 - (UIBarButtonItem *)leftBarButtonItem {
     if (!_leftBarButtonItem) {

@@ -28,4 +28,9 @@
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
 
+#define kStatusBarHeight ([UIDevice currentDevice].isFullScreenSeries?44:20)
+#define kNavigationBarHeight 44
+#define kTabBarHeight 49
+#define kHomeIndicatorHeight 34
+
 #endif /* iOSAppProjectHeader_h */

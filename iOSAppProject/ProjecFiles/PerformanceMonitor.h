@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+/// 抄的。。。还没读。。。
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PerformanceMonitor : NSObject
 
-+ (instancetype)sharedInstance;
-- (void)startMonitor;
-- (void)stopMonitor;
+//+ (instancetype)sharedInstance;
+//- (void)startMonitor;
+//- (void)stopMonitor;
 
 @end
 

@@ -24,7 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"[UIDevice currentDevice].isFullScreenSeries value: %@", [UIDevice currentDevice].isFullScreenSeries?@"YES":@"NO");
+    
+    NSLog(@"%d %d %d %d", kStatusBarHeight, kNavigationBarHeight, kTabBarHeight, kHomeIndicatorHeight);
 }
 
 - (void)didReceiveMemoryWarning {

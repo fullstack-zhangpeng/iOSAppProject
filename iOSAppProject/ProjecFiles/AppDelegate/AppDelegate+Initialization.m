@@ -12,8 +12,6 @@
 #import "HomeViewController.h"
 #import "SettingViewController.h"
 
-#import "Logger.h"
-
 @implementation AppDelegate (Initialization)
 
 - (void)setupRootViewController {
@@ -44,15 +42,6 @@
     vc.tabBarItem.selectedImage = selectedImage;
     BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
     return nav;
-}
-
-- (void)setupLogger{
-    [[Logger sharedInstance] setupLogger:^(LoggerConfig *config) {
-        
-        
-    }];
-    
-//    [[Logger sharedInstance] logWithName:@"Name" param:@{@"key": @"value"}];
 }
 
 @end

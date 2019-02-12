@@ -17,10 +17,10 @@ typedef NS_ENUM(NSUInteger, LineStyle) {
 
 #pragma mark - AddAttributeStyle
 
-- (void)addLineWithStyle:(LineStyle)lineStyle range:(NSRange)range;
+- (void)p_addLineWithStyle:(LineStyle)lineStyle range:(NSRange)range;
 
 #pragma mark - AddAttributes
 
-- (void)safelyAddAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range;
+- (void)p_addAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range;
 
 @end
