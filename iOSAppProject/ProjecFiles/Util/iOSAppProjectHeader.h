@@ -33,4 +33,13 @@
 #define kTabBarHeight 49
 #define kHomeIndicatorHeight 34
 
+
+// void(^block)(void)的指针是void(^*block)(void)
+static void blockCleanUp(__strong void(^*block)(void)) {
+    (*block)();
+}
+
+#define endBlock \
+__strong void(^block)(void) __attribute__((cleanup(blockCleanUp), unused)) = ^
+
 #endif /* iOSAppProjectHeader_h */

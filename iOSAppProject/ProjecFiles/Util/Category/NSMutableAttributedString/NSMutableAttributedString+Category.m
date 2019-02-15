@@ -35,6 +35,17 @@
     }
 }
 
+- (void)p_addLineHeight:(CGFloat)lineHeight font:(UIFont *)font {
+    NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
+    paragraphStyle.maximumLineHeight = lineHeight;
+    paragraphStyle.minimumLineHeight = lineHeight;
+    NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+    attributes[NSParagraphStyleAttributeName] = paragraphStyle;
+    CGFloat baselineOffset = (lineHeight - font.lineHeight) / 4;
+    attributes[NSBaselineOffsetAttributeName] = @(baselineOffset);
+    [self p_addAttributes:attributes range:NSMakeRange(0, self.length)];
+}
+
 #pragma mark - AddAttributes
 
 - (void)p_addAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range {
@@ -45,6 +56,8 @@
         [self addAttributes:attrs range:range];
     }
 }
+
+#pragma mark - Common
 
 - (BOOL)isNilOrNullObject:(id)object {
     if (object == nil || [object isEqual: [NSNull null]]) {

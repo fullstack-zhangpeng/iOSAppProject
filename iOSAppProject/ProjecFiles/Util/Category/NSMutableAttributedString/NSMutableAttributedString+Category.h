@@ -19,6 +19,8 @@ typedef NS_ENUM(NSUInteger, LineStyle) {
 
 - (void)p_addLineWithStyle:(LineStyle)lineStyle range:(NSRange)range;
 
+- (void)p_addLineHeight:(CGFloat)lineHeight font:(UIFont *)font;
+
 #pragma mark - AddAttributes
 
 - (void)p_addAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range;
