@@ -18,31 +18,10 @@
 
 @implementation HomeViewController
 
-- (void)dealloc {
-    NSLog(@"函数名：%s，行号：%d", __FUNCTION__, __LINE__);
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 //    NSLog(@"%d %d %d %d", kStatusBarHeight, kNavigationBarHeight, kTabBarHeight, kHomeIndicatorHeight);
     
-    NSLock *a;
-    [a lock];
-    
-    endBlock {
-        [a unlock];
-        NSLog(@"onExit");
-    };
-    
-    // 100w 行代码
-    
-    
-
-    
-    NSLog(@"---");
-    sleep(5);
-    NSLog(@"+++");
 }
 
 - (void)didReceiveMemoryWarning {

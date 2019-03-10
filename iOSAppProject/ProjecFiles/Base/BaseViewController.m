@@ -16,6 +16,10 @@
 
 #pragma mark - Life Circle
 
+- (void)dealloc {
+    NSLog(@"\n***%@ - delloc\n***\n", NSStringFromClass([self class]));
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
