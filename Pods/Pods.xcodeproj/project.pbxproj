@@ -7,204 +7,207 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00985A9B18C09A79DF96225B92D4F20B /* SDWebImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D37E163311922206E2D952CF09BA60 /* SDWebImageCodersManager.m */; };
-		013146573178AFE03B2139D2FBEB9F75 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 903015EE020116D5781BFE4B6B12DA28 /* GCDWebServerRequest.m */; };
-		0155BF902CB254542BD3B43D8864ACCC /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C53BD85BDF9AE2292569DE25E35B9C /* DDASLLogger.m */; };
+		014C3C9D46D932A33E886C0E8A45E8C6 /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E467BAECA080F9AE02C36D0C65FE79 /* CocoaLumberjack-dummy.m */; };
+		0152F69929D60E02D597FC9306C93282 /* FLEXImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EADEB77BE0B4630CD3F36FB8AD9BAF6D /* FLEXImagePreviewViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0381FCF30F5F07314E2C873BE1D638F6 /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CFEE3D179CF5318122560C9D10D8439 /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		03C42625B54FAAECAB2C9958177B4280 /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE13E0B4AF5DD8CE808FAC52563BF9B /* SDAnimatedImageRep.m */; };
-		03CDAAE029837D77358D5F5EF66BE0C1 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B42B479D0DA401A68562E8379F10F /* DDASLLogCapture.m */; };
+		0400EECC88E4D644C73EDF69C1D28DFC /* FLEXArgumentInputFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4771AB4137B649AD6C2385B0C9C9C8A /* FLEXArgumentInputFontView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		04C9DF293CBBC76CD79324E75CA13A21 /* FLEXExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = AB2FCE6E80770D96E8C6E0869CA0C678 /* FLEXExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		05FBDF4F257B27C4ADBBDC4656A5A668 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C5C7DE3FE2674CCFA0A5FD03F0770A /* GCDWebServerConnection.m */; };
+		0540631917DE912F4755DEAD8A9C09A9 /* FLEXArgumentInputNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1211F5253683D45349EBDF3FA65272 /* FLEXArgumentInputNumberView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0613A9F7DAF159EB447208CE6EBDAB51 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E4F386D93DF3534ADA331C436A1AF /* GCDWebServerDataResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0617C55283DFFCD4BAFEF86D05460876 /* FLEXHierarchyTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8558CF374E9CA1C02D3C2BDD0FD2BF9A /* FLEXHierarchyTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		08514E45F61A12BD489F738BF9EDD84F /* FLEXMultilineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E147914B26AEA252EBCA9CF894EBFB81 /* FLEXMultilineTableViewCell.m */; };
+		07CF4976BF9430E1EAF7537D3033659F /* FLEXNetworkTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = DF26AF4854AF8B2F712569EFC9459CD5 /* FLEXNetworkTransaction.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		09CD6D9A2DC42E1EBF5F4A43775C2D7C /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D95724726F885A90C735C554FC71F2 /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0A0E7DF5923A988B562FA47254DB8613 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E1826D863CAB4CA9F5009F4A7F9919C3 /* DDTTYLogger.m */; };
-		0A6500A9A3314DB2758DA4B99B7BB615 /* FLEXDefaultEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CA74FC68B93EED3145C85A93069EF8 /* FLEXDefaultEditorViewController.m */; };
-		0AA2EAE4D84C0B44969180214ECC8971 /* FLEXViewControllerExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16689A4DA38AF62A3603A38CE7F14FF6 /* FLEXViewControllerExplorerViewController.m */; };
 		0ADDE733AED802064801EC67737DA5F7 /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 336ADC9E0F6E35E2403A959055498EC3 /* GCDWebServer.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0CD42D640611A946A7B291CEF4761812 /* SDWebImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 55226A84439E6A624A4693C9160C7E16 /* SDWebImageGIFCoder.m */; };
 		0CEDD14C2158408C31A0E78E908144E3 /* SDWebImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = DAA90773E1A2521A32C3EA99D65A454F /* SDWebImageCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0D07D14F548451CCBB224F1DFAA571DD /* FLEXArgumentInputStringView.h in Headers */ = {isa = PBXBuildFile; fileRef = 21F2BB22B23EE88AEE3B2AAA29CB0864 /* FLEXArgumentInputStringView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0D64F957BE8A79371D159A4F2A3153B2 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F1B1F77949F6BB736AF242E0709A84 /* AFURLRequestSerialization.m */; };
 		0E4EC144C1F49B249C40921975147E8C /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 79E7C35D4CAA7F3AF91E617886CE280B /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0EB613C66FC63EC4FAFA9B2F17BB8EAF /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F2EB847874EB9544D67C2B86ED983 /* GCDWebServerErrorResponse.m */; };
 		0F2E328A27C43248262B71A9260A9CB2 /* FLEXObjectExplorerFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = CA1691285B03DA99B4FADA6A3CBFE06E /* FLEXObjectExplorerFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0FED6403D582AF96B09C70368459B7BC /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D507339F61C47F21E16FF755FA9790 /* SDImageCache.m */; };
 		100DCBFE39E91CF7A296FABFAB4D7CC6 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = E7086015DA2E7AB691F45E577B878B18 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1029EEE887D1289A0BBED30F5A96A2A5 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9E4F386D93DF3534ADA331C436A1AF /* GCDWebServerDataResponse.m */; };
-		1170F11006D33A6243816FE55F9B3E5F /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1841232F84067969D3DF8988640FA6 /* GCDWebServerResponse.m */; };
+		101DD5493E340552D7F6A655CD158E07 /* FLEXHierarchyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B64C1F9F07AF7C7879BC966CE505A06 /* FLEXHierarchyTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1175610D50E2333668BA90C76B286847 /* FLEXArgumentInputStringView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1680575DEA8435B30BFA0E4D5B535F9 /* FLEXArgumentInputStringView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1192A771C27D63E549A56E7D0C8C832D /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = B22FC9B89FCA387169861FF0750B24C6 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		12276F1F0C35CAAEA8EB0F3F5A299CB1 /* FLEXArgumentInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA6264238E25A8FBDC01CF326013B29 /* FLEXArgumentInputView.m */; };
 		12417C3742C4E4B605C2FD2EBF511848 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 65943AE163F1566578D665EE7A054029 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FAFE1EF1C6398161923DFE21721120 /* MASViewAttribute.m */; };
+		12A260213A01FCAF7EB93E319DAE9D6C /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 098E7A1DD10C6718AD165288B00B752B /* UIImageView+HighlightedWebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		13C8F868BBE08093A65ADAAD38CC6AB9 /* FLEXRealmDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 0770BE1AE565EB79CED58A227C07E9E3 /* FLEXRealmDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1445E8B096170D915AB1AF8DEF769B34 /* FLEXArrayExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19136836AF9B9EA72DAD7F0A633B75FF /* FLEXArrayExplorerViewController.m */; };
 		14B13E4EDCA548C988FFEF1F55B842CD /* FLEXViewControllerExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 55589DF7E957A1E53C2764EF2C2205C8 /* FLEXViewControllerExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		14B65CE3038761FA8F6F5D1ECED6A562 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB12D84E698C5D345FD0846E3AD7AB57 /* NSArray+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		153A89F88D7CFC89B9BC566E598681F5 /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD5527ADBF2A17A4B55C274FADA8B31 /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		15DF59F74A3D2C503BA9C509A6CADEB4 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BEB64B7F333DE34B04745251835FD4 /* UIButton+AFNetworking.m */; };
 		15F5070BA7AE298965D755B25260DA8C /* FLEXWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8EE203C415142C15C6FB398FBE0621 /* FLEXWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		162BB47F7289DF951CFCB5881A41782B /* FLEXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55B98532DB34F1A636EF9D3F2FA0143 /* FLEXWebViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		162E6E0DA9B401BA145031453C01D0F3 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 36DE37091F51900269771271B3677C73 /* DDLog.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		16DBCACDFB30FF18BD7E9ED1928BCE5C /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E64C2BFBE7FA893F6E2396464A4F1CBF /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		189056A70946CE6EDFFEF17CE6864652 /* FLEXDictionaryExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 137D8944BEEE8B69EFEF1321C60EA77B /* FLEXDictionaryExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		18A0969FF6EEC2C58A7D4D4AAB7C6060 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD555EFAD264BADBC939BB94D1B145DC /* MobileCoreServices.framework */; };
-		193D69BD85D0A0899EDF0D6FF269E86D /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3B7BBDA8FBFAA2CEF5371C2C9D87C9 /* UIProgressView+AFNetworking.m */; };
+		19D7DB9B95FAD0F12E2E9B68BB69FB43 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F295A0C4887D41406A2F9DBC881E8D7 /* GCDWebServerMultiPartFormRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1A4C61648DBBFE5725ADF2982374AAD9 /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B45932AC08ABB20B4EBA1AB827DAD7 /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1AE2E4F3BB7BD550E2323BB6EFE934BF /* FLEXTableContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D69790449306E4F1D2A41B8B32933D /* FLEXTableContentCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1AF513D8D71B663D5422760106B13723 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0227F805021BCB3ED961456564637B /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1B35441E0EF3A36DAEDE4D9A747F6DFF /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C53BD85BDF9AE2292569DE25E35B9C /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1B73FCDAE1A7A0E4EC584DF71952C14E /* FLEXSystemLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5EC39E6623049716FD090D060E018E /* FLEXSystemLogTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1BAD1EFBF5FC0501009654272BB22B69 /* FLEXKeyboardHelpViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 72F27BB7E735F7C9F39F6851EC6FBCFF /* FLEXKeyboardHelpViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1BD269444D1E84C5D8CA107864F75359 /* FLEXMultiColumnTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B5833E1E94A772395E92B4B8877A71 /* FLEXMultiColumnTableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1E551644BE676D1304B9CE9E460F65A5 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB959E7419BE55CFB2B5DCA55A51E2A /* DDContextFilterLogFormatter.m */; };
+		1D090D3C0F947FFEBE7337F893FA9B47 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDFF1DC7CEE5EB2112C3116E291B97 /* UIView+WebCacheOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1D0D3354E670D73DA6A7784877AC2AF1 /* FLEXTableLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441109FD3388BAB76E5D24B1077FAAA /* FLEXTableLeftCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1DCA6602E64429556C70B8F0F88C73D5 /* SDWebImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 55226A84439E6A624A4693C9160C7E16 /* SDWebImageGIFCoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1DDF4C69F0DB68442F735F1BF56B8059 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E1826D863CAB4CA9F5009F4A7F9919C3 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1E867583328CE9CD38E8F2C143B9289A /* FLEXArgumentInputViewFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = D433D14AF22D7F1DE2D3F1CF05C3877F /* FLEXArgumentInputViewFactory.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1E9270D46BE8FB06F26CF15E6E71B71B /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC28F17B30D6C4BF7EC45AFB4335CCF1 /* DDMultiFormatter.m */; };
-		1F21C5A5CC17546C0BAD635D50F45372 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 136C594A45131762ADC2289F4D8EAC9C /* UIRefreshControl+AFNetworking.m */; };
-		207F460925E7ECD78F9A31D9CE98B66C /* FLEXDefaultsExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EFBAD9BF8C53E51E49A94C04641B2A /* FLEXDefaultsExplorerViewController.m */; };
+		1EBC265F957717E21C23AFB331D69936 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D5C795C851784134E1D222763F43C0 /* SDWebImageDownloaderOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		20F749A610C2983DBEFBD0B8976C04C8 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BEFB7DF79D37E3BDEE0A2BB5E566A6A /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		210D42D469FA5F553716BB055FA91AE0 /* FLEXArgumentInputFontsPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBC8ABC4890BBEBE1D3C70154DC2214 /* FLEXArgumentInputFontsPickerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		213CB4261C2E6F79AAF42595714EED52 /* FLEXExplorerToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E39A6BF48CF01083BAD9D04D0E4BA50 /* FLEXExplorerToolbar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		214DF0B6664033C87D6B846599FB477A /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A4FB7AF2DE215251D0985E2ACB2F43 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		234CFF1073F27ABD22726797BBAE01DF /* SDWebImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475400113906FCC2062E8F9C727F1F /* SDWebImageCoder.m */; };
+		220D3352675FD32167BF16A18FEB431A /* FLEXNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 199D1B3972E3ECEEED939B51F33DEA59 /* FLEXNetworkObserver.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2276B788EEEE917DC14CBAACD4001F62 /* FLEXKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9743DBBC933800F49098EB0FF10060DA /* FLEXKeyboardShortcutManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		22F721822E046A54EAFCAEDAB3E5DB5B /* FLEXHeapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 626913D261DFC0EA474391BB9D0EFAA3 /* FLEXHeapEnumerator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		238FC67CB2EC59BEF69E2BD29DC88D09 /* FLEXUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E2C1F52FB1B3C96F341767C127F11E3 /* FLEXUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		245529096EB2ABDC6F9391BB5E172B34 /* SDWebImageImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 489B84CFB9834DCF5565805CB08D2A5D /* SDWebImageImageIOCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		25BC16D72BDA547273B78076F986B32E /* FLEX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D85AC51CF4F7DA51F6BFE328958D009 /* FLEX-dummy.m */; };
+		253AD6DD51E06DF1B45C5C5AEDCA5918 /* FLEXArgumentInputColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D6499E227D0CB61823466EDE477E32 /* FLEXArgumentInputColorView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		25B78D9BBC4CF410FEBEDFEB0DCA5736 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C991E46A55FDD384381227230129E23 /* UIImage+GIF.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		25D2C60E2F881495F3B5BB1329DDD5CF /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB812AFC47CFF3F776829A291979F29 /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2606DB77063181C79B34AA314546300F /* NSButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 667DEEF17219A5211EDDD65E774B1D0F /* NSButton+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2633BE2E887BB96BEB21584B65131AF8 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E124F80E3F9DD8A8ED5EFC53600D271B /* AFURLSessionManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		26790590D2881C8B53ECE3F170738FEB /* FLEXManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F6A68736907C30735357FAB2C138A6C /* FLEXManager+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		26873CE294135E7F21A809C79C117DEB /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C385EFFA6E50F0BA3416D4F402345E19 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		26EBBEF56FF5ED5A281A569D2F408B1C /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD5EB707184A5CC949EBE05632FBF2 /* UIActivityIndicatorView+AFNetworking.m */; };
-		27192398FF17E18E9585E056411EABF5 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C991E46A55FDD384381227230129E23 /* UIImage+GIF.m */; };
-		27B639D48D2A7994E58073096B0230CB /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 971658A7A341B04994B2384A8FD5501C /* DDAbstractDatabaseLogger.m */; };
+		2753EF5BCBEC5A53CC7115842D69A226 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6443F200BD78252C6C0182822A9DC7 /* AFSecurityPolicy.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		27FC8936BFB4DF067B15660F3C87903D /* FLEXResources.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E6C5F616C003A76C2CFD08E9FDC7D37 /* FLEXResources.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		28682421DAEFFF052FF2A21CC6FD6F81 /* FLEXArgumentInputDateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 613C1D2B5523AF10D2966D8FB7EE1C8E /* FLEXArgumentInputDateView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		28777FE92C78B54773448902E1E8CD81 /* CocoaLumberjack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E467BAECA080F9AE02C36D0C65FE79 /* CocoaLumberjack-dummy.m */; };
 		291034D0C82020E756477A28BFDDD178 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 43EC96640C037B33F06BD6A35BD61429 /* SDImageCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2B744A6D171FC6E20A342AAE842D4DED /* FLEXNetworkCurlLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CED05E741FA73584978236D4383C1F /* FLEXNetworkCurlLogger.m */; };
+		2AD40159A0D857BB1C432C50A240B300 /* FLEXArgumentInputJSONObjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1358F42AA22E2AC96A3CCC8587DE983A /* FLEXArgumentInputJSONObjectView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2B8538A35E9344A3C8A68833BC3393DE /* FLEXRuntimeUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 42106F7EB942D54FB47B5582C4133BCF /* FLEXRuntimeUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2BA4A7E418C623140B81FD0B77355A3E /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E2DC4E6579974086251D44D7FE4549C /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2BFBCE5990C2F4ED966ECB60F40F6828 /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 698E653CA9AE70C59907E374DD61D16C /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C95F7426AB8BB25B3DF1CBFA0B697C9 /* MASViewConstraint.m */; };
+		2C22FE431AF337ABDE2E3E85E3CCB54A /* FLEXArgumentInputDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF56058DDC9E9F5C7CC603C4BB9038 /* FLEXArgumentInputDateView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2C67FD363E5EFED189C3F8277F6B1F1F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B133089D488178D9C93BAF6C52DFA5B3 /* AFURLResponseSerialization.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2D62311B97E605E2C9AC1D8DEDE64781 /* FLEXDictionaryExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F05112087D4666996DB203DF71B405 /* FLEXDictionaryExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2E4463AE90078706E3CECAF1B1144D53 /* FLEXTableListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FE3490F8FF8A6B04203C68FD99BE41 /* FLEXTableListViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2E79BE99776B25AC85BDFACDD9738E99 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A17EBF0D90D807AA05AC33E7028329 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2F7FEF1F464082DB2B95A4D32AE255DD /* FLEXSQLiteDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 753CEF7A6D2BE47C63776BD87B274EF0 /* FLEXSQLiteDatabaseManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2FF702BC469472C861AB521B79C2BA5B /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B2D8232CCB72ACC52BE1A68687ECC /* UIImage+ForceDecode.m */; };
-		31BD6B601755B15049F76093D698D2B7 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6443F200BD78252C6C0182822A9DC7 /* AFSecurityPolicy.m */; };
-		3258C16AEE4C00E6C509DD8B156F5F10 /* FLEXArgumentInputJSONObjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1358F42AA22E2AC96A3CCC8587DE983A /* FLEXArgumentInputJSONObjectView.m */; };
+		2FB6E5B6597CB664C631E61735327D23 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1D7C423815B3CC2AB5C0828DA5ED7 /* UIImage+MultiFormat.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		301243A7C7CB4631B45101C279DA88A3 /* FLEXPropertyEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31951124F29DB09A4D539414E8FCB30A /* FLEXPropertyEditorViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3016ED823E49A987756CE34CBC489CC5 /* FLEXObjectExplorerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A08B73A53874AF61FA763D761DE4D3 /* FLEXObjectExplorerFactory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		302888D10A449158C46614ABA5B42B22 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5425D2FD19F9C718D63C087724731E6 /* AFHTTPSessionManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		30E79DFE79851A4C45E9C1218614285E /* FLEXRuntimeUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A8C9FDA34842E237E1C8E2A9285BA9 /* FLEXRuntimeUtility.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		30FE944EB3CC854978C0EFE7092C1A36 /* FLEXSetExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7AA98EC65D2AEC906EB6B0F35C70F4 /* FLEXSetExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		319C0B91501C85A68148525BB8D3AA0A /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3375B75836CF3B15DF1A9FAA7B0BEEC9 /* SDImageCacheConfig.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		329DBC957157A3A56386E284A4F8F97B /* FLEXIvarEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D913854A08E9B183DD87DC7C6998F863 /* FLEXIvarEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3308F074265D68B6A1EAC445320EC758 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 971658A7A341B04994B2384A8FD5501C /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3334746D072810854256D338A2AB0C0D /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD5EB707184A5CC949EBE05632FBF2 /* UIActivityIndicatorView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		33489416BF4D7E19315274A80F8BBDE0 /* FLEXCookiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D2C3B42E4E5847E38A6411DF2B1B5B /* FLEXCookiesTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		337ED4F86E4451B14C8DB1CEB6A9934A /* NSImage+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8149B8F0A100247160DDD4920C50E5F8 /* NSImage+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		33A25AD7320C7F462EC4804BBB100190 /* FLEXArgumentInputJSONObjectView.h in Headers */ = {isa = PBXBuildFile; fileRef = 35935A2B4BF62CA1F9B2BFA1DD9F5264 /* FLEXArgumentInputJSONObjectView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		341F56D4F0993EA23F993B24E355731C /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BB9FBCECE3E0D7783F73FDEDF19164 /* SDWebImageManager.m */; };
-		35A1E23BB5CB524D51A248B377801515 /* FLEXFileBrowserFileOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D6B183DF8C8C13FC99CBE3ABE243FC /* FLEXFileBrowserFileOperationController.m */; };
+		35A6298AE87C1C147C5AD3C2FF55F4E6 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E849621A93214AEBF33C26769D79E2B2 /* UIView+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		360D0A3690B213280B62431FCC5A87DA /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21361DF25C9FEBAF0C3913FEA46B7EB9 /* GCDWebServerFileRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		36277A5C0300F89A22985C4B4969C4D5 /* FLEXFileBrowserSearchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A2FB7A248FAA2A0B2137A2BE6D8E5 /* FLEXFileBrowserSearchOperation.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3641E4F5AEA11C0AFDD38487937F815A /* Pods-iOSAppProjectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A55D3534EBC05B22150425A56E00FCD6 /* Pods-iOSAppProjectUITests-dummy.m */; };
 		36CBD359E80E0988F58304104CD87C05 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA41E085C51C05846CA573E6B77E6AE /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		380E09B3A266917B4BE046A2AA3F7B67 /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 093A2031F7F94A33B484B7F16DF2BF54 /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		381B7AE4D90DB87F384B22E7C1540901 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0E5EA4C5A28C1DA064AC2070A8376A /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		38EE35422041FE34AC9D3444ED2D48D0 /* FLEXMultilineTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3709AC24E05E00521E963C0E563969E0 /* FLEXMultilineTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		391147924CD3BADD0ADB09047F8A467C /* FLEXTableListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC16B1C8B74BAC5A5D8C86CC502E6BE9 /* FLEXTableListViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		394685034942F5FA49C1E8A0CCFD93F9 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B4AB05A52E4C88C1EE970BA1C2C570 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		39575F84FB47C45584068A4D57781034 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D973C86A460E30376E641B622A8FF1B /* SDWebImagePrefetcher.m */; };
-		397C85445F9818B2B8A774D8A010BDD4 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 24860B2CD543BEC008DF46BD7D73B096 /* DDFileLogger.m */; };
+		39C80DB3498EB3B7E3BF6CDB46D77333 /* FLEXClassExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A749C1D64BCB03FD087851A004FCA9BF /* FLEXClassExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3A3D27B95A2667FD168BD6EB93E99578 /* FLEXWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B42017DC42EAD7A0F757999956654F /* FLEXWindow.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3ACA031218FDBDB072EF97E4E928C2A8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1DE9FF43308BEF36AE5DD2998995A0 /* CFNetwork.framework */; };
-		3B4DA5F47A67D8E38FD28B0238BB86A9 /* FLEXArgumentInputStructView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38796B71BF1C18164336BA28E2081014 /* FLEXArgumentInputStructView.m */; };
 		3BDA3D3F59280D53FD276688F1A9814A /* FLEXArgumentInputSwitchView.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC7E2D437C95FF0EFC5DD2CE67D64C6 /* FLEXArgumentInputSwitchView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3BE2B8DF14E40C80FD77000DFF97E1F2 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B1687140E64E5B6D7A26C9FD981B1FC /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3C139ECB1C8D6AD9C0C07FD21BDC85B4 /* FLEXHierarchyTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 656748EC0A739DE2CEEF94571916A792 /* FLEXHierarchyTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3D9474A10070F19DDA01858C408A8E12 /* FLEXGlobalsTableViewControllerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A4C6055E2A211209980F2736BF56DE /* FLEXGlobalsTableViewControllerEntry.m */; };
-		3E2600C80708DCA589660AA8D5BF604C /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 3375B75836CF3B15DF1A9FAA7B0BEEC9 /* SDImageCacheConfig.m */; };
 		3E736BC7DBD891CC6683F18F93575D67 /* FLEXNetworkHistoryTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0704C1C57E913DFCC4C2A82AC3A6692B /* FLEXNetworkHistoryTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D3F0BC199E7F1734B696D3936F2A3F /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		3EBD566CB84AE7FFB467118C36EEF600 /* FLEXHeapEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 626913D261DFC0EA474391BB9D0EFAA3 /* FLEXHeapEnumerator.m */; };
 		3FFFEB791647517EB17E29C580A50409 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = D302B0BDEA5AF47755476C60B40072FB /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		40003E90A603B75C1C07FA1DA3B2807D /* FLEXNetworkTransactionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED16F785450DEAB70A0CBB6DB0C346B /* FLEXNetworkTransactionTableViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		401BB14C2D09DA701356594EF4200A04 /* FLEXManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D7C8AD67D0FD001DFF4D153C8665325C /* FLEXManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		40355B8ACC1CFEEE3E27F32311784580 /* FLEXArgumentInputStringView.m in Sources */ = {isa = PBXBuildFile; fileRef = C1680575DEA8435B30BFA0E4D5B535F9 /* FLEXArgumentInputStringView.m */; };
 		409A9F5EB4811CA7225918A495E09344 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1B329B0FB27A37A660882A10C5CB06 /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		40F28269E8EB0B9B486AA14864C2B5DE /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FEF05BA09B9C1BE94DD78507D6FFFA8 /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		41B8C6B4D3F1CEF8AF6B7DCF6A165D65 /* FLEXTableContentCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 172A7B9036DCED15EB72F19E86F115D5 /* FLEXTableContentCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		425BEB3AB1EDF6D3FA017E96779E3DCE /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = D17A6C91FD122F687873E2F9D975CE3A /* NSData+ImageContentType.m */; };
-		42D12FE118AA13C392ECB5A8A9FEC8F0 /* FLEXClassExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A749C1D64BCB03FD087851A004FCA9BF /* FLEXClassExplorerViewController.m */; };
-		44CE7CAD318081B51DD9739DCE1B81F2 /* FLEXLayerExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC7B2E666ABE9B694F0CA5F54D8FDAE /* FLEXLayerExplorerViewController.m */; };
+		42A21385FCCA9B0541B513F049555C90 /* SDWebImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 145BB92076A3EF4A6F8447AC7E0238C9 /* SDWebImageFrame.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		444C42DCE893C47FC935496EB2CD4A17 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BEB64B7F333DE34B04745251835FD4 /* UIButton+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		44EFAD344FF5B80EC73A4A03BB805692 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D973C86A460E30376E641B622A8FF1B /* SDWebImagePrefetcher.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		452FA80139D393F7212F57FC157E5A8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7C4CA0BF1383226CD4757761E83C9B /* CoreGraphics.framework */; };
-		45598C04F6DF1EA5412E1F27606BF529 /* FLEXHierarchyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD729DB09AFA088613209E60CAE5280F /* FLEXHierarchyTableViewCell.m */; };
+		456F377DD03B42CFD65943C1347E0940 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C95EC8E7644B11E6F0B425CFF7F4 /* AFImageDownloader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		45E37DAC8DCFF755C9D10D3CFC4F4D59 /* FLEXImageExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC33F3812D509D3843D54A7218E998D3 /* FLEXImageExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		45FCB27BF2907E0DCEF3683250E898AA /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB481E0715D6F5D6FCEA79B8EC0EBC9 /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46592FDD33FB4637C6D16F4DA9422107 /* FLEXRealmDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A171D0395CB9BFC859492F733960A6C /* FLEXRealmDatabaseManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		466869E41EB306F74C8A6E87CC1539BF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E375FD96B7C2201131E817AF1786C680 /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		46B538AFD3B41E0E9E53F78C76D65AA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFB28652DEA48EB820FCFD9E5414296 /* Foundation.framework */; };
-		46B6E52897E6E54CDA78303E25FBD70D /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D4A6ADDA023F252EFBC5DB236AC2E /* GCDWebServerFunctions.m */; };
 		475A893CF9DC9BDE5EA787010EAACC4B /* FLEXLiveObjectsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D8ACEDCDE1839C18A13725AA76C47D5 /* FLEXLiveObjectsTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		49007499B497D9E2A11F990274A60ED8 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AFEE0AB12DD12F90AA46AA09B469C0 /* AFNetworking-dummy.m */; };
+		48DEE72AB795BF34314412F52870FA77 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BB9FBCECE3E0D7783F73FDEDF19164 /* SDWebImageManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		49A2961B25131079B1167C5C5EEFE924 /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A9B7F7028C2830A512A2FD9F019562 /* SDWebImageTransition.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4AB16F37F3DB310D29874942A952568B /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C936B6B3A37099DCB3D4E3F220D77949 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4CBF7041E69CF578FD98145DD2E1E4A7 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F295A0C4887D41406A2F9DBC881E8D7 /* GCDWebServerMultiPartFormRequest.m */; };
+		4ABB417B1B4A82CAC0EB5BD8F6DB168A /* FLEXFileBrowserFileOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1D6B183DF8C8C13FC99CBE3ABE243FC /* FLEXFileBrowserFileOperationController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4B198BA1B09E85F84629FDB25A627AB9 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 830D8428BB354444A89B447481213D63 /* DDOSLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4D203CC08A98E696BDCD6A3578C5DA1B /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 255D408939A71572A5EF848D857A01A5 /* UIWebView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4E9A475A320F6F8D61681EEA331E5FBA /* FLEXViewExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289AE30354EC974CF52F3F92901F2E21 /* FLEXViewExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4FDDD70B62B94FDAC72669CFAAD736B4 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = ED295A90B283FE8F7430A9CDC588DB4C /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		500F023EBAAF4F12AB08AC2FFF645E89 /* FLEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F87FAF4D135B4D942E8B5777B53A77A /* FLEX.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5059DC781EE5510147677AEECE4B80D5 /* SDWebImageCoderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E3243D569BA7A288FC2815A34A0C32 /* SDWebImageCoderHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5119C0718B35832AF0EA579BBD244A30 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB959E7419BE55CFB2B5DCA55A51E2A /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		523F69012549DCADB26D11EFB6593B5B /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A01461BEFCAC201840815BF3FBD618 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		537D3BA31ED5F507CAB49CEBFB0ADE6B /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C8FE2A9B2A1AE0A935AA35399176B3 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		548BBD5B63FA097F419829C3EE8EA068 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 293B82CF272F6B094EE1BC8A8774BBEB /* View+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		54BA64CED1049DD3AD59BC77B8874B09 /* FLEXArrayExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2328905A82E14A96A803254B948E70 /* FLEXArrayExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		54F432190D503970A901B4893F1478C7 /* FLEXTableLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6441109FD3388BAB76E5D24B1077FAAA /* FLEXTableLeftCell.m */; };
+		5650893803E6E6E158048F974F63457B /* FLEXFieldEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FA70E3022B5B1D1105EBBF2B9ED12A /* FLEXFieldEditorView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		56AA36DB5CC8902ED68BF3D00D2F0A6A /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 66CF3DD30964EAE953E83C0308EB0051 /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		583DD558E2DCD0287BED774993920A92 /* SDWebImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 59D37E163311922206E2D952CF09BA60 /* SDWebImageCodersManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		587B7BD156C852408C1762F7C04D2BE8 /* FLEXNetworkCurlLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CA90B3E7E7BF2C5192B8E5AEFF85EC /* FLEXNetworkCurlLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		58AC3895C3D696A5419BF6B23E4CBEAA /* FLEXLayerExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C7329F93549ECABFC3180DE1D28DE6C5 /* FLEXLayerExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5AB162FD4376ABE20E99004DF9EF28E6 /* FLEXFieldEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7FA70E3022B5B1D1105EBBF2B9ED12A /* FLEXFieldEditorView.m */; };
+		5971A637950378480AB9E43B30D7B855 /* FLEXTableColumnHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC83D78CFA2B488006DA3102A99ED91 /* FLEXTableColumnHeader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5992524E32494805E8D82AC1D8F22779 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F3BE4FD29174B0C78C6CD7B747D4E7 /* GCDWebServerStreamedResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		599BBDC46817FFEFD9E0445BFB2A1398 /* FLEXObjectExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13058B77C67F9AEB3DC0F6974F8EECF5 /* FLEXObjectExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5B1F7E53C9E4049210D3FC4E115C1CA7 /* FLEXNetworkSettingsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA7F7DEB6CF3EB5BB898093D1DAC00C /* FLEXNetworkSettingsTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5B24C8FAF91CEB114A4428F48C303B5F /* FLEXFileBrowserTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2162F1E9ABF2CF2AAFC9B73E1D619943 /* FLEXFileBrowserTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B46C39A3F939EDB676981756CC24007 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6414FBBEE696F7DD11308A8911726BA /* Masonry-dummy.m */; };
+		5BCB136B27665147EA6C18E08D764E63 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 31C5C7DE3FE2674CCFA0A5FD03F0770A /* GCDWebServerConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5BE15EE9AE65532C03F4DDD46661A7C3 /* SDWebImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B31AB2B0449D8122BD39D8960C758A97 /* SDWebImageCodersManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5BEC553BCA2FE3919DF6EE8DB43F9EF9 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B2C85D7ED11324B17F63CDD36EE0B /* SDWebImageDownloader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5C0EA53B52F22422A4B544AB8FFBC280 /* FLEXKeyboardHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FD2B2C645FC0FC6F7B0E2DFD70F0 /* FLEXKeyboardHelpViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5D60E038958AF38A78C89A3CF5BDCBF6 /* Pods-iOSAppProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAB25C4C4CAA4E18CE908B2B1E15D82 /* Pods-iOSAppProject-dummy.m */; };
-		5DE2AFDF49BF9FB71FE0B1108328AE45 /* FLEXArgumentInputNotSupportedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D10039500DEC490D8477CEB0BCDEA0 /* FLEXArgumentInputNotSupportedView.m */; };
 		5DFCEE1EE05D9670CED293DCB7DC8DE1 /* FLEXDefaultsExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 026CF016164118C581DF4A3BDDD326D0 /* FLEXDefaultsExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5E8B416ACEC3E328D352EBACCA547BFB /* FLEXNetworkCurlLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CED05E741FA73584978236D4383C1F /* FLEXNetworkCurlLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5EBFADB0ACACA114B98082EBD8FDA650 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB904B9433BCE6ED5992D3DD7BE6852 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5EC71A676DCC7BD05202B69F79FFE31B /* FLEXNetworkTransactionDetailTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C2AB8D7DA8C19471D719E6F1336EB99 /* FLEXNetworkTransactionDetailTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4548B8702DB251E611F1DDCEBBA87E /* MASCompositeConstraint.m */; };
+		5F47A244435B2D1F9384B96C2AE63FA1 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB372B7836D7343E0DB197824B16A8E /* SDWebImageCompat.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		60B273A20CBB4C749FFF15AC8EB1CC04 /* FLEXSystemLogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F034BDBA957BD99975ECAB73B026A5 /* FLEXSystemLogTableViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		61C611ABFFC5FFF35ACE70883CB8F523 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEBF10FAA48EF5DAA8A8B65994B174F /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		61F8EEE75640E51D8F647F90FF7F413E /* FLEXTableColumnHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B155575482291F09F1BAF00C5A25DB38 /* FLEXTableColumnHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		62FED5B4FB7624F17F01F0C3C7A0EE7E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDFF1DC7CEE5EB2112C3116E291B97 /* UIView+WebCacheOperation.m */; };
-		63DC4C5239B35339945F9E1FF0D3FC33 /* FLEXArgumentInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FD0A3B561BDDC536BE0EF083922B5F /* FLEXArgumentInputTextView.m */; };
-		64E4925198F6F064881126C817BA1F56 /* FLEXNetworkSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741EBC961E5D480C96F714C21833DBDE /* FLEXNetworkSettingsTableViewController.m */; };
-		653E127A8C49F933CC6C6AE424C4E345 /* FLEXSystemLogMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E3DEC3D65A86DDFC139ACCCBD4353A /* FLEXSystemLogMessage.m */; };
 		65F56DD218227209F7AFCF2A15EDCE2D /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 44930F864B1846118B05AE2158DAFFAC /* AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		66F9686B445345BADCC44D624917979B /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB372B7836D7343E0DB197824B16A8E /* SDWebImageCompat.m */; };
-		67560F327A068588DB75D0F726C71DBC /* FLEXSystemLogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F034BDBA957BD99975ECAB73B026A5 /* FLEXSystemLogTableViewCell.m */; };
-		67ECBAADF2F684E99D9E0C7F84FAF66C /* FLEXSQLiteDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51720256DF8B48B2ADB345537041013C /* FLEXSQLiteDatabaseManager.m */; };
-		6893012865C9664016E81DD5DE768037 /* FLEXToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C31ED9B39CD8FC18427D43EBDCDAAC24 /* FLEXToolbarItem.m */; };
-		68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6414FBBEE696F7DD11308A8911726BA /* Masonry-dummy.m */; };
+		67CC31341F522E0D3F13A0411613DE92 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AFEE0AB12DD12F90AA46AA09B469C0 /* AFNetworking-dummy.m */; };
+		6886E33B0A77E322339216AC96E832C2 /* FLEXGlobalsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ACFB95C3423969AA98591ACC8B7190 /* FLEXGlobalsTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		68E1B2F45F100C41D956371BABA541B7 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CCCC8E3C0FEE916E80004EC817BEA6 /* AFNetworkReachabilityManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6913AF9BFAD48198FAC591BE7759B842 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E3149B6BE9EDB9309BF2505EE7D411BE /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		692CF809EDCD42CA9B646B1C829B5B4B /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA24487B0D9C16C6B7AA4F45B8BB48F /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		69D4F112BC35CA9D1BCEA673B78F2B99 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F563E0360AC391E0C77D2560470EA7DD /* DDLog.m */; };
+		69AB13F951EE8E9FA3DE3220A0BC9798 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3C235B091C65DE8A193880CF22624C /* UIImageView+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6ADE7B0EC75D4F426E505500466200CC /* FLEXDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0E82E670C5F0C819BD8C7F497650B1 /* FLEXDatabaseManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6B5E29AF5CC52D74BF3101BC7E2C59A1 /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D7868F0AC21429B9092874AAA551F4FD /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6C261DB94EF23204B55D8098B02F04D5 /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = E699833E324A49E0D148A4393F398115 /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6CB1737A3BC22D606B89533DDF5CE82C /* FLEXExplorerToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E39A6BF48CF01083BAD9D04D0E4BA50 /* FLEXExplorerToolbar.m */; };
-		6FAA5D9DBF4F3867A401C2C4B7E13B5F /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C91B42D867567E1D0E8B37FC64CE48 /* GCDWebServerDataRequest.m */; };
 		6FBEF9BEF976F73220F5EA0246FA6674 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2939FCAC3023979E22C003BA94C295CD /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		71266855C6EDFF90917612BC93245A9E /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3C235B091C65DE8A193880CF22624C /* UIImageView+WebCache.m */; };
-		71752B4444BC9F54F6736935F4E31027 /* FLEXNetworkTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = DF26AF4854AF8B2F712569EFC9459CD5 /* FLEXNetworkTransaction.m */; };
 		7194FDB57B000B7B4E989B7AEC3A5405 /* SDWebImageGIFCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D01A442F4C563820B9A51365DE66CDE2 /* SDWebImageGIFCoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		731681284D2C3D303E20B1C3C3D7E585 /* FLEXTableColumnHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC83D78CFA2B488006DA3102A99ED91 /* FLEXTableColumnHeader.m */; };
-		73956D945A02272A05D8EB2A8DC80414 /* FLEXMultiColumnTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAEBB43D5E30842C56D7F26C52EFD7 /* FLEXMultiColumnTableView.m */; };
+		73A94FA91B4EFA43CB1A79133480C151 /* SDWebImageCoderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DA054BAA6F227865F3426A7B647514 /* SDWebImageCoderHelper.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		741A977C33EE2F3197E17D308C973C10 /* FLEXSystemLogTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9117F2CFB89F330977587E9CF82C87FA /* FLEXSystemLogTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		771C8E3F384A3FF228DB82AE6D128BB4 /* FLEXKeyboardShortcutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9743DBBC933800F49098EB0FF10060DA /* FLEXKeyboardShortcutManager.m */; };
 		77260DB3CC48C1E0985E95E25B994287 /* FLEXNetworkTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 921C3C9E85DFEC54C4F0759C90178552 /* FLEXNetworkTransaction.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79962609DA874540040EED5426240209 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54397010C59CF1BB9EE7A428C874FBC2 /* SDWebImage-dummy.m */; };
 		7AC0D0965486ED43C064F1BC177ACBC9 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = BEAEF943C189CDB039C99550693CAD24 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7B0C24FA820227C10BFAE7C7C7742593 /* FLEXGlobalsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ACFB95C3423969AA98591ACC8B7190 /* FLEXGlobalsTableViewController.m */; };
 		7B45F946EDD6C3411F899A0BF2701E1B /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = B7B5140274E05C07A477D2420761AA6F /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7B6C0C29E2AC0F93F9C525BC89123049 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA08369893F2B7D1C6F0A378D0D55284 /* SystemConfiguration.framework */; };
-		7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB12D84E698C5D345FD0846E3AD7AB57 /* NSArray+MASAdditions.m */; };
+		7E413F0C4ED0BBEBA9440A0A028E029F /* FLEXMethodCallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C70B0F0CD9DDF0FF5E23525E2FA68B /* FLEXMethodCallingViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7EEF177299590803C6394B03B24E4DD3 /* FLEXImagePreviewViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DCE680D26C7CE44E3A671679AA55851A /* FLEXImagePreviewViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7EFB5B434F20993A1589C8B5D90A185F /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE13E0B4AF5DD8CE808FAC52563BF9B /* SDAnimatedImageRep.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		800D4B454E4E1BA6DA4DD34EB1373058 /* FLEXArgumentInputNotSupportedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D547FB1D92E3A5C8A3F4F5B414FB22D /* FLEXArgumentInputNotSupportedView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		804EEDD242951E1E95C3AC8B10837A3F /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C01A950EBD0378895CD94529CDAB47B /* GCDWebServerURLEncodedFormRequest.m */; };
-		80C3BBCC80B28BFB9002381A8D170588 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F3BE4FD29174B0C78C6CD7B747D4E7 /* GCDWebServerStreamedResponse.m */; };
+		80AF0193E0F661CEDE0CDE038C744848 /* FLEXExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2188B1202D417C775C3109F76081734 /* FLEXExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8166797237033C259B7E619457029086 /* FLEXSystemLogTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E45A369762362DD7080AC09F91A8CE4 /* FLEXSystemLogTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		81C1291C7ABA4942277F5756671AEE37 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F3F13EEE0C236405B6ABDCE0F748456E /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		81E8DAC809A4EB62FB1698DD9F9905EF /* FLEXTableContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D69790449306E4F1D2A41B8B32933D /* FLEXTableContentCell.m */; };
-		83F7619A857C6945D24D92524604A97E /* FLEXArgumentInputViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1998FBF8DB31AAE2B314F060E1429 /* FLEXArgumentInputViewFactory.m */; };
-		84AFCFF8D8928C2375EF19894CC1CE6E /* FLEXExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2188B1202D417C775C3109F76081734 /* FLEXExplorerViewController.m */; };
+		82640F9EE0076F032567A8C1E3EDDA82 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80FE1937E2DF86BDB80B3976F68880 /* AFAutoPurgingImageCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		84C9EA321D36E31E65BC51FF30D1CE67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFB28652DEA48EB820FCFD9E5414296 /* Foundation.framework */; };
 		86B2DF4CC6E598AAA73D0CC6EEBA0E96 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1B6526DC439CF4B100F744B52E9D3C /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		87683757B7B15F677EFA76037734127B /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CCCC8E3C0FEE916E80004EC817BEA6 /* AFNetworkReachabilityManager.m */; };
-		87D100CB62B0095A58AB342A05213A95 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B80FE1937E2DF86BDB80B3976F68880 /* AFAutoPurgingImageCache.m */; };
 		8812D9A551B58A496CE5C9F60CA0275A /* FLEXInstancesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C78B603460F8D805D10E69767323B297 /* FLEXInstancesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		88AC9CAAE15B2C1929A3A98F8BB1A0E7 /* FLEXFieldEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E809E7791F5B681336804A6C65B37D57 /* FLEXFieldEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8935B02CE4400A8B16E05EAA93A3FCA3 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 17975C4D085EC2737B73665BC4C8AB65 /* UIButton+WebCache.m */; };
-		89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0227F805021BCB3ED961456564637B /* MASConstraint.m */; };
+		88EBC919BBE896EAD6E2672C816FE5F2 /* FLEXNetworkHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73965A59D1361F80191D6C04F4D614CF /* FLEXNetworkHistoryTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		897A6B84F4B7FC4523B3FB3A46448AA6 /* FLEXPropertyEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 12124EA41E8DE23576AB225D5530FE1A /* FLEXPropertyEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		89E367D5171F2DE242D7EC418EAAC67A /* FLEXSetExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7AA98EC65D2AEC906EB6B0F35C70F4 /* FLEXSetExplorerViewController.m */; };
 		8A23C581FE70A2FE9B109EA69C4AA247 /* FLEXLibrariesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AA1F91A3D6647B774CFE6DCBDC5100A /* FLEXLibrariesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8A49D61B987AF301489E7CF3FAA61C50 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437A7782060FF6A267F41AA20F7095E /* AFNetworkActivityIndicatorManager.m */; };
-		8B2B7130013B2B2920D67710379E173E /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F1D7C423815B3CC2AB5C0828DA5ED7 /* UIImage+MultiFormat.m */; };
-		8BCF14AA134F3463761946B105B347B6 /* FLEXDictionaryExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F05112087D4666996DB203DF71B405 /* FLEXDictionaryExplorerViewController.m */; };
+		8B2AB7A7E2CCB9CE47A1F8758CD0AC1A /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C01A950EBD0378895CD94529CDAB47B /* GCDWebServerURLEncodedFormRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8BFDD24EA734D85A262AAE9A3AA33222 /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 859CB74762FE438D5714DD1685582EB1 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8C1644AB8769E9A8CBD1119DC8B936C2 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A98DF0E2CF6B789681118D8C080C5CF /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8D5844406B71991C41B982874E548248 /* FLEX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D85AC51CF4F7DA51F6BFE328958D009 /* FLEX-dummy.m */; };
 		8DD8AF6428CC4EC278E72C8B268674FA /* FLEXViewExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B23A674325E03413BD6DCEC2F8709CE /* FLEXViewExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8E46B9F7E028BEC86C55753262A7C7E3 /* FLEXNetworkTransactionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CED16F785450DEAB70A0CBB6DB0C346B /* FLEXNetworkTransactionTableViewCell.m */; };
-		912EA0C6D7ED28B7FDA603B2A965B16D /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E124F80E3F9DD8A8ED5EFC53600D271B /* AFURLSessionManager.m */; };
+		9087FA9BBABF6214E53E6062C5A24C5D /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA175E3FCEBDE6DF72ECBCB641EA8B2 /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		91670344BB299B84C6C8D222C3E6DCAC /* FLEXNetworkRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F13FF44DC22AFE021C6EA7394D5393A /* FLEXNetworkRecorder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		924593ADD1A4BDD0ABB039EF6BB6C713 /* FLEXHeapEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = FBCC10726C15D71F9BBF7BCB097E5E67 /* FLEXHeapEnumerator.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		92711327ED7920702A69A828271279AE /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AEFFF257DCBE7FD589E8ACE150393874 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -213,139 +216,136 @@
 		933B27A01BD6988113287DBE3CB1AFB1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E56EC163EDFF13043FBF7C20762F6EC /* ImageIO.framework */; };
 		93A80650BACAAC57BCACCCAB1B510EBB /* FLEXRealmDatabaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D078713953D72BCA842B05BC42961402 /* FLEXRealmDatabaseManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		93CBFF0342054715B04EE0586E025DE8 /* FLEXNetworkTransactionTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 26751D7C1E44CB75FDABD47512B0BAA1 /* FLEXNetworkTransactionTableViewCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		93F6682F57E056D098FF44E056C17D99 /* FLEXObjectExplorerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A08B73A53874AF61FA763D761DE4D3 /* FLEXObjectExplorerFactory.m */; };
-		952972DBC00D6E1C95C27558221858AB /* FLEXArgumentInputNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1211F5253683D45349EBDF3FA65272 /* FLEXArgumentInputNumberView.m */; };
-		955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEBF10FAA48EF5DAA8A8B65994B174F /* MASLayoutConstraint.m */; };
+		9421F29D9A2DA65D3940AABBA141335E /* FLEXHierarchyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD729DB09AFA088613209E60CAE5280F /* FLEXHierarchyTableViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9550A16972633FF0CE4E5658FB2EEDE6 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F563E0360AC391E0C77D2560470EA7DD /* DDLog.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9576D202A2BDB8CE499296D3B09E188B /* FLEXSetExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 23234C80AE689FCF7D992D566F0269B7 /* FLEXSetExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		969D6A18B0E912E8CC87105A35EB881E /* FLEXArgumentInputStructView.h in Headers */ = {isa = PBXBuildFile; fileRef = E18A8616AE7F3C650897DED561680785 /* FLEXArgumentInputStructView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9772A394DD761C8B61F667C06C88AD7D /* FLEXFieldEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE876D3B4192BEF80485F0EBFD654A8 /* FLEXFieldEditorViewController.m */; };
+		973E5A4DF241D4BD72B45374A2D1FC5F /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5081930A0A8CA1DCE646B4C7E29C2E64 /* GCDWebServer-dummy.m */; };
 		97ACF1603BEF20B66F0058CCF0AE05B2 /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 47324628619E28A989915063D8497019 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9891EFA98AEBD3769D138617E69AA272 /* SDWebImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = E8475400113906FCC2062E8F9C727F1F /* SDWebImageCoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9893DE59C606D304F8C79341AE26DFDA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7C4CA0BF1383226CD4757761E83C9B /* CoreGraphics.framework */; };
+		99E00D593F76D7E6C96300345E211282 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E91EF300693F81A09530145C521FB852 /* MASConstraintMaker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9A5CBF43388EEDB781BB1FF9F492D14E /* FLEXGlobalsTableViewControllerEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A4C6055E2A211209980F2736BF56DE /* FLEXGlobalsTableViewControllerEntry.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9A70C53B04C79861AC0CDC92145A4B66 /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DC2DF95F8EB626CFAC57697CC24F881 /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9AB27A7F752AB644728D50B0228A070E /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = B242A7459A98E1DAAC72D5A8378A207B /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9AC1B2D2DB28C94E0542F99E41F2FB99 /* FLEXSQLiteDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 51720256DF8B48B2ADB345537041013C /* FLEXSQLiteDatabaseManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9AE6000BD22849B5262EBFB8720BE323 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 97B7DC818B6F0638F14B0D9E7A7DC7C2 /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9AF424136ACD6D698A07B9F62F086D67 /* FLEXDefaultEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B2E7DC5CD78D89E2E0F83257F6B7EDB /* FLEXDefaultEditorViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9B5B00119CD6F9D1A88FA33EA3931116 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 136C594A45131762ADC2289F4D8EAC9C /* UIRefreshControl+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9BFAE06AC2F3B426C64EEDBF8C99A69E /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5801A7498C310475923877C033FD0902 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9C00E9A9497EE852FF39F4C144070B16 /* SDWebImageCoderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DA054BAA6F227865F3426A7B647514 /* SDWebImageCoderHelper.m */; };
 		9C8CA19E0F6AAF8CE321300B2F0E54FF /* FLEXClassExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = BC4F5186FD9512C93ECE4EB697737709 /* FLEXClassExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9C94E28D388FB628B8E0EDAAA33CBF32 /* FLEXObjectExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13058B77C67F9AEB3DC0F6974F8EECF5 /* FLEXObjectExplorerViewController.m */; };
+		9D36248C763925D2BBECBDB9D3AE8BF1 /* FLEXNetworkRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F28750C6B5BE1183C63C8BA82945D47 /* FLEXNetworkRecorder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9DD475ABF8856FABD48FC9D28FF8F276 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D507339F61C47F21E16FF755FA9790 /* SDImageCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9E2619F615519720D0FB9DC992EE5BC7 /* FLEXTableContentViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B273ED6368EC0D95EE5FB508201B9EDF /* FLEXTableContentViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9E53E1EBA3EC1E1A52D9F360CC586AD1 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 17975C4D085EC2737B73665BC4C8AB65 /* UIButton+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9EA8418FC9C6534C84CCECA711B81C6E /* FLEXImageExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4E2D509258542642CC37D47A15BCFE /* FLEXImageExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9EEAF19ECB4246D88D2DA08D06136F93 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = F8B9659122D3D81CAF38BE4A91D2BAC3 /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9F02544B0F5217C2C5D36BFFA0B5B3BE /* FLEXUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DCCA9BC596BA45C343D306EB878F98 /* FLEXUtility.m */; };
 		9FA2A591D9AD21B89109D03697DF8DEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA212BF59A8D60688291668C6C44CF07 /* UIKit.framework */; };
 		A0763D725C170B6E7FA8CD660A6EA53E /* FLEXNetworkObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = B2EDF79402FD340C489167C8BB2520EF /* FLEXNetworkObserver.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A0B5E4F8D2060EEA847A90E5024540E7 /* FLEXIvarEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F68FBD1EFA604FE6336835FE3381214 /* FLEXIvarEditorViewController.m */; };
-		A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 293B82CF272F6B094EE1BC8A8774BBEB /* View+MASAdditions.m */; };
+		A12313BCEE4BC7B28C6BE0A94ABA905C /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 841B2D8232CCB72ACC52BE1A68687ECC /* UIImage+ForceDecode.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A299BF3D1797A99323502FFF0BA13563 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A3FB2CE121EF4406BD6EAECEE7AB9875 /* DDFileLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A34ECA13E74378A4BD8EE7FFB15FF567 /* FLEXImageExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC33F3812D509D3843D54A7218E998D3 /* FLEXImageExplorerViewController.m */; };
-		A3C7261460C9DF0706172EA230923A25 /* FLEXNetworkHistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73965A59D1361F80191D6C04F4D614CF /* FLEXNetworkHistoryTableViewController.m */; };
-		A503CC2AA891145DC4C4A90A45D1E7F9 /* FLEXWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B42017DC42EAD7A0F757999956654F /* FLEXWindow.m */; };
+		A41FA563F1A995A17BF79CF6ED12A7C8 /* FLEXFileBrowserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07AE3FF138B4CEF92029775893B79F6 /* FLEXFileBrowserTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A6534E001F062F5BD8F7ED2635222CCD /* FLEXViewControllerExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16689A4DA38AF62A3603A38CE7F14FF6 /* FLEXViewControllerExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A7E929BE6E2979A5CBDE3887BD215061 /* FLEXClassesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 61EA9492ADCB193C5976B9DA8331CFA4 /* FLEXClassesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A80F9204C5EFBCB79F92FA53179C3D87 /* DDOSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 830D8428BB354444A89B447481213D63 /* DDOSLogger.m */; };
 		A85C12EF260875C0B83E7C571AABB306 /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = AACDE400528A999104E5BF7DDE7ED540 /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8A6C92995E330A639C02FE5FE411352 /* FLEXArgumentInputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FD0A3B561BDDC536BE0EF083922B5F /* FLEXArgumentInputTextView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A902C49195566A59E15EE2574AAAFE94 /* FLEXLayerExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC7B2E666ABE9B694F0CA5F54D8FDAE /* FLEXLayerExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A9639966C2718CA82717E176FA0AA080 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1B42B479D0DA401A68562E8379F10F /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A9F1387B1C0A79677DDC636B8F9E6517 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3B7BBDA8FBFAA2CEF5371C2C9D87C9 /* UIProgressView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AB3DB46B8FA5217A0EA2676B7F9CCF9D /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 24860B2CD543BEC008DF46BD7D73B096 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AB5E0668ECE58C8965EACB5078BA644A /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 357AAE09F7A666E7D1BFD2A8EFE3FB32 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AB6AA6F2353613F4B868086043932497 /* FLEXArgumentInputFontView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4771AB4137B649AD6C2385B0C9C9C8A /* FLEXArgumentInputFontView.m */; };
-		ADE00B3427D6884873B002B63F04F552 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C1905BB5EDBA8218F064EE0CE90F8C /* NSButton+WebCache.m */; };
-		AE8CC6AFE5AA3935F659F8DE429E63F7 /* FLEXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55B98532DB34F1A636EF9D3F2FA0143 /* FLEXWebViewController.m */; };
-		AF382853D9065B13FA9ABC071E5A3C5D /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B2C85D7ED11324B17F63CDD36EE0B /* SDWebImageDownloader.m */; };
+		ABC22A9AA28F6E07A4B6E06F4C9940E0 /* FLEXLibrariesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AFBB2D438DCA0A8CE6417024983799 /* FLEXLibrariesTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AF4A73DD2DFC6D1F86064CE85A6B2046 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = F6673441D630D389410A3B2F315F281E /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AFA187B299B234D8CD3C7E58531BFA78 /* FLEXSystemLogMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = EA178F98DFF6EE62E21B6B1DA2C54B5D /* FLEXSystemLogMessage.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AFFA6F69535746774A7B805B7EF5015F /* FLEXMethodCallingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C70B0F0CD9DDF0FF5E23525E2FA68B /* FLEXMethodCallingViewController.m */; };
 		B01E4254FAF65EE8E7480D127221D83E /* FLEXGlobalsTableViewControllerEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E703E18F1259E7CB5D478EEFA9F55A7 /* FLEXGlobalsTableViewControllerEntry.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B0B315C2CC3FBA99CC84DE85F62AF9D7 /* FLEXResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EC5DB77333746B926762312F003EB6 /* FLEXResources.m */; };
 		B2725686181E540AA3038431817B6789 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 98B08B5E1ECABCB20425D8CBF70684CC /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B2882857A41FE19424820863C28CD8ED /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8352FA40AC3C66316E31B2AA20A9C9 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B3537E00D243289742B09740A66F4A4E /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 54397010C59CF1BB9EE7A428C874FBC2 /* SDWebImage-dummy.m */; };
-		B40D63C0D6B47379F14D710675E0012C /* FLEXHierarchyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B64C1F9F07AF7C7879BC966CE505A06 /* FLEXHierarchyTableViewController.m */; };
-		B4898D2E61EC2CF02E795FF51B3076BD /* FLEXCookiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D2C3B42E4E5847E38A6411DF2B1B5B /* FLEXCookiesTableViewController.m */; };
+		B3E69C72C4F0488989F5E56286991343 /* FLEXArrayExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19136836AF9B9EA72DAD7F0A633B75FF /* FLEXArrayExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B4F18856A8E3FFB02EE756859BBCC5AA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD555EFAD264BADBC939BB94D1B145DC /* MobileCoreServices.framework */; };
-		B57810DE7386B1DFCDB9AE8A5E2306A2 /* FLEXArgumentInputSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2EA0A1665AC50279BF062E1F82788 /* FLEXArgumentInputSwitchView.m */; };
-		B59D85AD245CDEE54E01E4BE6E0DE3D6 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F3E1D573DF65E6AFF173926C6F9CB /* NSImage+WebCache.m */; };
+		B50BEAD2F0DC32FA1C4C0DF20192D946 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DFED54B1A04256E5DFDBBDD47BFB3 /* GCDWebServerFileResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B5EC5518E18B05A5334C49ABBF4C78F7 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = BB800CA2174A87FEF9BF6DC43E7C93DB /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B600853A8BA07BC39D65B3FD2C96DF2B /* FLEXNetworkRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F28750C6B5BE1183C63C8BA82945D47 /* FLEXNetworkRecorder.m */; };
-		B694E4A2C9CC3AFDD0831200D18F7F43 /* FLEXRealmDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A171D0395CB9BFC859492F733960A6C /* FLEXRealmDatabaseManager.m */; };
+		B6B961B931D714D2A057F29A42E73A19 /* FLEXLiveObjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004241A6B0AEE97357A2267119D08620 /* FLEXLiveObjectsTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B6D4361B09362462B31018A5B6C6B2D4 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC28F17B30D6C4BF7EC45AFB4335CCF1 /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B822A304C832226448A25C842FBD1335 /* FLEXArgumentInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA6264238E25A8FBDC01CF326013B29 /* FLEXArgumentInputView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B8248A411F12780984490C0E0C576D53 /* FLEXFileBrowserFileOperationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C594F1860AA9347DCBAB0D20A5AC34 /* FLEXFileBrowserFileOperationController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B970A1CBB1478C18843756DA64CA41E8 /* FLEXKeyboardHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE04FD2B2C645FC0FC6F7B0E2DFD70F0 /* FLEXKeyboardHelpViewController.m */; };
+		B8CD6DAF1D397404999E223526B51FA9 /* FLEXDefaultEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CA74FC68B93EED3145C85A93069EF8 /* FLEXDefaultEditorViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B953667D411D1DCD919CBD314F568A92 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D3F0BC199E7F1734B696D3936F2A3F /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B9C411B330A32D3FF35D21F107339A92 /* FLEXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C2E3E00D1D018319B09D64701AADB /* FLEXManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		B9FCBC0B3D05008648BAA30FA1B3929F /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BBC48DC36626B5D143FBCA58BEF73410 /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BA11B38D1BD37266C6498E2D2FCA0DC6 /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FEAF2A9B37E7619C4C8429BD07B1F39 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BAC3594FDD6FD0AE852D7A850C32B5BC /* SDWebImageImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F5F8E163873CAE550D35EE73B52C8C /* SDWebImageImageIOCoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BB8ABA674C1530778868F802003DAC8F /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 277D4A6ADDA023F252EFBC5DB236AC2E /* GCDWebServerFunctions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BC57B153076D6CEFD1844CED39AB3DF8 /* FLEXArgumentInputFontView.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A9F46819381D63E69970268315A46C /* FLEXArgumentInputFontView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BD8CBB633FB52086876BAE8D32C75517 /* FLEXPropertyEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31951124F29DB09A4D539414E8FCB30A /* FLEXPropertyEditorViewController.m */; };
+		BECE1F7612902B617435EA3BCFB3DF1A /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A1841232F84067969D3DF8988640FA6 /* GCDWebServerResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BF0AF18F6E8FEE6FA790DCC18164ACE1 /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 54419A6B991AF0E88F5CE6DF91B02932 /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF8CFA80C5BD0289013ACC473C93E285 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = D17A6C91FD122F687873E2F9D975CE3A /* NSData+ImageContentType.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BF9798B77C858B8E448EC72A22ACA8BF /* FLEXObjectExplorerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 694BF2719E23A316CC1AD1CF36F539A8 /* FLEXObjectExplorerViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BFCD201B02C228ACBD7300EA0D174772 /* SDWebImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE040174112BFA2AE1FD2BE96B0BE1D /* SDWebImageFrame.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C05337A19BC03420EE59861B36F0B7D9 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5425D2FD19F9C718D63C087724731E6 /* AFHTTPSessionManager.m */; };
 		C17B74DCEC4CDAC0FC59A3FA1B153DCF /* FLEXToolbarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 206D76879EB739441FD87E8EAA893D74 /* FLEXToolbarItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C1D7647AD60CE3CCD9D86B030A36E442 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 57ABF1EC741D09C05661D3143FBED7DA /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C305A0D8359C786DE383D0BA3E5D8DED /* FLEXTableLeftCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB136F6A66A66406784EC5848AD3E9C /* FLEXTableLeftCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C356B9B97F924A1B9E8109F2CE7F1DB9 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F1FFE4BB5005CD5776BEC267D3585 /* GCDWebServer.m */; };
+		C37E1684E5573FD20B1BEB7BCE9CAD36 /* FLEXNetworkTransactionDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6043CA89740BAC275AE0A03D0BEBD7B /* FLEXNetworkTransactionDetailTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C395B26324C6EDAEEDCDE3AB300FBEDB /* FLEXResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EC5DB77333746B926762312F003EB6 /* FLEXResources.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C47C6D4894C0A12B0C6B2697B9A29EDD /* FLEXFieldEditorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 95FC5DBECBFA9E0598D004F494AA8972 /* FLEXFieldEditorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C4C28D423AEBE9965D7CDDC26DB40F13 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E849621A93214AEBF33C26769D79E2B2 /* UIView+WebCache.m */; };
-		C4DDE05BCC9E7E2558F5C5C049E80CED /* FLEXLiveObjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004241A6B0AEE97357A2267119D08620 /* FLEXLiveObjectsTableViewController.m */; };
-		C5A58C6A82A9E4CBE9E1CE877E3C55AB /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7318C95EC8E7644B11E6F0B425CFF7F4 /* AFImageDownloader.m */; };
-		C64649615017A15D5A768618699E03E1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 255D408939A71572A5EF848D857A01A5 /* UIWebView+AFNetworking.m */; };
+		C6B5FE2E4085922B1CC3402222D0E6E0 /* FLEXNetworkSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741EBC961E5D480C96F714C21833DBDE /* FLEXNetworkSettingsTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C6E83C10646E2DF6C83A578CE6AF0E5A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1A27CC0B8E768DD25E8CF069228512 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C7F05FD43E28FF593C043A6178337587 /* FLEXArgumentInputColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D6499E227D0CB61823466EDE477E32 /* FLEXArgumentInputColorView.m */; };
-		C8F08270F5B2B28B10B91FDA4007C368 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = B133089D488178D9C93BAF6C52DFA5B3 /* AFURLResponseSerialization.m */; };
+		C71CCE388FB703FD7EB6B82D56B959AF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F1B1F77949F6BB736AF242E0709A84 /* AFURLRequestSerialization.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C973E131940932D82E6B18C79BDE6AFF /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFE4FCD5B0BEB8F120E07A39472558E /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CAFC9622F9174BACE6787BC24E3E4444 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 007294EEA03445C9754954B169AE3DEE /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CBE8DA6684C7683445979893C1DF7A7E /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F3E1D573DF65E6AFF173926C6F9CB /* NSImage+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CEF7E139022FFA4F5C99D4DC5DE67990 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E0FAFE1EF1C6398161923DFE21721120 /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D0B19EA00D3C493EB507E07CFC243014 /* FLEXArgumentInputViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE1998FBF8DB31AAE2B314F060E1429 /* FLEXArgumentInputViewFactory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D0F253670B21A46A4DBD04ABED86BACC /* FLEXExplorerToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A5DF202563DCB8E6B9F0656F4B7136 /* FLEXExplorerToolbar.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D159CAFD1F32B6F94214E347B047F158 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA175E3FCEBDE6DF72ECBCB641EA8B2 /* DDDispatchQueueLogFormatter.m */; };
-		D1626EE056ACA4EDA78D34AF269A720D /* FLEXTableListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC16B1C8B74BAC5A5D8C86CC502E6BE9 /* FLEXTableListViewController.m */; };
-		D1D5903FC26A3CAB59A531CCA5A39248 /* FLEXFileBrowserSearchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1A2FB7A248FAA2A0B2137A2BE6D8E5 /* FLEXFileBrowserSearchOperation.m */; };
-		D2254E805DAEFCC285E9EE094014658F /* FLEXClassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC03E30D47767259BADF2DA9C0E1C30A /* FLEXClassesTableViewController.m */; };
 		D2BF2A30F845978BD2257306C0A0F4F4 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A40C68324CD11F83D89BC9EDB5FBCDD8 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D3570A5F49F22A4C57CDCB1288DE2E2F /* SDWebImageImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F5F8E163873CAE550D35EE73B52C8C /* SDWebImageImageIOCoder.m */; };
+		D3C3085E422E3136974D4B269441BDD7 /* FLEXArgumentInputNotSupportedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D10039500DEC490D8477CEB0BCDEA0 /* FLEXArgumentInputNotSupportedView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D4DAAEA9EA3B3EBE7F1A104F6FC07527 /* FLEXCookiesTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5720E704FD8F99F6E00CFB9646A8BF91 /* FLEXCookiesTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D650277B7C77B9FB30100687D2B6558D /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6DB4708AD9BEF453D94B881EF8B79F /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D668092B3030050F2F6C8126E95DEAB9 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F2EB847874EB9544D67C2B86ED983 /* GCDWebServerErrorResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D6B0AF73191AD0E1FC2EED9F4EF418D8 /* DDOSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 92D40FD85BF2B68D81F3C1C7DFA475E4 /* DDOSLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E375FD96B7C2201131E817AF1786C680 /* ViewController+MASAdditions.m */; };
+		D8D72BEC4364E9F77BCC6B8AB4E30DF3 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C95F7426AB8BB25B3DF1CBFA0B697C9 /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DAEE613938003A53625C3F8F07507A5E /* FLEXTableContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075EC65CA40AD74013636C8D99EB8605 /* FLEXTableContentViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DB11D96468F2FB045746DB2DC9EC878A /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 419266D915BE4A270230837E097B6F7B /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DB6CBC9AF62D692F4A95710F850FDFAD /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B868ABA2CFED11C5AFFBBF100F8D64C8 /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DD12B501C334C504DBB96EFCF52D45A9 /* FLEXSystemLogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5EC39E6623049716FD090D060E018E /* FLEXSystemLogTableViewController.m */; };
 		DD5DF7A20F29462695271F70200A6CE7 /* FLEXWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D3ECD9064CD0710BEE90407462DEA6 /* FLEXWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DD90D7BF15519EC0FA0F92B6CBBDB75D /* FLEXArgumentInputFontsPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = A86BAC1DC847B2E3896CA46B24E7FF84 /* FLEXArgumentInputFontsPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DDF1610381A259FD36A95619C2A2F79F /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E171FBB465B78C77C45350C11FE578 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE737B5DADB0D0FF1E6029228BF393FA /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1437A7782060FF6A267F41AA20F7095E /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DE7BE93080306842490F65C5727449AF /* FLEXArgumentInputColorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 046232DA6FE2E8984B1AF9A48452841D /* FLEXArgumentInputColorView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DE8DC7173E7D61FB765987EDBCCB7FB0 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = E3149B6BE9EDB9309BF2505EE7D411BE /* UIImageView+AFNetworking.m */; };
-		DF0AE9BCCE0643938F579D1D9639CDF3 /* FLEXFileBrowserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07AE3FF138B4CEF92029775893B79F6 /* FLEXFileBrowserTableViewController.m */; };
-		DF11E2A914FF70A66A4C15B3B720BF8D /* FLEXImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EADEB77BE0B4630CD3F36FB8AD9BAF6D /* FLEXImagePreviewViewController.m */; };
-		DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E91EF300693F81A09530145C521FB852 /* MASConstraintMaker.m */; };
+		DF4EC04954F80FBB4C584C7C805BD463 /* FLEXDefaultsExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19EFBAD9BF8C53E51E49A94C04641B2A /* FLEXDefaultsExplorerViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E018674BB8ED8BA60404AC797CCE91AF /* FLEXMultiColumnTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAEBB43D5E30842C56D7F26C52EFD7 /* FLEXMultiColumnTableView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E02A8B3C45A766A6CB0E8AA0C00C79B5 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B74AF274D1F860E69508DB21B4D930D /* DDASLLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E1BE5C066DDA9B74458B80B2E20BAD61 /* FLEXArgumentInputDateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF56058DDC9E9F5C7CC603C4BB9038 /* FLEXArgumentInputDateView.m */; };
+		E0E401796422F29BD773EB81D8DC3EAA /* FLEXFieldEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE876D3B4192BEF80485F0EBFD654A8 /* FLEXFieldEditorViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E28D315C00C8F9CD7D3A4887E94D6DAA /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 510C00C7AD30C9B0313CA1A47C60CC40 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E32398B9E9D905092617E2693C48CDA8 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D5C795C851784134E1D222763F43C0 /* SDWebImageDownloaderOperation.m */; };
 		E4E36B2FCB06C1213C9C9652A7956D80 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7390DCEE795E4E2FFDBA92CF6485AA /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E6A3428E8DA591F4443B5C18C0A73232 /* FLEXNetworkTransactionDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6043CA89740BAC275AE0A03D0BEBD7B /* FLEXNetworkTransactionDetailTableViewController.m */; };
-		E6E6BBD5DD26192213E35D0E79697F90 /* FLEXManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E25C2E3E00D1D018319B09D64701AADB /* FLEXManager.m */; };
-		E7D8CFC55D9996BE66522F8B88804E2F /* FLEXArgumentInputFontsPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEBC8ABC4890BBEBE1D3C70154DC2214 /* FLEXArgumentInputFontsPickerView.m */; };
+		E50D014EDE24A4C18F42502ACFF50E74 /* FLEXArgumentInputSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2EA0A1665AC50279BF062E1F82788 /* FLEXArgumentInputSwitchView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E75B3841E0574F2C76F813EF7400A91C /* FLEXArgumentInputStructView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38796B71BF1C18164336BA28E2081014 /* FLEXArgumentInputStructView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E7FF8C42206999D025423DF3C9E92AA0 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 903015EE020116D5781BFE4B6B12DA28 /* GCDWebServerRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EB4A58C85EB7FF0A4CC3EEA2F8AC8E21 /* FLEXGlobalsTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 49947810D6D88A65E17712ADCE6FF7F2 /* FLEXGlobalsTableViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EBECEF5521AB5D01DDDDF6EBA67F33CF /* FLEXArgumentInputNumberView.h in Headers */ = {isa = PBXBuildFile; fileRef = AF3E95551B6A0FBEDB3457C078BD84CA /* FLEXArgumentInputNumberView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EC0135F05B7F34CB5CD66A0C7E639886 /* FLEXNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 199D1B3972E3ECEEED939B51F33DEA59 /* FLEXNetworkObserver.m */; };
 		EC04F2F828BAADBAB9FA13518F1F2EE7 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 6257AE7223FFD2A150361FBDA9D24B60 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EC6F67D55D8FCDF3F76FF6D16A491BF7 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7B2EE3FC8BA7BDF6BFDAB00DB6B12C /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EC8EA6A349ADA67A9647004459C658C7 /* FLEXArgumentInputTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8149B56DA37D0E8D71F60CB67601D40D /* FLEXArgumentInputTextView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EDC39F0EFB388FC0D4A44F66BFDE72D7 /* FLEXKeyboardShortcutManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 83F17221AFD425B8F0277C79BD3706D9 /* FLEXKeyboardShortcutManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EE041EA37BBF2BC5344DEDE0FEF11D15 /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5081930A0A8CA1DCE646B4C7E29C2E64 /* GCDWebServer-dummy.m */; };
-		EE3D6E5A2CDA4069098A5391D4EDCD0D /* SDWebImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 145BB92076A3EF4A6F8447AC7E0238C9 /* SDWebImageFrame.m */; };
 		EFB74C2CAB68AE723F4F190EE52E9C3C /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9D8DC4A41DED0B34D5A572DFDBB717 /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EFC71790DABEA8AD5A6FD3076B8D211F /* FLEXLibrariesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AFBB2D438DCA0A8CE6417024983799 /* FLEXLibrariesTableViewController.m */; };
 		EFF534C1ADA2F45293254681C0CA6C54 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE0A3C38B1595A5CCA26A10905B1425 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F075812C629E8A3C79762708BA9A24F2 /* FLEXFileBrowserSearchOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B18DDE9BF099A30F4CA47ADC4511DF /* FLEXFileBrowserSearchOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F18C8C4271D12643799DF824742D291F /* FLEXRuntimeUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A8C9FDA34842E237E1C8E2A9285BA9 /* FLEXRuntimeUtility.m */; };
-		F2E6A368933A4D8285BCE3FB60834B19 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21361DF25C9FEBAF0C3913FEA46B7EB9 /* GCDWebServerFileRequest.m */; };
-		F2EA67A8E2114B38F46DC3F303AE4B25 /* FLEXTableContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075EC65CA40AD74013636C8D99EB8605 /* FLEXTableContentViewController.m */; };
-		F3D37B02A35AB20CFB48D70755604097 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0DFED54B1A04256E5DFDBBDD47BFB3 /* GCDWebServerFileResponse.m */; };
-		F70BCBF1A32BD2FFE65DD1F01D86AC83 /* FLEXInstancesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F433AF71108064039C3CC395E19218 /* FLEXInstancesTableViewController.m */; };
+		F390D582745DF3516ADD4D910A2ACFFA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4548B8702DB251E611F1DDCEBBA87E /* MASCompositeConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F4D54DB8709162AD5DFAF6CF69CF817B /* FLEXMultilineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E147914B26AEA252EBCA9CF894EBFB81 /* FLEXMultilineTableViewCell.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F5F7D150E326F0DFAEECCA2151B6DB09 /* FLEXSystemLogMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E3DEC3D65A86DDFC139ACCCBD4353A /* FLEXSystemLogMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F861D2DADCE8A8F94F1DCB22EB8A6CE2 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A988242DD3BDC20EFB8EC301ED32669 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F971E8AED7533D306FBC321BE69E6F43 /* FLEXViewExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289AE30354EC974CF52F3F92901F2E21 /* FLEXViewExplorerViewController.m */; };
+		F943DD479EE0D6E9317304FFC4C370A6 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C91B42D867567E1D0E8B37FC64CE48 /* GCDWebServerDataRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FB09FA2068274006560105A5013ACEC5 /* FLEXMethodCallingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 50B6989C1B0599B547D0F30DA58098FD /* FLEXMethodCallingViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FB2D6684809FC69FE060B456E307F0D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA212BF59A8D60688291668C6C44CF07 /* UIKit.framework */; };
 		FB415F79751F1A1F2203183C3CEE0723 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F7FDD4469F789101BFA30CDE423326 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB4FEF4E5DB12A033A4151D8EFCE94EC /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2F1FFE4BB5005CD5776BEC267D3585 /* GCDWebServer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FBD234312CB22DE397665214A38AD0ED /* FLEXClassesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC03E30D47767259BADF2DA9C0E1C30A /* FLEXClassesTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FCA47734936FAE9B10AF7ECDABD37CE0 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C1905BB5EDBA8218F064EE0CE90F8C /* NSButton+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD13752CD598BB726E62ACC1B50C1680 /* FLEXIvarEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F68FBD1EFA604FE6336835FE3381214 /* FLEXIvarEditorViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FD952BD02857452C5805E073EB6EB979 /* FLEXToolbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C31ED9B39CD8FC18427D43EBDCDAAC24 /* FLEXToolbarItem.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FDD7DD6B5E737C879B23431FFD5509F0 /* Pods-iOSAppProjectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F24A278FFBD4FBC4A2CEBF2269163DB /* Pods-iOSAppProjectTests-dummy.m */; };
-		FDF2F36FB7A66FAE27204EF098F1CC96 /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A9B7F7028C2830A512A2FD9F019562 /* SDWebImageTransition.m */; };
+		FE49AE466587F0E3F1ECBC1C8936AAF8 /* FLEXUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 12DCCA9BC596BA45C343D306EB878F98 /* FLEXUtility.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FEDC1552CAE6D0410E6A27D827B0EF1B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7669288E0B4E23CA5F7CE1F841548913 /* Security.framework */; };
-		FF53D5E7266FF94AAC83CC74E0F5E54F /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 098E7A1DD10C6718AD165288B00B752B /* UIImageView+HighlightedWebCache.m */; };
+		FFD7BD7CDFBEEF782893692927220128 /* FLEXInstancesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F433AF71108064039C3CC395E19218 /* FLEXInstancesTableViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FFD9DF8E723F0E64C106BF24317E7D70 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FF55E3A5FD70F27D11E3B8DB691EABD1 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
@@ -1791,7 +1791,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CAB611D366F288DDC5AE095627B2EB8 /* Build configuration list for PBXNativeTarget "CocoaLumberjack" */;
 			buildPhases = (
-				F42464A4DF0AB41E079657C98EA1E64D /* Sources */,
+				B0ABA0B17188918B397FB8779F402BAA /* Sources */,
 				E7780792D28E51ED20DE24C204EE2006 /* Frameworks */,
 				98E20DAD98D9A5824546465FF7590558 /* Headers */,
 			);
@@ -1808,7 +1808,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34CAE1CB89EDBF2E53735CC5D4E5E69F /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				C4BE2DC1E815E7367562323223772531 /* Sources */,
+				27E8E3A06AAFF112FF7BC4F0117165D8 /* Sources */,
 				6FD8312A1AEB348F49A81C438DB25115 /* Frameworks */,
 				BDF73468622762862D2FB76ED4AC0D8E /* Headers */,
 			);
@@ -1825,7 +1825,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76D068ABB39C249C8A138E545227F900 /* Build configuration list for PBXNativeTarget "GCDWebServer" */;
 			buildPhases = (
-				D7E6805ED02281D827DA1A328FF47670 /* Sources */,
+				A83502297DC89D93440D7AA35C770C16 /* Sources */,
 				2CB83A3DA57BB100787B94605FD262E8 /* Frameworks */,
 				BCCF1AA5FBAF8602553AE1B2242DC7A4 /* Headers */,
 			);
@@ -1842,7 +1842,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87198C8411485F9EBDBC13651D8700DC /* Build configuration list for PBXNativeTarget "FLEX" */;
 			buildPhases = (
-				D24CC32A387753ACF4699AB82D935508 /* Sources */,
+				FEF04BFCF7ACD9B42C808B8503423171 /* Sources */,
 				7FB67AF053180D4377FA6A70FEA905F3 /* Frameworks */,
 				C5A04A7A29093E7671365C294AA39C6E /* Headers */,
 			);
@@ -1859,7 +1859,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50BC50B372A9590F37BAD61CD86E2964 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
 			buildPhases = (
-				E2AC720AF6936526EF99ADBCE3C73D0A /* Sources */,
+				1B9807F0815BF3A33A7F1A79F2AD1E75 /* Sources */,
 				8756BB37F64AAC3AE16FAE90249207E3 /* Frameworks */,
 				4417300C0CF3155561390EFA84D6AB86 /* Headers */,
 			);
@@ -1876,7 +1876,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 469CB2A94A46775E6C5A3B8AA7AB988C /* Build configuration list for PBXNativeTarget "SDWebImage" */;
 			buildPhases = (
-				1B55AC897F4E73709382EC5EF9DF88EC /* Sources */,
+				1D687F17CEE050B304778439D67665B9 /* Sources */,
 				ABED2094C284DF1EAB13BF1CF22C9BCA /* Frameworks */,
 				F52FB011777668BAE3F6081BAE863AF9 /* Headers */,
 			);
@@ -1896,7 +1896,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1924,37 +1924,78 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1B55AC897F4E73709382EC5EF9DF88EC /* Sources */ = {
+		1B9807F0815BF3A33A7F1A79F2AD1E75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE00B3427D6884873B002B63F04F552 /* NSButton+WebCache.m in Sources */,
-				425BEB3AB1EDF6D3FA017E96779E3DCE /* NSData+ImageContentType.m in Sources */,
-				B59D85AD245CDEE54E01E4BE6E0DE3D6 /* NSImage+WebCache.m in Sources */,
-				03C42625B54FAAECAB2C9958177B4280 /* SDAnimatedImageRep.m in Sources */,
-				0FED6403D582AF96B09C70368459B7BC /* SDImageCache.m in Sources */,
-				3E2600C80708DCA589660AA8D5BF604C /* SDImageCacheConfig.m in Sources */,
-				B3537E00D243289742B09740A66F4A4E /* SDWebImage-dummy.m in Sources */,
-				234CFF1073F27ABD22726797BBAE01DF /* SDWebImageCoder.m in Sources */,
-				9C00E9A9497EE852FF39F4C144070B16 /* SDWebImageCoderHelper.m in Sources */,
-				00985A9B18C09A79DF96225B92D4F20B /* SDWebImageCodersManager.m in Sources */,
-				66F9686B445345BADCC44D624917979B /* SDWebImageCompat.m in Sources */,
-				AF382853D9065B13FA9ABC071E5A3C5D /* SDWebImageDownloader.m in Sources */,
-				E32398B9E9D905092617E2693C48CDA8 /* SDWebImageDownloaderOperation.m in Sources */,
-				EE3D6E5A2CDA4069098A5391D4EDCD0D /* SDWebImageFrame.m in Sources */,
-				0CD42D640611A946A7B291CEF4761812 /* SDWebImageGIFCoder.m in Sources */,
-				D3570A5F49F22A4C57CDCB1288DE2E2F /* SDWebImageImageIOCoder.m in Sources */,
-				341F56D4F0993EA23F993B24E355731C /* SDWebImageManager.m in Sources */,
-				39575F84FB47C45584068A4D57781034 /* SDWebImagePrefetcher.m in Sources */,
-				FDF2F36FB7A66FAE27204EF098F1CC96 /* SDWebImageTransition.m in Sources */,
-				8935B02CE4400A8B16E05EAA93A3FCA3 /* UIButton+WebCache.m in Sources */,
-				2FF702BC469472C861AB521B79C2BA5B /* UIImage+ForceDecode.m in Sources */,
-				27192398FF17E18E9585E056411EABF5 /* UIImage+GIF.m in Sources */,
-				8B2B7130013B2B2920D67710379E173E /* UIImage+MultiFormat.m in Sources */,
-				FF53D5E7266FF94AAC83CC74E0F5E54F /* UIImageView+HighlightedWebCache.m in Sources */,
-				71266855C6EDFF90917612BC93245A9E /* UIImageView+WebCache.m in Sources */,
-				C4C28D423AEBE9965D7CDDC26DB40F13 /* UIView+WebCache.m in Sources */,
-				62FED5B4FB7624F17F01F0C3C7A0EE7E /* UIView+WebCacheOperation.m in Sources */,
+				82640F9EE0076F032567A8C1E3EDDA82 /* AFAutoPurgingImageCache.m in Sources */,
+				302888D10A449158C46614ABA5B42B22 /* AFHTTPSessionManager.m in Sources */,
+				456F377DD03B42CFD65943C1347E0940 /* AFImageDownloader.m in Sources */,
+				DE737B5DADB0D0FF1E6029228BF393FA /* AFNetworkActivityIndicatorManager.m in Sources */,
+				67CC31341F522E0D3F13A0411613DE92 /* AFNetworking-dummy.m in Sources */,
+				68E1B2F45F100C41D956371BABA541B7 /* AFNetworkReachabilityManager.m in Sources */,
+				2753EF5BCBEC5A53CC7115842D69A226 /* AFSecurityPolicy.m in Sources */,
+				C71CCE388FB703FD7EB6B82D56B959AF /* AFURLRequestSerialization.m in Sources */,
+				2C67FD363E5EFED189C3F8277F6B1F1F /* AFURLResponseSerialization.m in Sources */,
+				2633BE2E887BB96BEB21584B65131AF8 /* AFURLSessionManager.m in Sources */,
+				3334746D072810854256D338A2AB0C0D /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				444C42DCE893C47FC935496EB2CD4A17 /* UIButton+AFNetworking.m in Sources */,
+				6913AF9BFAD48198FAC591BE7759B842 /* UIImageView+AFNetworking.m in Sources */,
+				A9F1387B1C0A79677DDC636B8F9E6517 /* UIProgressView+AFNetworking.m in Sources */,
+				9B5B00119CD6F9D1A88FA33EA3931116 /* UIRefreshControl+AFNetworking.m in Sources */,
+				4D203CC08A98E696BDCD6A3578C5DA1B /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D687F17CEE050B304778439D67665B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA47734936FAE9B10AF7ECDABD37CE0 /* NSButton+WebCache.m in Sources */,
+				BF8CFA80C5BD0289013ACC473C93E285 /* NSData+ImageContentType.m in Sources */,
+				CBE8DA6684C7683445979893C1DF7A7E /* NSImage+WebCache.m in Sources */,
+				7EFB5B434F20993A1589C8B5D90A185F /* SDAnimatedImageRep.m in Sources */,
+				9DD475ABF8856FABD48FC9D28FF8F276 /* SDImageCache.m in Sources */,
+				319C0B91501C85A68148525BB8D3AA0A /* SDImageCacheConfig.m in Sources */,
+				79962609DA874540040EED5426240209 /* SDWebImage-dummy.m in Sources */,
+				9891EFA98AEBD3769D138617E69AA272 /* SDWebImageCoder.m in Sources */,
+				73A94FA91B4EFA43CB1A79133480C151 /* SDWebImageCoderHelper.m in Sources */,
+				583DD558E2DCD0287BED774993920A92 /* SDWebImageCodersManager.m in Sources */,
+				5F47A244435B2D1F9384B96C2AE63FA1 /* SDWebImageCompat.m in Sources */,
+				5BEC553BCA2FE3919DF6EE8DB43F9EF9 /* SDWebImageDownloader.m in Sources */,
+				1EBC265F957717E21C23AFB331D69936 /* SDWebImageDownloaderOperation.m in Sources */,
+				42A21385FCCA9B0541B513F049555C90 /* SDWebImageFrame.m in Sources */,
+				1DCA6602E64429556C70B8F0F88C73D5 /* SDWebImageGIFCoder.m in Sources */,
+				BAC3594FDD6FD0AE852D7A850C32B5BC /* SDWebImageImageIOCoder.m in Sources */,
+				48DEE72AB795BF34314412F52870FA77 /* SDWebImageManager.m in Sources */,
+				44EFAD344FF5B80EC73A4A03BB805692 /* SDWebImagePrefetcher.m in Sources */,
+				49A2961B25131079B1167C5C5EEFE924 /* SDWebImageTransition.m in Sources */,
+				9E53E1EBA3EC1E1A52D9F360CC586AD1 /* UIButton+WebCache.m in Sources */,
+				A12313BCEE4BC7B28C6BE0A94ABA905C /* UIImage+ForceDecode.m in Sources */,
+				25B78D9BBC4CF410FEBEDFEB0DCA5736 /* UIImage+GIF.m in Sources */,
+				2FB6E5B6597CB664C631E61735327D23 /* UIImage+MultiFormat.m in Sources */,
+				12A260213A01FCAF7EB93E319DAE9D6C /* UIImageView+HighlightedWebCache.m in Sources */,
+				69AB13F951EE8E9FA3DE3220A0BC9798 /* UIImageView+WebCache.m in Sources */,
+				35A6298AE87C1C147C5AD3C2FF55F4E6 /* UIView+WebCache.m in Sources */,
+				1D090D3C0F947FFEBE7337F893FA9B47 /* UIView+WebCacheOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E8E3A06AAFF112FF7BC4F0117165D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F390D582745DF3516ADD4D910A2ACFFA /* MASCompositeConstraint.m in Sources */,
+				1AF513D8D71B663D5422760106B13723 /* MASConstraint.m in Sources */,
+				99E00D593F76D7E6C96300345E211282 /* MASConstraintMaker.m in Sources */,
+				61C611ABFFC5FFF35ACE70883CB8F523 /* MASLayoutConstraint.m in Sources */,
+				5B46C39A3F939EDB676981756CC24007 /* Masonry-dummy.m in Sources */,
+				CEF7E139022FFA4F5C99D4DC5DE67990 /* MASViewAttribute.m in Sources */,
+				D8D72BEC4364E9F77BCC6B8AB4E30DF3 /* MASViewConstraint.m in Sources */,
+				14B65CE3038761FA8F6F5D1ECED6A562 /* NSArray+MASAdditions.m in Sources */,
+				B953667D411D1DCD919CBD314F568A92 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				548BBD5B63FA097F419829C3EE8EA068 /* View+MASAdditions.m in Sources */,
+				466869E41EB306F74C8A6E87CC1539BF /* ViewController+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1966,6 +2007,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A83502297DC89D93440D7AA35C770C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				973E5A4DF241D4BD72B45374A2D1FC5F /* GCDWebServer-dummy.m in Sources */,
+				FB4FEF4E5DB12A033A4151D8EFCE94EC /* GCDWebServer.m in Sources */,
+				5BCB136B27665147EA6C18E08D764E63 /* GCDWebServerConnection.m in Sources */,
+				F943DD479EE0D6E9317304FFC4C370A6 /* GCDWebServerDataRequest.m in Sources */,
+				0613A9F7DAF159EB447208CE6EBDAB51 /* GCDWebServerDataResponse.m in Sources */,
+				D668092B3030050F2F6C8126E95DEAB9 /* GCDWebServerErrorResponse.m in Sources */,
+				360D0A3690B213280B62431FCC5A87DA /* GCDWebServerFileRequest.m in Sources */,
+				B50BEAD2F0DC32FA1C4C0DF20192D946 /* GCDWebServerFileResponse.m in Sources */,
+				BB8ABA674C1530778868F802003DAC8F /* GCDWebServerFunctions.m in Sources */,
+				19D7DB9B95FAD0F12E2E9B68BB69FB43 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				E7FF8C42206999D025423DF3C9E92AA0 /* GCDWebServerRequest.m in Sources */,
+				BECE1F7612902B617435EA3BCFB3DF1A /* GCDWebServerResponse.m in Sources */,
+				5992524E32494805E8D82AC1D8F22779 /* GCDWebServerStreamedResponse.m in Sources */,
+				8B2AB7A7E2CCB9CE47A1F8758CD0AC1A /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0ABA0B17188918B397FB8779F402BAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014C3C9D46D932A33E886C0E8A45E8C6 /* CocoaLumberjack-dummy.m in Sources */,
+				3308F074265D68B6A1EAC445320EC758 /* DDAbstractDatabaseLogger.m in Sources */,
+				A9639966C2718CA82717E176FA0AA080 /* DDASLLogCapture.m in Sources */,
+				1B35441E0EF3A36DAEDE4D9A747F6DFF /* DDASLLogger.m in Sources */,
+				5119C0718B35832AF0EA579BBD244A30 /* DDContextFilterLogFormatter.m in Sources */,
+				9087FA9BBABF6214E53E6062C5A24C5D /* DDDispatchQueueLogFormatter.m in Sources */,
+				AB3DB46B8FA5217A0EA2676B7F9CCF9D /* DDFileLogger.m in Sources */,
+				9550A16972633FF0CE4E5658FB2EEDE6 /* DDLog.m in Sources */,
+				B6D4361B09362462B31018A5B6C6B2D4 /* DDMultiFormatter.m in Sources */,
+				4B198BA1B09E85F84629FDB25A627AB9 /* DDOSLogger.m in Sources */,
+				1DDF4C69F0DB68442F735F1BF56B8059 /* DDTTYLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C140368D6BAA4FBAA867528AEC95A00F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1974,174 +2054,94 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4BE2DC1E815E7367562323223772531 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61CCEA01CBE8EFFA5515E7A0D8635AAE /* MASCompositeConstraint.m in Sources */,
-				89450A58FD91E5B227171FC75160E4EA /* MASConstraint.m in Sources */,
-				DF7F88B58B564EDF169EC0C9CF8E5124 /* MASConstraintMaker.m in Sources */,
-				955BE39896CA35F2A585DC3309E5FDA5 /* MASLayoutConstraint.m in Sources */,
-				68F98758BA84B8EC3472A8C6FD646D16 /* Masonry-dummy.m in Sources */,
-				13635B78121B99E5C03C92506A161607 /* MASViewAttribute.m in Sources */,
-				2DBB74B8B5DDB1F621433DD12BF35102 /* MASViewConstraint.m in Sources */,
-				7BDDE51AF16FA53A09506EDB91E1C3C2 /* NSArray+MASAdditions.m in Sources */,
-				3E8E6916C563B9CB12AA417275FC6EB3 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				A1FA046FDFC42676D17FEC387B10D24A /* View+MASAdditions.m in Sources */,
-				D7CE05A743B7ACD50796191FA442814C /* ViewController+MASAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D24CC32A387753ACF4699AB82D935508 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				25BC16D72BDA547273B78076F986B32E /* FLEX-dummy.m in Sources */,
-				C7F05FD43E28FF593C043A6178337587 /* FLEXArgumentInputColorView.m in Sources */,
-				E1BE5C066DDA9B74458B80B2E20BAD61 /* FLEXArgumentInputDateView.m in Sources */,
-				E7D8CFC55D9996BE66522F8B88804E2F /* FLEXArgumentInputFontsPickerView.m in Sources */,
-				AB6AA6F2353613F4B868086043932497 /* FLEXArgumentInputFontView.m in Sources */,
-				3258C16AEE4C00E6C509DD8B156F5F10 /* FLEXArgumentInputJSONObjectView.m in Sources */,
-				5DE2AFDF49BF9FB71FE0B1108328AE45 /* FLEXArgumentInputNotSupportedView.m in Sources */,
-				952972DBC00D6E1C95C27558221858AB /* FLEXArgumentInputNumberView.m in Sources */,
-				40355B8ACC1CFEEE3E27F32311784580 /* FLEXArgumentInputStringView.m in Sources */,
-				3B4DA5F47A67D8E38FD28B0238BB86A9 /* FLEXArgumentInputStructView.m in Sources */,
-				B57810DE7386B1DFCDB9AE8A5E2306A2 /* FLEXArgumentInputSwitchView.m in Sources */,
-				63DC4C5239B35339945F9E1FF0D3FC33 /* FLEXArgumentInputTextView.m in Sources */,
-				12276F1F0C35CAAEA8EB0F3F5A299CB1 /* FLEXArgumentInputView.m in Sources */,
-				83F7619A857C6945D24D92524604A97E /* FLEXArgumentInputViewFactory.m in Sources */,
-				1445E8B096170D915AB1AF8DEF769B34 /* FLEXArrayExplorerViewController.m in Sources */,
-				D2254E805DAEFCC285E9EE094014658F /* FLEXClassesTableViewController.m in Sources */,
-				42D12FE118AA13C392ECB5A8A9FEC8F0 /* FLEXClassExplorerViewController.m in Sources */,
-				B4898D2E61EC2CF02E795FF51B3076BD /* FLEXCookiesTableViewController.m in Sources */,
-				0A6500A9A3314DB2758DA4B99B7BB615 /* FLEXDefaultEditorViewController.m in Sources */,
-				207F460925E7ECD78F9A31D9CE98B66C /* FLEXDefaultsExplorerViewController.m in Sources */,
-				8BCF14AA134F3463761946B105B347B6 /* FLEXDictionaryExplorerViewController.m in Sources */,
-				6CB1737A3BC22D606B89533DDF5CE82C /* FLEXExplorerToolbar.m in Sources */,
-				84AFCFF8D8928C2375EF19894CC1CE6E /* FLEXExplorerViewController.m in Sources */,
-				5AB162FD4376ABE20E99004DF9EF28E6 /* FLEXFieldEditorView.m in Sources */,
-				9772A394DD761C8B61F667C06C88AD7D /* FLEXFieldEditorViewController.m in Sources */,
-				35A1E23BB5CB524D51A248B377801515 /* FLEXFileBrowserFileOperationController.m in Sources */,
-				D1D5903FC26A3CAB59A531CCA5A39248 /* FLEXFileBrowserSearchOperation.m in Sources */,
-				DF0AE9BCCE0643938F579D1D9639CDF3 /* FLEXFileBrowserTableViewController.m in Sources */,
-				7B0C24FA820227C10BFAE7C7C7742593 /* FLEXGlobalsTableViewController.m in Sources */,
-				3D9474A10070F19DDA01858C408A8E12 /* FLEXGlobalsTableViewControllerEntry.m in Sources */,
-				3EBD566CB84AE7FFB467118C36EEF600 /* FLEXHeapEnumerator.m in Sources */,
-				45598C04F6DF1EA5412E1F27606BF529 /* FLEXHierarchyTableViewCell.m in Sources */,
-				B40D63C0D6B47379F14D710675E0012C /* FLEXHierarchyTableViewController.m in Sources */,
-				A34ECA13E74378A4BD8EE7FFB15FF567 /* FLEXImageExplorerViewController.m in Sources */,
-				DF11E2A914FF70A66A4C15B3B720BF8D /* FLEXImagePreviewViewController.m in Sources */,
-				F70BCBF1A32BD2FFE65DD1F01D86AC83 /* FLEXInstancesTableViewController.m in Sources */,
-				A0B5E4F8D2060EEA847A90E5024540E7 /* FLEXIvarEditorViewController.m in Sources */,
-				B970A1CBB1478C18843756DA64CA41E8 /* FLEXKeyboardHelpViewController.m in Sources */,
-				771C8E3F384A3FF228DB82AE6D128BB4 /* FLEXKeyboardShortcutManager.m in Sources */,
-				44CE7CAD318081B51DD9739DCE1B81F2 /* FLEXLayerExplorerViewController.m in Sources */,
-				EFC71790DABEA8AD5A6FD3076B8D211F /* FLEXLibrariesTableViewController.m in Sources */,
-				C4DDE05BCC9E7E2558F5C5C049E80CED /* FLEXLiveObjectsTableViewController.m in Sources */,
-				E6E6BBD5DD26192213E35D0E79697F90 /* FLEXManager.m in Sources */,
-				AFFA6F69535746774A7B805B7EF5015F /* FLEXMethodCallingViewController.m in Sources */,
-				73956D945A02272A05D8EB2A8DC80414 /* FLEXMultiColumnTableView.m in Sources */,
-				08514E45F61A12BD489F738BF9EDD84F /* FLEXMultilineTableViewCell.m in Sources */,
-				2B744A6D171FC6E20A342AAE842D4DED /* FLEXNetworkCurlLogger.m in Sources */,
-				A3C7261460C9DF0706172EA230923A25 /* FLEXNetworkHistoryTableViewController.m in Sources */,
-				EC0135F05B7F34CB5CD66A0C7E639886 /* FLEXNetworkObserver.m in Sources */,
-				B600853A8BA07BC39D65B3FD2C96DF2B /* FLEXNetworkRecorder.m in Sources */,
-				64E4925198F6F064881126C817BA1F56 /* FLEXNetworkSettingsTableViewController.m in Sources */,
-				71752B4444BC9F54F6736935F4E31027 /* FLEXNetworkTransaction.m in Sources */,
-				E6A3428E8DA591F4443B5C18C0A73232 /* FLEXNetworkTransactionDetailTableViewController.m in Sources */,
-				8E46B9F7E028BEC86C55753262A7C7E3 /* FLEXNetworkTransactionTableViewCell.m in Sources */,
-				93F6682F57E056D098FF44E056C17D99 /* FLEXObjectExplorerFactory.m in Sources */,
-				9C94E28D388FB628B8E0EDAAA33CBF32 /* FLEXObjectExplorerViewController.m in Sources */,
-				BD8CBB633FB52086876BAE8D32C75517 /* FLEXPropertyEditorViewController.m in Sources */,
-				B694E4A2C9CC3AFDD0831200D18F7F43 /* FLEXRealmDatabaseManager.m in Sources */,
-				B0B315C2CC3FBA99CC84DE85F62AF9D7 /* FLEXResources.m in Sources */,
-				F18C8C4271D12643799DF824742D291F /* FLEXRuntimeUtility.m in Sources */,
-				89E367D5171F2DE242D7EC418EAAC67A /* FLEXSetExplorerViewController.m in Sources */,
-				67ECBAADF2F684E99D9E0C7F84FAF66C /* FLEXSQLiteDatabaseManager.m in Sources */,
-				653E127A8C49F933CC6C6AE424C4E345 /* FLEXSystemLogMessage.m in Sources */,
-				67560F327A068588DB75D0F726C71DBC /* FLEXSystemLogTableViewCell.m in Sources */,
-				DD12B501C334C504DBB96EFCF52D45A9 /* FLEXSystemLogTableViewController.m in Sources */,
-				731681284D2C3D303E20B1C3C3D7E585 /* FLEXTableColumnHeader.m in Sources */,
-				81E8DAC809A4EB62FB1698DD9F9905EF /* FLEXTableContentCell.m in Sources */,
-				F2EA67A8E2114B38F46DC3F303AE4B25 /* FLEXTableContentViewController.m in Sources */,
-				54F432190D503970A901B4893F1478C7 /* FLEXTableLeftCell.m in Sources */,
-				D1626EE056ACA4EDA78D34AF269A720D /* FLEXTableListViewController.m in Sources */,
-				6893012865C9664016E81DD5DE768037 /* FLEXToolbarItem.m in Sources */,
-				9F02544B0F5217C2C5D36BFFA0B5B3BE /* FLEXUtility.m in Sources */,
-				0AA2EAE4D84C0B44969180214ECC8971 /* FLEXViewControllerExplorerViewController.m in Sources */,
-				F971E8AED7533D306FBC321BE69E6F43 /* FLEXViewExplorerViewController.m in Sources */,
-				AE8CC6AFE5AA3935F659F8DE429E63F7 /* FLEXWebViewController.m in Sources */,
-				A503CC2AA891145DC4C4A90A45D1E7F9 /* FLEXWindow.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7E6805ED02281D827DA1A328FF47670 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE041EA37BBF2BC5344DEDE0FEF11D15 /* GCDWebServer-dummy.m in Sources */,
-				C356B9B97F924A1B9E8109F2CE7F1DB9 /* GCDWebServer.m in Sources */,
-				05FBDF4F257B27C4ADBBDC4656A5A668 /* GCDWebServerConnection.m in Sources */,
-				6FAA5D9DBF4F3867A401C2C4B7E13B5F /* GCDWebServerDataRequest.m in Sources */,
-				1029EEE887D1289A0BBED30F5A96A2A5 /* GCDWebServerDataResponse.m in Sources */,
-				0EB613C66FC63EC4FAFA9B2F17BB8EAF /* GCDWebServerErrorResponse.m in Sources */,
-				F2E6A368933A4D8285BCE3FB60834B19 /* GCDWebServerFileRequest.m in Sources */,
-				F3D37B02A35AB20CFB48D70755604097 /* GCDWebServerFileResponse.m in Sources */,
-				46B6E52897E6E54CDA78303E25FBD70D /* GCDWebServerFunctions.m in Sources */,
-				4CBF7041E69CF578FD98145DD2E1E4A7 /* GCDWebServerMultiPartFormRequest.m in Sources */,
-				013146573178AFE03B2139D2FBEB9F75 /* GCDWebServerRequest.m in Sources */,
-				1170F11006D33A6243816FE55F9B3E5F /* GCDWebServerResponse.m in Sources */,
-				80C3BBCC80B28BFB9002381A8D170588 /* GCDWebServerStreamedResponse.m in Sources */,
-				804EEDD242951E1E95C3AC8B10837A3F /* GCDWebServerURLEncodedFormRequest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E2AC720AF6936526EF99ADBCE3C73D0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				87D100CB62B0095A58AB342A05213A95 /* AFAutoPurgingImageCache.m in Sources */,
-				C05337A19BC03420EE59861B36F0B7D9 /* AFHTTPSessionManager.m in Sources */,
-				C5A58C6A82A9E4CBE9E1CE877E3C55AB /* AFImageDownloader.m in Sources */,
-				8A49D61B987AF301489E7CF3FAA61C50 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				49007499B497D9E2A11F990274A60ED8 /* AFNetworking-dummy.m in Sources */,
-				87683757B7B15F677EFA76037734127B /* AFNetworkReachabilityManager.m in Sources */,
-				31BD6B601755B15049F76093D698D2B7 /* AFSecurityPolicy.m in Sources */,
-				0D64F957BE8A79371D159A4F2A3153B2 /* AFURLRequestSerialization.m in Sources */,
-				C8F08270F5B2B28B10B91FDA4007C368 /* AFURLResponseSerialization.m in Sources */,
-				912EA0C6D7ED28B7FDA603B2A965B16D /* AFURLSessionManager.m in Sources */,
-				26EBBEF56FF5ED5A281A569D2F408B1C /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				15DF59F74A3D2C503BA9C509A6CADEB4 /* UIButton+AFNetworking.m in Sources */,
-				DE8DC7173E7D61FB765987EDBCCB7FB0 /* UIImageView+AFNetworking.m in Sources */,
-				193D69BD85D0A0899EDF0D6FF269E86D /* UIProgressView+AFNetworking.m in Sources */,
-				1F21C5A5CC17546C0BAD635D50F45372 /* UIRefreshControl+AFNetworking.m in Sources */,
-				C64649615017A15D5A768618699E03E1 /* UIWebView+AFNetworking.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F42464A4DF0AB41E079657C98EA1E64D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28777FE92C78B54773448902E1E8CD81 /* CocoaLumberjack-dummy.m in Sources */,
-				27B639D48D2A7994E58073096B0230CB /* DDAbstractDatabaseLogger.m in Sources */,
-				03CDAAE029837D77358D5F5EF66BE0C1 /* DDASLLogCapture.m in Sources */,
-				0155BF902CB254542BD3B43D8864ACCC /* DDASLLogger.m in Sources */,
-				1E551644BE676D1304B9CE9E460F65A5 /* DDContextFilterLogFormatter.m in Sources */,
-				D159CAFD1F32B6F94214E347B047F158 /* DDDispatchQueueLogFormatter.m in Sources */,
-				397C85445F9818B2B8A774D8A010BDD4 /* DDFileLogger.m in Sources */,
-				69D4F112BC35CA9D1BCEA673B78F2B99 /* DDLog.m in Sources */,
-				1E9270D46BE8FB06F26CF15E6E71B71B /* DDMultiFormatter.m in Sources */,
-				A80F9204C5EFBCB79F92FA53179C3D87 /* DDOSLogger.m in Sources */,
-				0A0E7DF5923A988B562FA47254DB8613 /* DDTTYLogger.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FBAB3DEEAD2225892C9817683C6B764E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3641E4F5AEA11C0AFDD38487937F815A /* Pods-iOSAppProjectUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF04BFCF7ACD9B42C808B8503423171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5844406B71991C41B982874E548248 /* FLEX-dummy.m in Sources */,
+				253AD6DD51E06DF1B45C5C5AEDCA5918 /* FLEXArgumentInputColorView.m in Sources */,
+				2C22FE431AF337ABDE2E3E85E3CCB54A /* FLEXArgumentInputDateView.m in Sources */,
+				210D42D469FA5F553716BB055FA91AE0 /* FLEXArgumentInputFontsPickerView.m in Sources */,
+				0400EECC88E4D644C73EDF69C1D28DFC /* FLEXArgumentInputFontView.m in Sources */,
+				2AD40159A0D857BB1C432C50A240B300 /* FLEXArgumentInputJSONObjectView.m in Sources */,
+				D3C3085E422E3136974D4B269441BDD7 /* FLEXArgumentInputNotSupportedView.m in Sources */,
+				0540631917DE912F4755DEAD8A9C09A9 /* FLEXArgumentInputNumberView.m in Sources */,
+				1175610D50E2333668BA90C76B286847 /* FLEXArgumentInputStringView.m in Sources */,
+				E75B3841E0574F2C76F813EF7400A91C /* FLEXArgumentInputStructView.m in Sources */,
+				E50D014EDE24A4C18F42502ACFF50E74 /* FLEXArgumentInputSwitchView.m in Sources */,
+				A8A6C92995E330A639C02FE5FE411352 /* FLEXArgumentInputTextView.m in Sources */,
+				B822A304C832226448A25C842FBD1335 /* FLEXArgumentInputView.m in Sources */,
+				D0B19EA00D3C493EB507E07CFC243014 /* FLEXArgumentInputViewFactory.m in Sources */,
+				B3E69C72C4F0488989F5E56286991343 /* FLEXArrayExplorerViewController.m in Sources */,
+				FBD234312CB22DE397665214A38AD0ED /* FLEXClassesTableViewController.m in Sources */,
+				39C80DB3498EB3B7E3BF6CDB46D77333 /* FLEXClassExplorerViewController.m in Sources */,
+				33489416BF4D7E19315274A80F8BBDE0 /* FLEXCookiesTableViewController.m in Sources */,
+				B8CD6DAF1D397404999E223526B51FA9 /* FLEXDefaultEditorViewController.m in Sources */,
+				DF4EC04954F80FBB4C584C7C805BD463 /* FLEXDefaultsExplorerViewController.m in Sources */,
+				2D62311B97E605E2C9AC1D8DEDE64781 /* FLEXDictionaryExplorerViewController.m in Sources */,
+				213CB4261C2E6F79AAF42595714EED52 /* FLEXExplorerToolbar.m in Sources */,
+				80AF0193E0F661CEDE0CDE038C744848 /* FLEXExplorerViewController.m in Sources */,
+				5650893803E6E6E158048F974F63457B /* FLEXFieldEditorView.m in Sources */,
+				E0E401796422F29BD773EB81D8DC3EAA /* FLEXFieldEditorViewController.m in Sources */,
+				4ABB417B1B4A82CAC0EB5BD8F6DB168A /* FLEXFileBrowserFileOperationController.m in Sources */,
+				36277A5C0300F89A22985C4B4969C4D5 /* FLEXFileBrowserSearchOperation.m in Sources */,
+				A41FA563F1A995A17BF79CF6ED12A7C8 /* FLEXFileBrowserTableViewController.m in Sources */,
+				6886E33B0A77E322339216AC96E832C2 /* FLEXGlobalsTableViewController.m in Sources */,
+				9A5CBF43388EEDB781BB1FF9F492D14E /* FLEXGlobalsTableViewControllerEntry.m in Sources */,
+				22F721822E046A54EAFCAEDAB3E5DB5B /* FLEXHeapEnumerator.m in Sources */,
+				9421F29D9A2DA65D3940AABBA141335E /* FLEXHierarchyTableViewCell.m in Sources */,
+				101DD5493E340552D7F6A655CD158E07 /* FLEXHierarchyTableViewController.m in Sources */,
+				45E37DAC8DCFF755C9D10D3CFC4F4D59 /* FLEXImageExplorerViewController.m in Sources */,
+				0152F69929D60E02D597FC9306C93282 /* FLEXImagePreviewViewController.m in Sources */,
+				FFD7BD7CDFBEEF782893692927220128 /* FLEXInstancesTableViewController.m in Sources */,
+				FD13752CD598BB726E62ACC1B50C1680 /* FLEXIvarEditorViewController.m in Sources */,
+				5C0EA53B52F22422A4B544AB8FFBC280 /* FLEXKeyboardHelpViewController.m in Sources */,
+				2276B788EEEE917DC14CBAACD4001F62 /* FLEXKeyboardShortcutManager.m in Sources */,
+				A902C49195566A59E15EE2574AAAFE94 /* FLEXLayerExplorerViewController.m in Sources */,
+				ABC22A9AA28F6E07A4B6E06F4C9940E0 /* FLEXLibrariesTableViewController.m in Sources */,
+				B6B961B931D714D2A057F29A42E73A19 /* FLEXLiveObjectsTableViewController.m in Sources */,
+				B9C411B330A32D3FF35D21F107339A92 /* FLEXManager.m in Sources */,
+				7E413F0C4ED0BBEBA9440A0A028E029F /* FLEXMethodCallingViewController.m in Sources */,
+				E018674BB8ED8BA60404AC797CCE91AF /* FLEXMultiColumnTableView.m in Sources */,
+				F4D54DB8709162AD5DFAF6CF69CF817B /* FLEXMultilineTableViewCell.m in Sources */,
+				5E8B416ACEC3E328D352EBACCA547BFB /* FLEXNetworkCurlLogger.m in Sources */,
+				88EBC919BBE896EAD6E2672C816FE5F2 /* FLEXNetworkHistoryTableViewController.m in Sources */,
+				220D3352675FD32167BF16A18FEB431A /* FLEXNetworkObserver.m in Sources */,
+				9D36248C763925D2BBECBDB9D3AE8BF1 /* FLEXNetworkRecorder.m in Sources */,
+				C6B5FE2E4085922B1CC3402222D0E6E0 /* FLEXNetworkSettingsTableViewController.m in Sources */,
+				07CF4976BF9430E1EAF7537D3033659F /* FLEXNetworkTransaction.m in Sources */,
+				C37E1684E5573FD20B1BEB7BCE9CAD36 /* FLEXNetworkTransactionDetailTableViewController.m in Sources */,
+				40003E90A603B75C1C07FA1DA3B2807D /* FLEXNetworkTransactionTableViewCell.m in Sources */,
+				3016ED823E49A987756CE34CBC489CC5 /* FLEXObjectExplorerFactory.m in Sources */,
+				599BBDC46817FFEFD9E0445BFB2A1398 /* FLEXObjectExplorerViewController.m in Sources */,
+				301243A7C7CB4631B45101C279DA88A3 /* FLEXPropertyEditorViewController.m in Sources */,
+				46592FDD33FB4637C6D16F4DA9422107 /* FLEXRealmDatabaseManager.m in Sources */,
+				C395B26324C6EDAEEDCDE3AB300FBEDB /* FLEXResources.m in Sources */,
+				30E79DFE79851A4C45E9C1218614285E /* FLEXRuntimeUtility.m in Sources */,
+				30FE944EB3CC854978C0EFE7092C1A36 /* FLEXSetExplorerViewController.m in Sources */,
+				9AC1B2D2DB28C94E0542F99E41F2FB99 /* FLEXSQLiteDatabaseManager.m in Sources */,
+				F5F7D150E326F0DFAEECCA2151B6DB09 /* FLEXSystemLogMessage.m in Sources */,
+				60B273A20CBB4C749FFF15AC8EB1CC04 /* FLEXSystemLogTableViewCell.m in Sources */,
+				1B73FCDAE1A7A0E4EC584DF71952C14E /* FLEXSystemLogTableViewController.m in Sources */,
+				5971A637950378480AB9E43B30D7B855 /* FLEXTableColumnHeader.m in Sources */,
+				1AE2E4F3BB7BD550E2323BB6EFE934BF /* FLEXTableContentCell.m in Sources */,
+				DAEE613938003A53625C3F8F07507A5E /* FLEXTableContentViewController.m in Sources */,
+				1D0D3354E670D73DA6A7784877AC2AF1 /* FLEXTableLeftCell.m in Sources */,
+				391147924CD3BADD0ADB09047F8A467C /* FLEXTableListViewController.m in Sources */,
+				FD952BD02857452C5805E073EB6EB979 /* FLEXToolbarItem.m in Sources */,
+				FE49AE466587F0E3F1ECBC1C8936AAF8 /* FLEXUtility.m in Sources */,
+				A6534E001F062F5BD8F7ED2635222CCD /* FLEXViewControllerExplorerViewController.m in Sources */,
+				4E9A475A320F6F8D61681EEA331E5FBA /* FLEXViewExplorerViewController.m in Sources */,
+				162BB47F7289DF951CFCB5881A41782B /* FLEXWebViewController.m in Sources */,
+				3A3D27B95A2667FD168BD6EB93E99578 /* FLEXWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,14 +1,14 @@
 //
-//  NSString+Category.m
+//  NSString+Filter.m
 //  iOSAppProject
 //
 //  Created by zhangpeng on 2019/1/7.
 //  Copyright © 2019 zhangpeng. All rights reserved.
 //
 
-#import "NSString+Category.h"
+#import "NSString+Filter.h"
 
-@implementation NSString (Category)
+@implementation NSString (Filter)
 
 /**
  根据正则表达式过滤文字

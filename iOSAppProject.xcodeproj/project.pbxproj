@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E299BFB22352E3B002FF36B /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E299BFA22352E3B002FF36B /* NSString+URL.m */; };
 		6E4872A521E470ED00B84C2F /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4872A421E470ED00B84C2F /* UITextField+Category.m */; };
 		6E4872AB21E4AA9400B84C2F /* UITextField+Limit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4872AA21E4AA9400B84C2F /* UITextField+Limit.m */; };
-		6E68B86421E3463F003A909B /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68B86321E3463F003A909B /* NSString+Category.m */; };
+		6E68B86421E3463F003A909B /* NSString+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68B86321E3463F003A909B /* NSString+Filter.m */; };
 		6E68B88021E34790003A909B /* NSMutableAttributedString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68B86721E3478E003A909B /* NSMutableAttributedString+Category.m */; };
 		6E68B88121E34790003A909B /* NSTimer+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68B86C21E3478E003A909B /* NSTimer+Category.m */; };
 		6E68B88221E34790003A909B /* UIDevice+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68B86E21E3478F003A909B /* UIDevice+Category.m */; };
@@ -63,13 +64,15 @@
 /* Begin PBXFileReference section */
 		42253E5899184B8ADBADDB84 /* libPods-iOSAppProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSAppProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		529D968BB19D5720A3E9BE70 /* Pods-iOSAppProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAppProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSAppProject/Pods-iOSAppProject.debug.xcconfig"; sourceTree = "<group>"; };
+		6E299BF922352E3B002FF36B /* NSString+URL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		6E299BFA22352E3B002FF36B /* NSString+URL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
 		6E2C710321ED977E0019D2D7 /* iOSAppProjectHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSAppProjectHeader.h; sourceTree = "<group>"; };
 		6E4872A321E470ED00B84C2F /* UITextField+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Category.h"; sourceTree = "<group>"; };
 		6E4872A421E470ED00B84C2F /* UITextField+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Category.m"; sourceTree = "<group>"; };
 		6E4872A921E4AA9400B84C2F /* UITextField+Limit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Limit.h"; sourceTree = "<group>"; };
 		6E4872AA21E4AA9400B84C2F /* UITextField+Limit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Limit.m"; sourceTree = "<group>"; };
-		6E68B86221E3463F003A909B /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
-		6E68B86321E3463F003A909B /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		6E68B86221E3463F003A909B /* NSString+Filter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Filter.h"; sourceTree = "<group>"; };
+		6E68B86321E3463F003A909B /* NSString+Filter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Filter.m"; sourceTree = "<group>"; };
 		6E68B86721E3478E003A909B /* NSMutableAttributedString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+Category.m"; sourceTree = "<group>"; };
 		6E68B86921E3478E003A909B /* NSMutableAttributedString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+Category.h"; sourceTree = "<group>"; };
 		6E68B86B21E3478E003A909B /* NSTimer+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Category.h"; sourceTree = "<group>"; };
@@ -277,8 +280,10 @@
 		6E68B88921E347C4003A909B /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				6E68B86221E3463F003A909B /* NSString+Category.h */,
-				6E68B86321E3463F003A909B /* NSString+Category.m */,
+				6E68B86221E3463F003A909B /* NSString+Filter.h */,
+				6E68B86321E3463F003A909B /* NSString+Filter.m */,
+				6E299BF922352E3B002FF36B /* NSString+URL.h */,
+				6E299BFA22352E3B002FF36B /* NSString+URL.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -400,7 +405,6 @@
 				6E7F7E742212B7B300FB2959 /* AppDelegate */,
 				6E7F7E732212B79800FB2959 /* Base */,
 				6E30B0F6212EA49C002CFF85 /* ThirdParty */,
-				6EF83C94212A58E000705870 /* UI */,
 				6EF83C93212A58D100705870 /* Util */,
 				6EC3F880213D3B9A003319BF /* HomeViewController.h */,
 				6EC3F881213D3B9A003319BF /* HomeViewController.m */,
@@ -424,13 +428,6 @@
 				6EF83C9F212A60E000705870 /* Category */,
 			);
 			path = Util;
-			sourceTree = "<group>";
-		};
-		6EF83C94212A58E000705870 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		6EF83C9F212A60E000705870 /* Category */ = {
@@ -671,6 +668,7 @@
 				6E68B88121E34790003A909B /* NSTimer+Category.m in Sources */,
 				6EDFEF4621EEDF68001FF7FB /* PerformanceMonitor.m in Sources */,
 				6E4872AB21E4AA9400B84C2F /* UITextField+Limit.m in Sources */,
+				6E299BFB22352E3B002FF36B /* NSString+URL.m in Sources */,
 				6EF83C9E212A60A300705870 /* NSDateFormatter+Category.m in Sources */,
 				6EA2525321281D0700ED0495 /* BaseViewController.m in Sources */,
 				6E4872A521E470ED00B84C2F /* UITextField+Category.m in Sources */,
@@ -686,7 +684,7 @@
 				6EF83C97212A59B100705870 /* AppDelegate+Initialization.m in Sources */,
 				6E68B88221E34790003A909B /* UIDevice+Category.m in Sources */,
 				6EC3F873213D11A9003319BF /* SettingViewController.m in Sources */,
-				6E68B86421E3463F003A909B /* NSString+Category.m in Sources */,
+				6E68B86421E3463F003A909B /* NSString+Filter.m in Sources */,
 				6EC3F879213D1318003319BF /* UIView+Category.m in Sources */,
 				6E68B88721E34790003A909B /* UIButton+Category.m in Sources */,
 				6EA2525021281D0700ED0495 /* AppDelegate.m in Sources */,
@@ -856,7 +854,7 @@
 				DEVELOPMENT_TEAM = PYZ5L33K5W;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSAppProject/ProjecFiles/Util/iOSAppProject.pch";
 				INFOPLIST_FILE = iOSAppProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -876,7 +874,7 @@
 				DEVELOPMENT_TEAM = PYZ5L33K5W;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOSAppProject/ProjecFiles/Util/iOSAppProject.pch";
 				INFOPLIST_FILE = iOSAppProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
