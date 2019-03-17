@@ -11,6 +11,7 @@
 #import "BaseNavigationController.h"
 #import "HomeViewController.h"
 #import "SettingViewController.h"
+#import "BaseTabBar.h"
 
 @implementation AppDelegate (Initialization)
 
@@ -29,6 +30,9 @@
     
     // Setup RootViewController
     BaseTabBarController *tabBarController = [[BaseTabBarController alloc] init];
+    // Custom tabBar
+    [tabBarController setValue:[[BaseTabBar alloc] init] forKey:@"tabBar"];
+    
     tabBarController.viewControllers = @[nav0, nav1];
     self.window.rootViewController = tabBarController;
 }
