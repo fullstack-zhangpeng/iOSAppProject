@@ -11,6 +11,7 @@
 #import "UIViewController+Category.h"
 #import "GCDWebServerDataResponse.h"
 #import "Util/Category/UIDevice/UIDevice+Category.h"
+#import "UIView+FLMBProgressHUD.h"
 
 @interface HomeViewController () <UITextFieldDelegate>
 
@@ -21,21 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    NSLog(@"%d %d %d %d", kStatusBarHeight, kNavigationBarHeight, kTabBarHeight, kHomeIndicatorHeight);
-    UIScrollView *sc = [[UIScrollView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:sc];
     
-    UIView *subView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, sc.frame.size.width, 60)];
-    subView.backgroundColor = [UIColor redColor];
-    [sc addSubview:subView];
-    if (@available(iOS 11.0, *)) {
-        NSLog(@"%@", NSStringFromUIEdgeInsets(self.view.safeAreaInsets));
-        NSLog(@"---");
-        NSLog(@"%@", NSStringFromUIEdgeInsets(sc.contentInset));
-        NSLog(@"%@", NSStringFromUIEdgeInsets(sc.safeAreaInsets));
-        NSLog(@"%@", NSStringFromUIEdgeInsets(sc.adjustedContentInset));
-    } else {
-        // Fallback on earlier versions
-    }
+    [self.view showHudWithText:@"ssss" displayTime:0.25];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {

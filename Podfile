@@ -12,7 +12,8 @@ target 'iOSAppProject' do
   pod 'AFNetworking', '~> 3.0'
   pod 'SDWebImage', '~> 4.0'
   pod 'CocoaLumberjack'
-  
+#  pod 'MBProgressHUD', '~> 1.1.0'
+
   pod 'GCDWebServer', '~> 3.0'
   
   pod 'FLEX', '~> 2.0', :configurations => ['Debug']
