@@ -29,6 +29,9 @@ PODS:
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
   - WechatOpenSDK (1.8.3)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
@@ -38,6 +41,7 @@ DEPENDENCIES:
   - Masonry
   - SDWebImage (~> 4.0)
   - WechatOpenSDK
+  - YYCategories
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -48,6 +52,7 @@ SPEC REPOS:
     - Masonry
     - SDWebImage
     - WechatOpenSDK
+    - YYCategories
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -57,7 +62,8 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   WechatOpenSDK: 3117412f8aafde4758cac1e8d20b93c67cafcfef
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: b670a0ce23e7b37a7f692402fcfb9fc2c6c46870
+PODFILE CHECKSUM: b39680fb88ede2b72dcf8d8fb8c2c0681c2d221c
 
 COCOAPODS: 1.5.3

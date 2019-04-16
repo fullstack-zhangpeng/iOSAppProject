@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Initialization.h"
-
+#import <YYCategories.h>
 @interface AppDelegate ()
 
 @end
@@ -19,6 +19,13 @@
     // Override point for customization after application launch.
     //    [self setupLogger];
     [self setupRootViewController];
+    NSDictionary *dic = @{
+                          @"2": @"2",
+                          @"6": @"6",
+                          @"s": @"s",
+                          @"1": @"1"
+                          };
+    NSLog(@"%@", dic.allKeysSorted);
     return YES;
 }
 

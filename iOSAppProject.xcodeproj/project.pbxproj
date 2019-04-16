@@ -10,9 +10,6 @@
 		6E1F7328223AA1B3004338AF /* NSObject+Archiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F7327223AA1B3004338AF /* NSObject+Archiver.m */; };
 		6E1F7337223E789D004338AF /* BaseTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F7336223E789D004338AF /* BaseTabBar.m */; };
 		6E299BFB22352E3B002FF36B /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E299BFA22352E3B002FF36B /* NSString+URL.m */; };
-		6E3F08E3225787D100D43F9B /* HudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3F08E2225787D100D43F9B /* HudView.m */; };
-		6E3F08E62259E0B000D43F9B /* UIView+FLMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3F08E52259E0B000D43F9B /* UIView+FLMBProgressHUD.m */; };
-		6E3F08F02259EB8300D43F9B /* FLMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3F08EE2259EB8300D43F9B /* FLMBProgressHUD.m */; };
 		6E4872A521E470ED00B84C2F /* UITextField+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4872A421E470ED00B84C2F /* UITextField+Category.m */; };
 		6E4872AB21E4AA9400B84C2F /* UITextField+Limit.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4872AA21E4AA9400B84C2F /* UITextField+Limit.m */; };
 		6E68B86421E3463F003A909B /* NSString+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68B86321E3463F003A909B /* NSString+Filter.m */; };
@@ -78,8 +75,6 @@
 		6E2C710321ED977E0019D2D7 /* iOSAppProjectHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSAppProjectHeader.h; sourceTree = "<group>"; };
 		6E3F08E1225787D100D43F9B /* HudView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HudView.h; sourceTree = "<group>"; };
 		6E3F08E2225787D100D43F9B /* HudView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HudView.m; sourceTree = "<group>"; };
-		6E3F08E42259E0B000D43F9B /* UIView+FLMBProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FLMBProgressHUD.h"; sourceTree = "<group>"; };
-		6E3F08E52259E0B000D43F9B /* UIView+FLMBProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLMBProgressHUD.m"; sourceTree = "<group>"; };
 		6E3F08EE2259EB8300D43F9B /* FLMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMBProgressHUD.m; sourceTree = "<group>"; };
 		6E3F08EF2259EB8300D43F9B /* FLMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMBProgressHUD.h; sourceTree = "<group>"; };
 		6E4872A321E470ED00B84C2F /* UITextField+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+Category.h"; sourceTree = "<group>"; };
@@ -431,8 +426,6 @@
 				6E3F08E2225787D100D43F9B /* HudView.m */,
 				6E3F08EF2259EB8300D43F9B /* FLMBProgressHUD.h */,
 				6E3F08EE2259EB8300D43F9B /* FLMBProgressHUD.m */,
-				6E3F08E42259E0B000D43F9B /* UIView+FLMBProgressHUD.h */,
-				6E3F08E52259E0B000D43F9B /* UIView+FLMBProgressHUD.m */,
 				6EC3F871213D11A9003319BF /* SettingViewController.h */,
 				6EC3F872213D11A9003319BF /* SettingViewController.m */,
 				6EDFEF4421EEDF68001FF7FB /* PerformanceMonitor.h */,
@@ -690,7 +683,6 @@
 				6EF83CA2212A617600705870 /* BaseTabBarController.m in Sources */,
 				6E68B88521E34790003A909B /* UIViewController+Category.m in Sources */,
 				6EF83C9B212A5FFA00705870 /* Const.m in Sources */,
-				6E3F08F02259EB8300D43F9B /* FLMBProgressHUD.m in Sources */,
 				6E68B88121E34790003A909B /* NSTimer+Category.m in Sources */,
 				6EDFEF4621EEDF68001FF7FB /* PerformanceMonitor.m in Sources */,
 				6E4872AB21E4AA9400B84C2F /* UITextField+Limit.m in Sources */,
@@ -713,10 +705,8 @@
 				6E68B88221E34790003A909B /* UIDevice+Category.m in Sources */,
 				6EC3F873213D11A9003319BF /* SettingViewController.m in Sources */,
 				6E68B86421E3463F003A909B /* NSString+Filter.m in Sources */,
-				6E3F08E62259E0B000D43F9B /* UIView+FLMBProgressHUD.m in Sources */,
 				6EC3F879213D1318003319BF /* UIView+Category.m in Sources */,
 				6E68B88721E34790003A909B /* UIButton+Category.m in Sources */,
-				6E3F08E3225787D100D43F9B /* HudView.m in Sources */,
 				6EA2525021281D0700ED0495 /* AppDelegate.m in Sources */,
 				6E68B88621E34790003A909B /* UIApplication+Category.m in Sources */,
 			);

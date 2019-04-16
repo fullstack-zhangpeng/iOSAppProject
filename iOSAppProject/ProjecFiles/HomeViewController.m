@@ -10,8 +10,6 @@
 #import "NSObject+Category.h"
 #import "UIViewController+Category.h"
 #import "GCDWebServerDataResponse.h"
-#import "Util/Category/UIDevice/UIDevice+Category.h"
-#import "UIView+FLMBProgressHUD.h"
 
 @interface HomeViewController () <UITextFieldDelegate>
 
@@ -23,7 +21,7 @@
     [super viewDidLoad];
 //    NSLog(@"%d %d %d %d", kStatusBarHeight, kNavigationBarHeight, kTabBarHeight, kHomeIndicatorHeight);
     
-    [self.view showHudWithText:@"ssss" displayTime:0.25];
+    
     
 }
 
