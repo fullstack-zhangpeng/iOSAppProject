@@ -7,11 +7,12 @@
 //
 
 #ifdef DEBUG
-@implementation NSSet(Log)
+@implementation NSSet (Log)
 
-- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
+- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level
+{
     NSMutableString *desc = [NSMutableString string];
-    
+
     NSMutableString *originalStr = [[NSMutableString alloc] initWithCapacity:level];
     for (NSUInteger i = 0; i < level; ++i) {
         [originalStr appendString:@"\t"];
@@ -21,7 +22,7 @@
         tab = originalStr;
     }
     [desc appendString:@"\t{(\n"];
-    [self enumerateObjectsUsingBlock:^(id  _Nonnull obj, BOOL * _Nonnull stop) {
+    [self enumerateObjectsUsingBlock:^(id _Nonnull obj, BOOL *_Nonnull stop) {
         if ([obj isKindOfClass:[NSDictionary class]]
             || [obj isKindOfClass:[NSArray class]]
             || [obj isKindOfClass:[NSSet class]]) {
@@ -52,8 +53,7 @@
                     } else {
                         [desc appendFormat:@"%@\t%@,\n", tab, obj];
                     }
-                }
-                @catch (NSException *exception) {
+                } @catch (NSException *exception) {
                     [desc appendFormat:@"%@\t%@,\n", tab, obj];
                 }
             }
@@ -64,11 +64,13 @@
     [desc appendFormat:@"%@)}", tab];
     return desc;
 }
+
 @end
 
 @implementation NSArray (Log)
 
-- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
+- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level
+{
     NSMutableString *desc = [NSMutableString string];
     NSMutableString *originalStr = [[NSMutableString alloc] initWithCapacity:level];
     for (NSUInteger i = 0; i < level; ++i) {
@@ -79,7 +81,7 @@
         tab = originalStr;
     }
     [desc appendString:@"\t(\n"];
-    [self enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self enumerateObjectsUsingBlock:^(id _Nonnull obj, NSUInteger idx, BOOL *_Nonnull stop) {
         if ([obj isKindOfClass:[NSDictionary class]]
             || [obj isKindOfClass:[NSArray class]]
             || [obj isKindOfClass:[NSSet class]]) {
@@ -88,7 +90,6 @@
         } else if ([obj isKindOfClass:[NSString class]]) {
             [desc appendFormat:@"%@\t\"%@\",\n", tab, obj];
         } else if ([obj isKindOfClass:[NSData class]]) {
-            
             NSError *error = nil;
             NSObject *result =  [NSJSONSerialization JSONObjectWithData:obj
                                                                 options:NSJSONReadingMutableContainers
@@ -110,8 +111,7 @@
                     } else {
                         [desc appendFormat:@"%@\t%@,\n", tab, obj];
                     }
-                }
-                @catch (NSException *exception) {
+                } @catch (NSException *exception) {
                     [desc appendFormat:@"%@\t%@,\n", tab, obj];
                 }
             }
@@ -127,7 +127,8 @@
 
 @implementation NSDictionary (Log)
 
-- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level {
+- (NSString *)descriptionWithLocale:(id)locale indent:(NSUInteger)level
+{
     NSMutableString *desc = [NSMutableString string];
     NSMutableString *originalStr = [[NSMutableString alloc] initWithCapacity:level];
     for (NSUInteger i = 0; i < level; ++i) {
@@ -138,7 +139,7 @@
         tab = originalStr;
     }
     [desc appendString:@"\t{\n"];
-    [self.allKeys enumerateObjectsUsingBlock:^(id  _Nonnull key, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.allKeys enumerateObjectsUsingBlock:^(id _Nonnull key, NSUInteger idx, BOOL *_Nonnull stop) {
         id obj = [self objectForKey:key];
         if ([obj isKindOfClass:[NSString class]]) {
             [desc appendFormat:@"%@\t%@ = \"%@\",\n", tab, key, obj];
@@ -168,8 +169,7 @@
                     } else {
                         [desc appendFormat:@"%@\t%@ = %@,\n", tab, key, obj];
                     }
-                }
-                @catch (NSException *exception) {
+                } @catch (NSException *exception) {
                     [desc appendFormat:@"%@\t%@ = %@,\n", tab, key, obj];
                 }
             }
@@ -180,5 +180,6 @@
     [desc appendFormat:@"%@}", tab];
     return desc;
 }
+
 @end
 #endif
