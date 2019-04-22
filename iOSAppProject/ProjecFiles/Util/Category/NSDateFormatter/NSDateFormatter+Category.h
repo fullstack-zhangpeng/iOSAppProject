@@ -21,6 +21,6 @@ extern NSString *const df_yyy_MM_dd_HH_mm_ss;
 
 @interface NSDateFormatter (Category)
 
-+ (NSDateFormatter *)p_dateFormatterWithString:(NSString *)format;
++ (NSDateFormatter *)fs_dateFormatterWithString:(NSString *)format;
 
 @end

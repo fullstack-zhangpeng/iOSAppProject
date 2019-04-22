@@ -1,7 +1,6 @@
-
 //
 //  NSMutableAttributedString+Category.m
-//  P_App_OC
+//  iOSAppProject
 //
 //  Created by zhangpeng on 2018/2/11.
 //  Copyright © 2018年 zhangpeng. All rights reserved.
@@ -13,20 +12,20 @@
 
 #pragma mark - AddAttributeStyle
 
-- (void)p_addLineWithStyle:(LineStyle)lineStyle range:(NSRange)range {
+- (void)fs_addLineWithStyle:(LineStyle)lineStyle range:(NSRange)range {
     switch (lineStyle) {
         case LineStyleDelete: {
-            [self p_addAttributes:@{NSStrikethroughStyleAttributeName : @(NSUnderlineStyleNone)}
+            [self fs_addAttributes:@{NSStrikethroughStyleAttributeName : @(NSUnderlineStyleNone)}
                                 range: NSMakeRange(0, self.string.length)];
-            [self p_addAttributes:@{NSStrikethroughStyleAttributeName : @(NSUnderlineStyleSingle),
+            [self fs_addAttributes:@{NSStrikethroughStyleAttributeName : @(NSUnderlineStyleSingle),
                                         NSBaselineOffsetAttributeName : @0}
                                 range:range];
             break;
         }
         case LineStyleUnder: {
-            [self p_addAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleNone)}
+            [self fs_addAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleNone)}
                                 range: NSMakeRange(0, self.string.length)];
-            [self p_addAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle)}
+            [self fs_addAttributes:@{NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle)}
                                 range:range];
             break;
         }
@@ -35,7 +34,7 @@
     }
 }
 
-- (void)p_addLineHeight:(CGFloat)lineHeight font:(UIFont *)font {
+- (void)fs_addLineHeight:(CGFloat)lineHeight font:(UIFont *)font {
     NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
     paragraphStyle.maximumLineHeight = lineHeight;
     paragraphStyle.minimumLineHeight = lineHeight;
@@ -43,12 +42,12 @@
     attributes[NSParagraphStyleAttributeName] = paragraphStyle;
     CGFloat baselineOffset = (lineHeight - font.lineHeight) / 4;
     attributes[NSBaselineOffsetAttributeName] = @(baselineOffset);
-    [self p_addAttributes:attributes range:NSMakeRange(0, self.length)];
+    [self fs_addAttributes:attributes range:NSMakeRange(0, self.length)];
 }
 
 #pragma mark - AddAttributes
 
-- (void)p_addAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range {
+- (void)fs_addAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range {
     if ([self isNilOrNullObject:attrs]) {
         return;
     }

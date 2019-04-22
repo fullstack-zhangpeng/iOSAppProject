@@ -12,9 +12,10 @@
 #import "GCDWebServerDataResponse.h"
 #import "UIView+FrameAnimation.h"
 #import "FrameAnimationView.h"
+#import "Util/Category/UIView/UIView+Category.h"
 
-@interface HomeViewController () <FrameAnimationViewDelegate>
-@property (nonatomic, strong) UIImageView *imageView;
+@interface HomeViewController ()
+
 @end
 
 @implementation HomeViewController
@@ -23,17 +24,7 @@
 {
     [super viewDidLoad];
 //    NSLog(@"%d %d %d %d", kStatusBarHeight, kNavigationBarHeight, kTabBarHeight, kHomeIndicatorHeight);
-    
-}
 
-- (void)frameAnimationView:(UIView *)frameAnimationView animationDidStart:(CAAnimation *)anim
-{
-    NSLog(@"函数名：%s，行号：%d", __FUNCTION__, __LINE__);
-}
-
-- (void)frameAnimationView:(UIView *)frameAnimationView animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
-{
-    NSLog(@"函数名：%s，行号：%d", __FUNCTION__, __LINE__);
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -44,7 +35,6 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     HomeViewController *vc = [[HomeViewController alloc] init];
-    vc.aa = YES;
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }

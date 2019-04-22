@@ -12,7 +12,7 @@
 
 @implementation UIImage (Category)
 
-- (UIImage *)p_roundedImageWithRadius:(NSInteger)radius {
+- (UIImage *)fs_roundedImageWithRadius:(NSInteger)radius {
     if (!self.size.height || !self.size.width) {
         return self;
     }
@@ -27,7 +27,7 @@
     return UIGraphicsGetImageFromCurrentImageContext();
 }
 
-+ (UIImage *)p_roundedImageWithSize:(CGSize)size color:(UIColor *)color radius:(CGFloat)radius {
++ (UIImage *)fs_roundedImageWithSize:(CGSize)size color:(UIColor *)color radius:(CGFloat)radius {
     CGRect newRect = CGRectIntegral(CGRectMake(0, 0, size.width, size.height));
     
     // Build a context that's the same dimensions as the new size
@@ -61,7 +61,7 @@
     return newImage;
 }
 
-- (UIImage *)p_drawImage:(UIImage *)image atPosition:(CGPoint)point {
+- (UIImage *)fs_drawImage:(UIImage *)image atPosition:(CGPoint)point {
     if (!self.size.height || !self.size.width) {
         return self;
     }
@@ -76,7 +76,7 @@
     return newImage;
 }
 
-- (UIImage *)p_blurImageWithBlurPercent:(CGFloat)percent {
+- (UIImage *)fs_blurImageWithBlurPercent:(CGFloat)percent {
     // hack, helps w/ our colors when blurring
     NSData *imageData = UIImageJPEGRepresentation(self, 1); // convert to jpeg
     UIImage *destImage = [UIImage imageWithData:imageData];
@@ -164,7 +164,7 @@
     return returnImage;
 }
 
-- (UIImage *)p_greyImage {
+- (UIImage *)fs_greyImage {
     CGFloat scale = [self scale];
     
     CGSize size = [self size];
@@ -219,7 +219,7 @@
     return resultUIImage;
 }
 
-- (UIImage *)p_roundedImage {
+- (UIImage *)fs_roundedImage {
     CGFloat w = self.size.width;
     CGFloat h = self.size.height;
     CGFloat scale = [UIScreen mainScreen].scale;
@@ -234,7 +234,7 @@
     return image;
 }
 
-- (UIImage *)p_roundedImageWithCornerRadius:(CGFloat)cornerRadius cornerType:(UIRectCorner)rectCornerType {
+- (UIImage *)fs_roundedImageWithCornerRadius:(CGFloat)cornerRadius cornerType:(UIRectCorner)rectCornerType {
     CGFloat w = self.size.width;
     CGFloat h = self.size.height;
     CGFloat scale = [UIScreen mainScreen].scale;
@@ -251,8 +251,8 @@
     return image;
 }
 
-- (UIImage *)p_thumbnailImage:(NSInteger)thumbnailSize transparentBorder:(NSUInteger)borderSize cornerRadius:(NSUInteger)cornerRadius resizeMode:(UIViewContentMode)contentMode interpolationQuality:(CGInterpolationQuality)quality {
-    UIImage *resizedImage = [self p_resizedImageWithContentMode:contentMode
+- (UIImage *)fs_thumbnailImage:(NSInteger)thumbnailSize transparentBorder:(NSUInteger)borderSize cornerRadius:(NSUInteger)cornerRadius resizeMode:(UIViewContentMode)contentMode interpolationQuality:(CGInterpolationQuality)quality {
+    UIImage *resizedImage = [self fs_resizedImageWithContentMode:contentMode
                                                            bounds:CGSizeMake(thumbnailSize, thumbnailSize)
                                              interpolationQuality:quality];
     
@@ -263,15 +263,15 @@
                                  round((resizedImage.size.height - thumbnailSize) / 2),
                                  thumbnailSize,
                                  thumbnailSize);
-    UIImage *croppedImage = [resizedImage p_croppedImage:cropRect];
+    UIImage *croppedImage = [resizedImage fs_croppedImage:cropRect];
     
-    UIImage *transparentBorderImage = borderSize ? [croppedImage p_transparentBorderImage:borderSize] : croppedImage;
+    UIImage *transparentBorderImage = borderSize ? [croppedImage fs_transparentBorderImage:borderSize] : croppedImage;
     
-    return [transparentBorderImage p_roundedCornerImage:cornerRadius borderSize:borderSize];
+    return [transparentBorderImage fs_roundedCornerImage:cornerRadius borderSize:borderSize];
 }
 
-- (UIImage *)p_cropImageWithCroppedSize:(CGSize)croppedSize contentMode:(UIViewContentMode)contentMode interpolationQuality:(CGInterpolationQuality)quality {
-    UIImage *resizedImage = [self p_resizedImageWithContentMode:contentMode
+- (UIImage *)fs_cropImageWithCroppedSize:(CGSize)croppedSize contentMode:(UIViewContentMode)contentMode interpolationQuality:(CGInterpolationQuality)quality {
+    UIImage *resizedImage = [self fs_resizedImageWithContentMode:contentMode
                                                            bounds:croppedSize
                                              interpolationQuality:quality];
     
@@ -282,12 +282,12 @@
                                  round((resizedImage.size.height - croppedSize.height) / 2),
                                  croppedSize.width,
                                  croppedSize.height);
-    UIImage *croppedImage = [resizedImage p_croppedImage:cropRect];
+    UIImage *croppedImage = [resizedImage fs_croppedImage:cropRect];
     
     return croppedImage;
 }
 
-- (UIImage *)p_resizedImageToSize:(CGSize)size {
+- (UIImage *)fs_resizedImageToSize:(CGSize)size {
     CGImageRef imgRef = self.CGImage;
     // the below values are regardless of orientation : for UIImages from Camera, width>height (landscape)
     CGSize  srcSize = CGSizeMake(CGImageGetWidth(imgRef), CGImageGetHeight(imgRef)); // not equivalent to self.size (which is dependant on the imageOrientation)!
@@ -380,7 +380,7 @@
 }
 
 // Resizes the image according to the given content mode, taking into account the image's orientation
-- (UIImage *)p_resizedImageWithContentMode:(UIViewContentMode)contentMode
+- (UIImage *)fs_resizedImageWithContentMode:(UIViewContentMode)contentMode
                                       bounds:(CGSize)bounds
                         interpolationQuality:(CGInterpolationQuality)quality {
     CGFloat horizontalRatio = bounds.width / self.size.width;
@@ -403,10 +403,10 @@
         return self;
     }
     
-    return [self p_resizedImage:newSize interpolationQuality:quality];
+    return [self fs_resizedImage:newSize interpolationQuality:quality];
 }
 
-- (UIImage *)p_resizedImage:(CGSize)newSize interpolationQuality:(CGInterpolationQuality)quality {
+- (UIImage *)fs_resizedImage:(CGSize)newSize interpolationQuality:(CGInterpolationQuality)quality {
     BOOL drawTransposed;
     
     switch (self.imageOrientation) {
@@ -421,14 +421,14 @@
             drawTransposed = NO;
     }
     
-    return [self p_resizedImage:newSize
-                        transform:[self p_transformForOrientation:newSize]
+    return [self fs_resizedImage:newSize
+                        transform:[self fs_transformForOrientation:newSize]
                    drawTransposed:drawTransposed
              interpolationQuality:quality];
 }
 
 // Returns an affine transform that takes into account the image orientation when drawing a scaled image
-- (CGAffineTransform)p_transformForOrientation:(CGSize)newSize {
+- (CGAffineTransform)fs_transformForOrientation:(CGSize)newSize {
     CGAffineTransform transform = CGAffineTransformIdentity;
     
     switch (self.imageOrientation) {
@@ -477,7 +477,7 @@
 // Returns a copy of the image that has been transformed using the given affine transform and scaled to the new size
 // The new image's orientation will be UIImageOrientationUp, regardless of the current image's orientation
 // If the new size is not integral, it will be rounded up
-- (UIImage *)p_resizedImage:(CGSize)newSize
+- (UIImage *)fs_resizedImage:(CGSize)newSize
                     transform:(CGAffineTransform)transform
                drawTransposed:(BOOL)transpose
          interpolationQuality:(CGInterpolationQuality)quality {
@@ -524,7 +524,7 @@
 // Returns a copy of this image that is cropped to the given bounds.
 // The bounds will be adjusted using CGRectIntegral.
 // This method ignores the image's imageOrientation setting.
-- (UIImage *)p_croppedImage:(CGRect)bounds {
+- (UIImage *)fs_croppedImage:(CGRect)bounds {
     bounds = CGRectMake(bounds.origin.x * self.scale, bounds.origin.y * self.scale, bounds.size.width * self.scale, bounds.size.height * self.scale);
     
     CGImageRef imageRef = CGImageCreateWithImageInRect([self CGImage], bounds);
@@ -534,7 +534,7 @@
 }
 
 // Returns true if the image has an alpha layer
-- (BOOL)p_hasAlpha {
+- (BOOL)fs_hasAlpha {
     CGImageAlphaInfo alpha = CGImageGetAlphaInfo(self.CGImage);
     return (alpha == kCGImageAlphaFirst ||
             alpha == kCGImageAlphaLast ||
@@ -543,8 +543,8 @@
 }
 
 // Returns a copy of the given image, adding an alpha channel if it doesn't already have one
-- (UIImage *)p_imageWithAlpha {
-    if ([self p_hasAlpha]) {
+- (UIImage *)fs_imageWithAlpha {
+    if ([self fs_hasAlpha]) {
         return self;
     }
     
@@ -576,7 +576,7 @@
 // Creates a mask that makes the outer edges transparent and everything else opaque
 // The size must include the entire mask (opaque part + transparent border)
 // The caller is responsible for releasing the returned reference by calling CGImageRelease
-- (CGImageRef)p_newBorderMask:(NSUInteger)borderSize size:(CGSize)size {
+- (CGImageRef)fs_newBorderMask:(NSUInteger)borderSize size:(CGSize)size {
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceGray();
     
     // Build a context that's the same dimensions as the new size
@@ -609,9 +609,9 @@
 
 // Returns a copy of the image with a transparent border of the given size added around its edges.
 // If the image has no alpha layer, one will be added to it.
-- (UIImage *)p_transparentBorderImage:(NSUInteger)borderSize {
+- (UIImage *)fs_transparentBorderImage:(NSUInteger)borderSize {
     // If the image does not have an alpha layer, add one
-    UIImage *image = [self p_imageWithAlpha];
+    UIImage *image = [self fs_imageWithAlpha];
     
     CGRect newRect = CGRectMake(0, 0, image.size.width + borderSize * 2, image.size.height + borderSize * 2);
     
@@ -630,7 +630,7 @@
     CGImageRef borderImageRef = CGBitmapContextCreateImage(bitmap);
     
     // Create a mask to make the border transparent, and combine it with the image
-    CGImageRef maskImageRef = [self p_newBorderMask:borderSize size:newRect.size];
+    CGImageRef maskImageRef = [self fs_newBorderMask:borderSize size:newRect.size];
     CGImageRef transparentBorderImageRef = CGImageCreateWithMask(borderImageRef, maskImageRef);
     UIImage *transparentBorderImage = [UIImage imageWithCGImage:transparentBorderImageRef];
     
@@ -645,7 +645,7 @@
 
 // Adds a rectangular path to the given context and rounds its corners by the given extents
 // Original author: Björn Sållarp. Used with permission. See: http://blog.sallarp.com/iphone-uiimage-round-corners/
-- (void)p_addRoundedRectToPath:(CGRect)rect context:(CGContextRef)context ovalWidth:(CGFloat)ovalWidth ovalHeight:(CGFloat)ovalHeight {
+- (void)fs_addRoundedRectToPath:(CGRect)rect context:(CGContextRef)context ovalWidth:(CGFloat)ovalWidth ovalHeight:(CGFloat)ovalHeight {
     if (ovalWidth == 0 || ovalHeight == 0) {
         CGContextAddRect(context, rect);
         return;
@@ -667,9 +667,9 @@
 // Creates a copy of this image with rounded corners
 // If borderSize is non-zero, a transparent border of the given size will also be added
 // Original author: Björn Sållarp. Used with permission. See: http://blog.sallarp.com/iphone-uiimage-round-corners/
-- (UIImage *)p_roundedCornerImage:(NSInteger)cornerSize borderSize:(NSInteger)borderSize {
+- (UIImage *)fs_roundedCornerImage:(NSInteger)cornerSize borderSize:(NSInteger)borderSize {
     // If the image does not have an alpha layer, add one
-    UIImage *image = [self p_imageWithAlpha];
+    UIImage *image = [self fs_imageWithAlpha];
     
     // Build a context that's the same dimensions as the new size
     CGContextRef context = CGBitmapContextCreate(NULL,
@@ -682,7 +682,7 @@
     
     // Create a clipping path with rounded corners
     CGContextBeginPath(context);
-    [self p_addRoundedRectToPath:CGRectMake(borderSize, borderSize, image.size.width - borderSize * 2, image.size.height - borderSize * 2)
+    [self fs_addRoundedRectToPath:CGRectMake(borderSize, borderSize, image.size.width - borderSize * 2, image.size.height - borderSize * 2)
                            context:context
                          ovalWidth:cornerSize
                         ovalHeight:cornerSize];

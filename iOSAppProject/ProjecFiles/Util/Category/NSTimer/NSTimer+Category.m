@@ -1,6 +1,6 @@
 //
 //  NSTimer+Category.m
-//  P_App_OC
+//  iOSAppProject
 //
 //  Created by zhangpeng on 2018/2/17.
 //  Copyright © 2018年 zhangpeng. All rights reserved.
@@ -10,7 +10,7 @@
 
 @implementation NSTimer (Category)
 
-+ (NSTimer *)p_scheduledTimerWithTimeInterval:(NSTimeInterval)interval
++ (NSTimer *)fs_scheduledTimerWithTimeInterval:(NSTimeInterval)interval
                                      block:(void (^)(void))block
                                    repeats:(BOOL)repeats {
     return [self scheduledTimerWithTimeInterval:interval

@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return UIImage
  */
-- (UIImage *)p_drawImage:(UIImage *)image atPosition:(CGPoint)point;
+- (UIImage *)fs_drawImage:(UIImage *)image atPosition:(CGPoint)point;
 
 /**
  * 图片模糊处理
@@ -31,14 +31,14 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return UIImage
  */
-- (UIImage *)p_blurImageWithBlurPercent:(CGFloat)percent;
+- (UIImage *)fs_blurImageWithBlurPercent:(CGFloat)percent;
 
 /**
  * 图片灰化处理
  *
  * @return UIImage
  */
-- (UIImage *)p_greyImage;
+- (UIImage *)fs_greyImage;
 
 /**
  * 圆角图片创建
@@ -49,14 +49,14 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return UIImage
  */
-+ (UIImage *)p_roundedImageWithSize:(CGSize)size color:(UIColor *)color radius:(CGFloat)radius;
++ (UIImage *)fs_roundedImageWithSize:(CGSize)size color:(UIColor *)color radius:(CGFloat)radius;
 
 /**
  * 圆角处理
  *
  * @return UIImage
  */
-- (UIImage *)p_roundedImage;
+- (UIImage *)fs_roundedImage;
 
 /**
  * 圆角处理
@@ -65,7 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return UIImage
  */
-- (UIImage *)p_roundedImageWithRadius:(NSInteger)radius;
+- (UIImage *)fs_roundedImageWithRadius:(NSInteger)radius;
 
 /**
  * 圆角处理
@@ -75,7 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return UIImage
  */
-- (UIImage *)p_roundedImageWithCornerRadius:(CGFloat)cornerRadius cornerType:(UIRectCorner)rectCornerType;
+- (UIImage *)fs_roundedImageWithCornerRadius:(CGFloat)cornerRadius cornerType:(UIRectCorner)rectCornerType;
 
 /**
  * 获取一张 图片的缩略图
@@ -88,7 +88,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return UIImage
  */
-- (UIImage *)p_thumbnailImage:(NSInteger)thumbnailSize transparentBorder:(NSUInteger)borderSize cornerRadius:(NSUInteger)cornerRadius resizeMode:(UIViewContentMode)contentMode interpolationQuality:(CGInterpolationQuality)quality;
+- (UIImage *)fs_thumbnailImage:(NSInteger)thumbnailSize transparentBorder:(NSUInteger)borderSize cornerRadius:(NSUInteger)cornerRadius resizeMode:(UIViewContentMode)contentMode interpolationQuality:(CGInterpolationQuality)quality;
 
 /**
  * 图片裁剪
@@ -99,7 +99,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return UIImage
  */
-- (UIImage *)p_cropImageWithCroppedSize:(CGSize)croppedSize contentMode:(UIViewContentMode)contentMode interpolationQuality:(CGInterpolationQuality)quality;
+- (UIImage *)fs_cropImageWithCroppedSize:(CGSize)croppedSize contentMode:(UIViewContentMode)contentMode interpolationQuality:(CGInterpolationQuality)quality;
 
 /**
  * 将一张图片调整到指定size，生成一张新图片
@@ -108,7 +108,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @return UIImage
  */
-- (UIImage *)p_resizedImageToSize:(CGSize)size;
+- (UIImage *)fs_resizedImageToSize:(CGSize)size;
 
 @end
 

@@ -10,7 +10,7 @@
 
 @implementation NSObject (Category)
 
-- (NSString *)p_description {
+- (NSString *)fs_description {
     unsigned int count;
     const char *clasName    = object_getClassName(self);
     NSMutableString *string = [NSMutableString stringWithFormat:@"<%s: %p>:[ \n",clasName, self];
@@ -43,11 +43,11 @@
     return string;
 }
 
-- (id)p_objectWithAssociatedKey:(void *)key {
+- (id)fs_objectWithAssociatedKey:(void *)key {
     return objc_getAssociatedObject(self, key);
 }
 
-- (void)p_setObject:(id)object forAssociatedKey:(void *)key associationPolicy:(objc_AssociationPolicy)policy {
+- (void)fs_setObject:(id)object forAssociatedKey:(void *)key associationPolicy:(objc_AssociationPolicy)policy {
     objc_setAssociatedObject(self, key, object, policy);
 }
 

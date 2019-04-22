@@ -1,6 +1,6 @@
 //
 //  NSMutableAttributedString+Category.h
-//  P_App_OC
+//  iOSAppProject
 //
 //  Created by zhangpeng on 2018/2/11.
 //  Copyright © 2018年 zhangpeng. All rights reserved.
@@ -17,12 +17,12 @@ typedef NS_ENUM(NSUInteger, LineStyle) {
 
 #pragma mark - AddAttributeStyle
 
-- (void)p_addLineWithStyle:(LineStyle)lineStyle range:(NSRange)range;
+- (void)fs_addLineWithStyle:(LineStyle)lineStyle range:(NSRange)range;
 
-- (void)p_addLineHeight:(CGFloat)lineHeight font:(UIFont *)font;
+- (void)fs_addLineHeight:(CGFloat)lineHeight font:(UIFont *)font;
 
 #pragma mark - AddAttributes
 
-- (void)p_addAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range;
+- (void)fs_addAttributes:(NSDictionary<NSAttributedStringKey,id> *)attrs range:(NSRange)range;
 
 @end

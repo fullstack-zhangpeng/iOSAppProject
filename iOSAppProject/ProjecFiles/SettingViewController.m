@@ -16,34 +16,39 @@
 
 @implementation SettingViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     self.navigationItem.title = @"设置";
     [[NSUserDefaults standardUserDefaults] setBool:NO forKey:nd_Setting_FLEXDebug];
     [[NSUserDefaults standardUserDefaults] synchronize];
     self.settingArray = @[
-                          @[
-                              @"FLEX Debug"
-                              ]
-                          ];
+        @[
+            @"FLEX Debug"
+        ]
+    ];
     [self setupUI];
 }
 
 #pragma mark - UITableViewDelegate, UITableViewDataSource
 
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
     return CGFLOAT_MIN;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
     return CGFLOAT_MIN;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     return 44;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
     NSString *title = self.settingArray[indexPath.section][indexPath.row];
     if ([title containsString:@"FLEX Debug"]) {
         BOOL switchStatus = [[NSUserDefaults standardUserDefaults] boolForKey:nd_Setting_FLEXDebug];
@@ -58,7 +63,8 @@
     }
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"UITableViewCell"];
@@ -73,27 +79,31 @@
     return cell;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return self.settingArray[section].count;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return self.settingArray.count;
 }
 
 #pragma mark - UI
 
-- (void)setupUI {
-    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.p_width, self.view.p_height) style:UITableViewStyleGrouped];
+- (void)setupUI
+{
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.fs_width, self.view.fs_height) style:UITableViewStyleGrouped];
     tableView.delegate = self;
     tableView.dataSource = self;
     [self.view addSubview:tableView];
-    
-    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.p_width, CGFLOAT_MIN)];
+
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.fs_width, CGFLOAT_MIN)];
     tableView.tableHeaderView = header;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

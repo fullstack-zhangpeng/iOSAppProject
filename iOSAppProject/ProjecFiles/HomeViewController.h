@@ -9,5 +9,5 @@
 #import "BaseViewController.h"
 
 @interface HomeViewController : BaseViewController
-@property (nonatomic, assign) BOOL aa;
+
 @end

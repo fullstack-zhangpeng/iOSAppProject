@@ -1,6 +1,6 @@
 //
 //  UIButton+Category.m
-//  P_App_OC
+//  iOSAppProject
 //
 //  Created by zhangpeng on 2018/1/28.
 //  Copyright © 2018年 zhangpeng. All rights reserved.
@@ -14,8 +14,8 @@
 + (void)load {
     Method originMethod = class_getInstanceMethod(self, @selector(sendAction:to:forEvent:));
     SEL originSEL = @selector(sendAction:to:forEvent:);
-    Method replaceMethod = class_getInstanceMethod(self, @selector(p_sendAction:to:forEvent:));
-    SEL replaceSEL = @selector(p_sendAction:to:forEvent:);
+    Method replaceMethod = class_getInstanceMethod(self, @selector(fs_sendAction:to:forEvent:));
+    SEL replaceSEL = @selector(fs_sendAction:to:forEvent:);
     // 添加方法 语法: BOOL class_addMethod(Class cls, SEL name, IMP imp, const char *types)
     // 若返回YES，说明系统中方法实现不存在，则使用class_replaceMethod函数替换方法的实现；
     // 若返回NO，说明系统中此方法实现已存在，则使用method_exchangeImplementations函数交换方法的实现即可。
@@ -46,7 +46,7 @@
     objc_setAssociatedObject(self, "UIControl_acceptEventTime", @(currentClickTime), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)p_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event{
+- (void)fs_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event{
     // 如果想要设置统一的间隔时间，可以在此处加上以下几句
     // 注意，网上有使用 UIControl 分类的，如果使用 UIControl 分类，并且在这里统一设置时间间隔，会影响到其他继承自 UIControl 类的控件，要想统一设置又不想影响其他继承自 UIControl 的控件，建议使用UIButton分类，实现方法都是一样的。
     
@@ -61,7 +61,7 @@
     }
     // 两次点击的时间间隔小于设定的时间间隔时，才执行响应事件
     if (needSendAction) {
-        [self p_sendAction:action to:target forEvent:event];
+        [self fs_sendAction:action to:target forEvent:event];
     }
 }
 
