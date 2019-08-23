@@ -10,125 +10,125 @@
 
 @implementation UIView (Category)
 
-- (void)setFs_origin:(CGPoint)fs_origin
+- (void)setPb_origin:(CGPoint)pb_origin
 {
     CGRect frame = self.frame;
-    frame.origin = fs_origin;
+    frame.origin = pb_origin;
     self.frame = frame;
 }
 
-- (CGPoint)fs_origin
+- (CGPoint)pb_origin
 {
     return self.frame.origin;
 }
 
-- (void)setFs_size:(CGSize)fs_size
+- (void)setPb_size:(CGSize)pb_size
 {
     CGRect frame = self.frame;
-    frame.size = fs_size;
+    frame.size = pb_size;
     self.frame = frame;
 }
 
-- (CGSize)fs_size
+- (CGSize)pb_size
 {
     return self.frame.size;
 }
 
-- (void)setFs_top:(CGFloat)fs_top
+- (void)setPb_top:(CGFloat)pb_top
 {
     CGRect frame = self.frame;
-    frame.origin.y = fs_top;
+    frame.origin.y = pb_top;
     self.frame = frame;
 }
 
-- (CGFloat)fs_top
+- (CGFloat)pb_top
 {
     return self.frame.origin.y;
 }
 
-- (void)setFs_left:(CGFloat)fs_left
+- (void)setPb_left:(CGFloat)pb_left
 {
     CGRect frame = self.frame;
-    frame.origin.x = fs_left;
+    frame.origin.x = pb_left;
     self.frame = frame;
 }
 
-- (CGFloat)fs_left
+- (CGFloat)pb_left
 {
     return self.frame.origin.x;
 }
 
-- (void)setFs_bottom:(CGFloat)fs_bottom
+- (void)setPb_bottom:(CGFloat)pb_bottom
 {
     CGRect frame = self.frame;
-    frame.origin.y = fs_bottom - frame.size.height;
+    frame.origin.y = pb_bottom - frame.size.height;
     self.frame = frame;
 }
 
-- (CGFloat)fs_bottom
+- (CGFloat)pb_bottom
 {
     return self.frame.origin.y + self.frame.size.height;
 }
 
-- (void)setFs_right:(CGFloat)fs_right
+- (void)setPb_right:(CGFloat)pb_right
 {
     CGRect frame = self.frame;
-    frame.origin.x = fs_right - frame.size.width;
+    frame.origin.x = pb_right - frame.size.width;
     self.frame = frame;
 }
 
-- (CGFloat)fs_right
+- (CGFloat)pb_right
 {
     return self.frame.origin.x + self.frame.size.width;
 }
 
-- (void)setFs_width:(CGFloat)fs_width
+- (void)setPb_width:(CGFloat)pb_width
 {
     CGRect frame = self.frame;
-    frame.size.width = fs_width;
+    frame.size.width = pb_width;
     self.frame = frame;
 }
 
-- (CGFloat)fs_width
+- (CGFloat)pb_width
 {
     return self.frame.size.width;
 }
 
-- (void)setFs_height:(CGFloat)fs_height
+- (void)setPb_height:(CGFloat)pb_height
 {
     CGRect frame = self.frame;
-    frame.size.height = fs_height;
+    frame.size.height = pb_height;
     self.frame = frame;
 }
 
-- (CGFloat)fs_height
+- (CGFloat)pb_height
 {
     return self.frame.size.height;
 }
 
-- (void)setFs_centerX:(CGFloat)fs_centerX
+- (void)setPb_centerX:(CGFloat)pb_centerX
 {
-    self.center = CGPointMake(fs_centerX, self.center.y);
+    self.center = CGPointMake(pb_centerX, self.center.y);
 }
 
-- (CGFloat)fs_centerX
+- (CGFloat)pb_centerX
 {
     return self.center.x;
 }
 
-- (void)setFs_centerY:(CGFloat)fs_centerY
+- (void)setPb_centerY:(CGFloat)pb_centerY
 {
-    self.center = CGPointMake(self.center.x, fs_centerY);
+    self.center = CGPointMake(self.center.x, pb_centerY);
 }
 
-- (CGFloat)fs_centerY
+- (CGFloat)pb_centerY
 {
     return self.center.y;
 }
 
 #pragma mark - Method
 
-- (BOOL)fs_containView:(UIView *)view
+- (BOOL)pb_containView:(UIView *)view
 {
     if (!self || !view || (self.subviews.count <= 0)) {
         return NO;

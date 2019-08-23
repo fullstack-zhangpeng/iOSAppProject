@@ -12,19 +12,29 @@
 
 #pragma mark - Property
 
-@property (nonatomic, assign) CGPoint fs_origin;      ///< Shortcut for frame.origin.
-@property (nonatomic, assign) CGSize fs_size;         ///< Shortcut for frame.size.
-@property (nonatomic, assign) CGFloat fs_top;         ///< Shortcut for frame.origin.y
-@property (nonatomic, assign) CGFloat fs_left;        ///< Shortcut for frame.origin.x.
-@property (nonatomic, assign) CGFloat fs_bottom;      ///< Shortcut for frame.origin.y + frame.size.height
-@property (nonatomic, assign) CGFloat fs_right;       ///< Shortcut for frame.origin.x + frame.size.width
-@property (nonatomic, assign) CGFloat fs_width;       ///< Shortcut for frame.size.width.
-@property (nonatomic, assign) CGFloat fs_height;      ///< Shortcut for frame.size.height.
-@property (nonatomic, assign) CGFloat fs_centerX;     ///< Shortcut for center.x
-@property (nonatomic, assign) CGFloat fs_centerY;     ///< Shortcut for center.y
+/// Shortcut for frame.origin.
+@property (nonatomic, assign) CGPoint pb_origin;
+/// Shortcut for frame.size.
+@property (nonatomic, assign) CGSize pb_size;
+/// Shortcut for frame.origin.y
+@property (nonatomic, assign) CGFloat pb_top;
+/// Shortcut for frame.origin.x.
+@property (nonatomic, assign) CGFloat pb_left;
+/// Shortcut for frame.origin.y + frame.size.height
+@property (nonatomic, assign) CGFloat pb_bottom;
+/// Shortcut for frame.origin.x + frame.size.width
+@property (nonatomic, assign) CGFloat pb_right;
+/// Shortcut for frame.size.width.
+@property (nonatomic, assign) CGFloat pb_width;
+/// Shortcut for frame.size.height.
+@property (nonatomic, assign) CGFloat pb_height;
+/// Shortcut for center.x
+@property (nonatomic, assign) CGFloat pb_centerX;
+/// Shortcut for center.y
+@property (nonatomic, assign) CGFloat pb_centerY;
 
 #pragma mark - Method
 
-- (BOOL)fs_containView:(UIView *)view;
+- (BOOL)pb_containView:(UIView *)view;
 
 @end
